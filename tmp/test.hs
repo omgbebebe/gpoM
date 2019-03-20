@@ -9,6 +9,7 @@ import Text.XML.HXT.Arrow.Pickle --(XmlPickler (..), showPickled, unpickleDoc)
 import Text.XML.HXT.Parser.XmlParsec (xread)
 import Data.Word (Word8)
 import Data.Text (Text)
+import Data.Aeson
 
 type MyBool = String
 
@@ -19,7 +20,10 @@ data Properties = Properties { name :: String
                              , user :: Maybe MyBool
                              , action :: Maybe String
                              }
-  deriving (Eq, Show)
+  deriving (Eq, Show, Generic)
+
+instance FromJSON Properties
+instance ToJSON Properties
 
 instance XmlPickler Properties where
   xpickle = xpProperties
@@ -36,7 +40,10 @@ data EnvironmentVariable = EnvironmentVariable { name :: String
                                                , status :: Maybe String
                                                , properties :: Properties
                                                }
-  deriving (Eq, Show)
+  deriving (Eq, Show, Generic)
+
+instance FromJSON EnvironmentVariable
+instance ToJSON EnvironmentVariable
 
 instance XmlPickler EnvironmentVariable where
   xpickle = xpEnvironmentVariable
@@ -46,7 +53,10 @@ data EnvironmentVariables = EnvironmentVariables { clsid :: String
                                                  , environmentVariables :: [EnvironmentVariable]
                                                  , disabled :: Maybe Bool
                                                  }
-  deriving (Eq, Show)
+  deriving (Eq, Show, Generic)
+instance FromJSON EnvironmentVariables
+instance ToJSON EnvironmentVariables
+
 
 instance XmlPickler EnvironmentVariables where
   xpickle = xpEnvironmentVariables
