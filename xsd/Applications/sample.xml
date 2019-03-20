@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Applications  clsid="{16DB8EC4-EBFC-4958-98EE-712E9DD3A966}" disabled="0">
+   <Application clsid="{C8535E2E-148D-494d-8E9A-71FC46649B5E}" 
+           name="Sample Application One" 
+           image="0" 
+           changed="2010-01-17 20:40:03" 
+           uid="{E61B266E-24D3-4141-9854-BDAC3A42601D}"
+           extId="{5F6A652F-1FA2-4A5C-B4DB-48D5D8095F47}">
+         <Properties/>
+         <RegistrySettings 
+           clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}">
+         <Registry 
+           clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}"
+           name="Enable Sample Application One" 
+           status="" 
+           image="12"
+           changed="2010-01-17 20:40:03"
+           uid="{7575141C-6FE6-4E8D-A564-7D9B5ACA8AC4}">
+         <Properties 
+           action="U" 
+           displayDecimal="0" 
+           default="0"
+           hive="HKEY_CURRENT_USER" 
+           key="MP3" 
+           name="Disallowed"
+           type="REG_DWORD" 
+           value="00000001"/>
+         </Registry>
+        </RegistrySettings>
+       </Application>
+ </Applications>

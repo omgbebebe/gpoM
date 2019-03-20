@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <NetworkOptions 
+           clsid="{09686AD1-5D80-48ee-A940-690A6DF02A90}" 
+           disabled="1">
+   <VPN    clsid="{0532F359-3205-4d32-ADB7-9AEC6402BECF}" 
+           name="Corporate" 
+           image="2" 
+           userContext="0" 
+           removePolicy="0" 
+           changed="2007-07-06 20:47:40" 
+           uid="{30201E8F-5BD1-4F72-8B8F-69EAA7B62C65}">
+     <Properties 
+           action="U" 
+           user="1" 
+           name="Corporate" 
+           ipAddress="10.10.10.50" 
+           useDNS="0" 
+           dialFirst="" 
+           trayIcon="1" 
+           showProgress="1" 
+           showPassword="1" 
+           showDomain="1" 
+           redialCount="0" 
+           redialPause="" 
+           idleDisconnect="" 
+           reconnect="0" 
+           customSettings="0" 
+           securePassword="0" 
+           secureData="0" 
+           useLogon="0" 
+           vpnStrategy="VS_PptpOnly"/>
+   </VPN>
+   <DUN    clsid="{9B0D030D-9396-49c1-8DEF-08B35B5BB79E}" 
+           name="Default IDSN Line" 
+           image="2" 
+           changed="2007-07-06 20:47:56" 
+           uid="{FE5D7ECD-DD71-468C-9D9B-54E9505A6751}">
+   <Properties 
+           action="U" 
+           user="1" 
+           name="Default IDSN Line" 
+           phoneNumber="1-555-1212"/>
+   </DUN>
+ </NetworkOptions>

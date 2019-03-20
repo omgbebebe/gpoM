@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Folders  clsid="{77CC39E7-3D16-4f8f-AF86-EC0BBEE2C861}" 
+           disabled="1">
+   <Folder clsid="{07DA02F5-F9CD-4397-A550-4AE21B6B4BD3}" 
+           name="%LogonUser%" 
+           status="%LogonUser%" 
+           image="2" 
+           changed="2007-07-06 21:01:26" 
+           uid="{99F88DD6-8EE4-4D46-BCFF-2934498F495F}">
+     <Properties 
+           action="U" 
+           path="\\scratch2\%LogonUser%" 
+           readOnly="1" 
+           archive="1" 
+           hidden="0"/>
+   </Folder>
+ </Folders>

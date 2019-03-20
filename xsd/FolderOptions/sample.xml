@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <FolderOptions  clsid="{8AB5F5D7-F676-48ab-A94E-1186E120EFDC}" 
+                 disabled="1">
+   <GlobalFolderOptions 
+                 clsid="{E7632293-E3FC-4fee-9CD3-584C95D8D2A0}"
+                 name="Folder Options (Windows XP)" 
+                 changed="2007-07-06 20:41:09" 
+                 uid="{D3D3DF1A-170D-44A9-B30E-F95F07B8D6C7}">
+     <Filters>
+       <FilterOs hidden="1" 
+                 not="1" 
+                 bool="AND" 
+                 class="NT" 
+                 version="VISTA" 
+                 type="NE" 
+                 edition="NE" 
+                 sp="NE"/>
+     </Filters>
+     <Properties noNetCrawling="0" 
+                 folderContentsInfoTip="1" 
+                 friendlyTree="1" 
+                 fullPathAddress="1" 
+                 fullPath="0" 
+                 disableThumbnailCache="0" 
+                 hidden="HIDE" 
+                 hideFileExt="1" 
+                 separateProcess="0" 
+                 showSuperHidden="0" 
+                 classicViewState="0" 
+                 persistBrowsers="0" 
+                 showControlPanel="1" 
+                 showCompColor="1" 
+                 showInfoTip="1" 
+                 webViewBarricade="0"
+                 forceGuest="1"/>
+   </GlobalFolderOptions>
+   <GlobalFolderOptionsVista 
+                 clsid="{DBF1E3CD-4CA2-407c-BE84-5F67D3BE754D}" 
+                 name="Folder Options (Windows Vista)" 
+                 changed="2007-07-06 20:41:14" 
+                 uid="{AA3507A3-F6C2-4CE5-8646-D7AB7521DE20}">
+     <Filters>
+       <FilterOs hidden="1" 
+                 not="0" 
+                 bool="AND" 
+                 class="NT" 
+                 version="VISTA" 
+                 type="NE" 
+                 edition="NE" 
+                 sp="NE"/>
+     </Filters>
+     <Properties alwaysShowIcons="0" 
+                 alwaysShowMenus="0" 
+                 displayIconThumb="1" 
+                 displayFileSize="1" 
+                 displaySimpleFolders="1" 
+                 fullPath="0" 
+                 hidden="HIDE" 
+                 hideFileExt="1" 
+                 showSuperHidden="0" 
+                 separateProcess="0" 
+                 classicViewState="0" 
+                 persistBrowsers="0" 
+                 showDriveLetter="0" 
+                 showCompColor="1" 
+                 showInfoTip="1" 
+                 showPreviewHandlers="1" 
+                 useCheckBoxes="0" 
+                 useSharingWizard="1" 
+                 listViewTyping="SELECT"/>
+   </GlobalFolderOptionsVista>
+   <OpenWith clsid="{100B9C09-906A-4f5a-9C41-1BD98B6CA022}" 
+                 name="salt" 
+                 image="2" 
+                 changed="2007-07-06 20:41:36" 
+                 uid="{DB34CE2D-6C16-477F-B19B-3BD844BB7E9B}">
+     <Properties action="U" 
+                 fileExtension="salt" 
+                 applicationPath="notepad.exe" 
+                 default="1"/>
+   </OpenWith>
+   <FileType clsid="{580C4D3B-7A89-44d0-92D2-C105702C7BD0}" 
+                 name="salt" 
+                 image="2" 
+                 changed="2007-07-06 21:36:50" 
+                 uid="{22F1F58D-F470-4787-9B2C-16D30A07A285}">
+     <Properties action="U" 
+                 fileExt="salt" 
+                 application="ActiveMovie Control Object" 
+                 appProgID="AMOVIE.ActiveMovie Control" 
+                 configActions="0"/>
+   </FileType>
+ </FolderOptions>

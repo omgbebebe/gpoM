@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <EnvironmentVariables 
+           clsid="{BF141A63-327B-438a-B9BF-2C188F13B7AD}" 
+           disabled="1">
+   <EnvironmentVariable 
+           clsid="{78570023-8373-4a19-BA80-2F150738EA19}"
+           name="GAMEDRIVE" 
+           status="GAMEDRIVE = Z:" 
+           image="2" 
+           changed="2007-07-06 20:58:37" 
+           uid="{C715B0C2-23AB-4F8F-80DC-7350144F1A63}">
+     <Properties 
+           action="U" 
+           name="GAMEDRIVE" 
+           value="Z:" 
+           user="1" 
+           partial="0"/>
+   </EnvironmentVariable>
+   <EnvironmentVariable 
+           clsid="{78570023-8373-4a19-BA80-2F150738EA19}"
+           name="MP3S" 
+           status="MP3S = \\SCRATCHMP3" 
+           image="2" 
+           changed="2007-07-06 20:59:09" 
+           uid="{5B57561C-A0A6-491C-917A-937FB0A65903}">
+     <Properties 
+           action="U" 
+           name="MP3S" 
+           value="\\SCRATCHMP3" 
+           user="0" 
+           partial="0"/>
+   </EnvironmentVariable>
+ </EnvironmentVariables>

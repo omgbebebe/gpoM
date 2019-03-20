@@ -1,0 +1,1628 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <InternetSettings clsid="{B611EB48-F531-42cd-A1F6-5E0D015377BA}"
+                   disabled="1">
+ <Internet clsid="{8C0FE68F-E8A2-4f17-99E7-C6EFED208917}"
+           name="Internet Explorer 5 and 6"
+           status="Internet Settings"
+           changed="2007-07-06 20:43:08"
+           uid="{4DAD6166-915A-4AF6-BAEC-8F63E9653C8D}"
+           bypasserrors="1">
+ <Filters>
+ <FilterFile hidden="1" 
+             not="0" 
+             bool="AND" 
+             path="%ProgramFilesDir%\Internet Explorer\iexplore.exe"
+             type="VERSION" 
+             gte="1" 
+             min="4.0.0.0" 
+             max="7.0.0.0" 
+             lte="0"/>
+ </Filters>
+ <Properties>
+ <Reg id="IgnoreColors"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Settings"
+            name="Always Use My Colors"
+            value="0"/>
+ <Reg id="IgnoreFontStyles"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Settings"
+            name="Always Use My Font Face"
+            value="0"/>
+ <Reg id="IgnoreFontSizes"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Settings"
+            name="Always Use My Font Size"
+            value="0"/>
+ <Reg id="FormatWithStylesheet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Styles"
+            name="Use My Stylesheet"
+            value="0"/>
+ <Reg id="Stylesheet" disabled="1"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Styles"
+            name="User Stylesheet"
+            value=""/>
+ <Reg id="ScriptAddress"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="AutoConfigURL"
+            value=""/>
+ <Reg id="UseProxyServer"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="ProxyEnable"
+            value="0"/>
+ <Reg id="ProxyServerAndPort" disabled="1"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="ProxyServer"
+            value=""/>
+ <Reg id="ProxyOverride" disabled="1"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="ProxyOverride"
+            value=""/>
+ <Reg id="Homepage"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Start Page"
+            value=""/>
+ <Reg id="SearchPath"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Search Bar"
+            value=""/>
+ <Reg id="SupportPath"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Help_Menu_URLs"
+            name="Online_Support"
+            value=""/>
+ <Reg id="DownloadPath"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer"
+            name="Download Directory"
+            value=""/>
+ <Reg id="DaysToKeep"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                Settings\Url History"
+            name="DaysToKeep"
+            value="00000014"/>
+ <Reg id="CurrentLevelLocal"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\1"
+            name="CurrentLevel"
+            value="00011000"/>
+ <Reg id="CurrentLevelTrusted"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\2"
+            name="CurrentLevel"
+            value="00011000"/>
+ <Reg id="CurrentLevelInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="CurrentLevel"
+            value="00011000"/>
+ <Reg id="CurrentLevelRestricted"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\4"
+            name="CurrentLevel"
+            value="00011000"/>
+ <Reg id="NotSignedAuthenticodeInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2004"
+            value="00000000"/>
+ <Reg id="SignedAuthenticodeInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2001"
+            value="00000000"/>
+ <Reg id="PromptActivXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2201"
+            value="00000003"/>
+ <Reg id="BinaryScriptInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2000"
+            value="00000000"/>
+ <Reg id="DownloadSignedActiveXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1001"
+            value="00000001"/>
+ <Reg id="DownloadUnsignedActiveXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1004"
+            value="00000003"/>
+ <Reg id="ScriptUnsafeActiveXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1201"
+            value="00000003"/>
+ <Reg id="RunActiveXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1200"
+            value="00000000"/>
+ <Reg id="ScriptSafeActiveXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1405"
+            value="00000000"/>
+ <Reg id="PromptFileDownloadInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2200"
+            value="00000003"/>
+ <Reg id="FileDownloadInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1803"
+            value="00000000"/>
+ <Reg id="FontDownloadInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1604"
+            value="00000000"/>
+ <Reg id="JavaPermissionsInternet"
+            type="REG_BINARY"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1C00"
+            value="00010000"/>
+ <Reg id="AccessDataAcrossDomainsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1406"
+            value="00000003"/>
+ <Reg id="AllowMETAREFRESHInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1608"
+            value="00000000"/>
+ <Reg id="AllowScriptingInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1206"
+            value="00000000"/>
+ <Reg id="AllowScriptInitiatedWindowsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2102"
+            value="00000003"/>
+ <Reg id="AllowRestrictedProtocolsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2300"
+            value="00000001"/>
+ <Reg id="DisplayMixedContentInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1609"
+            value="00000001"/>
+ <Reg id="DontPromptForCertificateInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1A04"
+            value="00000003"/>
+ <Reg id="DragAndDropInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1802"
+            value="00000000"/>
+ <Reg id="InstallDesktopItemsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1800"
+            value="00000001"/>
+ <Reg id="LaunchProgramsInIFRAMEInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1804"
+            value="00000001"/>
+ <Reg id="NavigateSubFramesAcrossDomainsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1607"
+            value="00000000"/>
+ <Reg id="FileContentInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2100"
+            value="00000000"/>
+ <Reg id="ChannelPermissionsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1E05"
+            value="00000001"/>
+ <Reg id="SubmitNonEncryptedFormInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1601"
+            value="00000001"/>
+ <Reg id="UsePopUpBlockerInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1809"
+            value="00000000"/>
+ <Reg id="UserdataPersistenceInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1606"
+            value="00000000"/>
+ <Reg id="LessPrivilegedWebsitesInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2101"
+            value="00000000"/>
+ <Reg id="ActiveScriptingInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1401"
+            value="00000000"/>
+ <Reg id="PasteViaScriptInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1407"
+            value="00000000"/>
+ <Reg id="AppletScriptingInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1402"
+            value="00000000"/>
+ <Reg id="LogonInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1A00"
+            value="00020000"/>
+ <Reg id="DefaultConnection"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="RemoteAccess"
+            name="InternetProfile"
+            value=""/>
+ <Reg id="EnableAutodial"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="EnableAutodial"
+            value="0"/>
+ <Reg id="NoNetAutodial"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="NoNetAutodial"
+            value="0"/>
+ <Reg id="DisableWizard"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Connection Wizard"
+            name="Completed"
+            value="0"/>
+ <Reg id="AlwaysExpandALTText"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Expand Alt Text"
+            value="no"/>
+ <Reg id="MoveSystemCaret"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Move System Caret"
+            value="no"/>
+ <Reg id="SendURLsAsUTF8"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="UrlEncoding"
+            value="00000000"/>
+ <Reg id="CheckForIEUpdates"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="NoUpdateCheck"
+            value="00000000"/>
+ <Reg id="CloseUnusedFolders"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="NscSingleExpand"
+            value="00000001"/>
+ <Reg id="DisableScriptDebugging"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Disable Script Debugger"
+            value="yes"/>
+ <Reg id="DisplayErrorNotification"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Error Dlg Displayed On Every Error"
+            value="no"/>
+ <Reg id="FTPFolderView"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Ftp"
+            name="Use Web Based FTP"
+            value="no"/>
+ <Reg id="InstallOnDemand"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="NoJITSetup"
+            value="00000000"/>
+ <Reg id="InstallOnDemandOther"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="NowebJITSetup"
+            value="00000000"/>
+ <Reg id="EnableOfflineSync"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\WebCheck"
+            name="NoScheduledUpdates"
+            value="00000000"/>
+ <Reg id="PageHitCounting"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\WebCheck"
+            name="NoChannelLogging"
+            value="00000001"/>
+ <Reg id="PageTransitions"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Page_Transitions"
+            value="00000001"/>
+ <Reg id="PersonalizedFavorites"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="FavIntelliMenus"
+            value="no"/>
+ <Reg id="3rdPartyExtensions"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Enable Browser Extensions"
+            value="no"/>
+ <Reg id="UseThemes"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="UseThemes"
+            value="00000001"/>
+ <Reg id="OffscreenCompositing"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Force Offscreen Composition"
+            value="00000001"/>
+ <Reg id="NotifyDownloadComplete"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="NotifyDownloadComplete"
+            value="yes"/>
+ <Reg id="ReuseWindows"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="AllowWindowReuse"
+            value="00000001"/>
+ <Reg id="ShowFriendlyHTTP"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Friendly http errors"
+            value="yes"/>
+ <Reg id="ShowFriendlyURLs"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer"
+            name="Show_FullURL"
+            value="00000000"/>
+ <Reg id="ShowGoButton"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="ShowGoButton"
+            value="yes"/>
+ <Reg id="UnderlineLinks"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Anchor Underline"
+            value="yes"/>
+ <Reg id="InlineAutoComplete"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Explorer\
+                                                       AutoComplete"
+            name="Append Completion"
+            value="no"/>
+ <Reg id="PassiveFTP"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\FTP"
+            name="Use PASV"
+            value="no"/>
+ <Reg id="SmoothScrolling"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="SmoothScroll"
+            value="00000001"/>
+ <Reg id="HTTP1_1"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="EnableHTTP1_1"
+            value="00000001"/>
+ <Reg id="HTTP1_1ThroughProxy"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="ProxyHTTP1.1"
+            value="00000000"/>
+ <Reg id="JavaConsole"
+            type="REG_BINARY"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Java VM"
+            name="EnableJavaConsole"
+            value="00000000"/>
+ <Reg id="JavaLogging"
+            type="REG_BINARY"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Java VM"
+            name="EnableLogging"
+            value="00000000"/>
+ <Reg id="JITCompiler"
+            type="REG_BINARY"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Java VM"
+            name="EnableJIT"
+            value="01000000"/>
+ <Reg id="SuppressOnlineContent"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Media"
+            name="SuppressOnlineContent"
+            value="no"/>
+ <Reg id="AutoImageResize"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Enable AutoImageResize"
+            value="no"/>
+ <Reg id="MyPicsHoverbar"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Enable_MyPics_Hoverbar"
+            value="no"/>
+ <Reg id="PlayAnimations"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Play_Animations"
+            value="yes"/>
+ <Reg id="PlaySounds"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Play_Background_Sounds"
+            value="yes"/>
+ <Reg id="PlayVideos"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Display Inline Videos"
+            value="yes"/>
+ <Reg id="ImagePlaceholders"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Show image placeholders"
+            value="00000000"/>
+ <Reg id="ShowPictures"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Display Inline Images"
+            value="yes"/>
+ <Reg id="SmartDithering"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer"
+            name="SmartDithering"
+            value="00000001"/>
+ <Reg id="PrintBackground"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Print_Background"
+            value="no"/>
+ <Reg id="WhenSearching"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="AutoSearch"
+            value="00000006"/>
+ <Reg id="PubCertRevocation"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\WinTrust\
+                                Trust Providers\Software Publishing"
+            name="State"
+            value="000000C9"/>
+ <Reg id="ServerCertRevocation"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="CertificateRevocation"
+            value="00000000"/>
+ <Reg id="CheckExeSignatures"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Download"
+            name="CheckExeSignatures"
+            value="no"/>
+ <Reg id="DoNotSaveEncrypted"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="DisableCachingOfSSLPages"
+            value="00000000"/>
+ <Reg id="EmptyTemporary"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Cache"
+            name="Persistent"
+            value="00000001"/>
+ <Reg id="EnableIntegrated"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="EnableNegotiate"
+            value="00000000"/>
+ <Reg id="ProfileAssistant"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Security\
+                                                          P3Global"
+            name="Enabled"
+            value="00000001"/>
+ <Reg id="SecureProtocols"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="SecureProtocols" 
+            defaultValue="00000028" 
+            bitfield="1">
+ <SubProp id="SecureProtocolsSsl2"
+            value="00000008" mask="00000008"/>
+ <SubProp id="SecureProtocolsSsl3"
+            value="00000020" mask="00000020"/>
+ <SubProp id="SecureProtocolsTls1"
+            value="00000000" mask="00000080"/>
+ </Reg>
+ <Reg id="WarnInvalidCert"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="WarnonBadCertRecving"
+            value="00000001"/>
+ <Reg id="WarnChangeSecure"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="WarnonZoneCrossing"
+            value="00000001"/>
+ <Reg id="WarnFormRedirect"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="WarnOnPostRedirect"
+            value="00000001"/>
+ <Reg id="IEDefault"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Check_Associations"
+            value="yes"/>
+ </Properties>
+ </Internet>
+ <IE7 clsid="{683F7AD7-E782-4232-8A6D-F22431F12DB5}"
+            name="Internet Explorer 7"
+            status="Internet Settings"
+            changed="2007-07-06 20:43:56"
+            uid="{413810A7-62FE-4426-8839-0E147EDDB113}">
+ <Filters>
+ <FilterFile hidden="1" 
+             not="0" 
+             bool="AND" 
+             path="%ProgramFilesDir%\Internet Explorer\iexplore.exe"
+             type="VERSION" 
+             gte="1" 
+             min="7.0.0.0" 
+             max="8.0.0.0" 
+             lte="0"/>
+ </Filters>
+ <Properties>
+ <Reg id="CacheLimit"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                         Settings\5.0\Cache\Content"
+            name="CacheLimit"
+            value="00005000"/>
+ <Reg id="TempCache"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Explorer\
+                                         User Shell Folders"
+            name="Cache"
+            value=""/>
+ <Reg id="SyncMode5"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="SyncMode5"
+            value="00000000"/>
+ <Reg id="DaysToKeep"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                Settings\Url History"
+            name="DaysToKeep"
+            value="00000014"/>
+ <Reg id="PopupShowInformationBar"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\New Windows"
+            name="UseSecBand"
+            value="1"/>
+ <Reg id="PopupPlaySoundWhenBlocked"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\New Windows"
+            name="PlaySound"
+            value="1"/>
+ <Reg id="PopupAllowHTTPS"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\New Windows"
+            name="AllowHTTPS"
+            value="0"/>
+ <Reg id="PopupBlockControls"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\New Windows"
+            name="BlockControls"
+            value="0"/>
+ <Reg id="PopupBlockUserInit"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\New Windows"
+            name="BlockUserInit"
+            value="0"/>
+ <Reg id="PopupUseHooks"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\New Windows"
+            name="UseHooks"
+            value="1"/>
+ <Reg id="PopupUseTimerMethod"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\New Windows"
+            name="UserTimerMethod"
+            value="0"/>
+ <Reg id="ScriptAddress"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="AutoConfigURL"
+            value=""/>
+ <Reg id="UseProxyServer"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="ProxyEnable"
+            value="0"/>
+ <Reg id="ProxyServerAndPort" disabled="1"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="ProxyServer"
+            value=""/>
+ <Reg id="ProxyOverride" disabled="1"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="ProxyOverride"
+            value=""/>
+ <Reg id="Homepage"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Start Page"
+            value=""/>
+ <Reg id="SecondaryStartPages"
+            type="REG_MULTI_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Secondary Start Pages"
+            value=""/>
+ <Reg id="CurrentLevelInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="CurrentLevel"
+            value="00011500"/>
+ <Reg id="LooseXamlInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2402"
+            value="00000000"/>
+ <Reg id="XamlBrowserAppInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2400"
+            value="00000000"/>
+ <Reg id="XpsDocsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2401"
+            value="00000000"/>
+ <Reg id="SignedAuthenticodeInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2001"
+            value="00000003"/>
+ <Reg id="NotSignedAuthenticodeInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2004"
+            value="00000003"/>
+ <Reg id="ActiveXUnusedInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1208"
+            value="00000003"/>
+ <Reg id="ScriptletsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1209"
+            value="00000003"/>
+ <Reg id="PromptActivXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2201"
+            value="00000003"/>
+ <Reg id="BinaryScriptInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2000"
+            value="00000000"/>
+ <Reg id="ShowVideoAnimationInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="120A"
+            value="00000003"/>
+ <Reg id="DownloadSignedActiveXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1001"
+            value="00000001"/>
+ <Reg id="DownloadUnsignedActiveXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1004"
+            value="00000003"/>
+ <Reg id="ScriptUnsafeActiveXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1201"
+            value="00000003"/>
+ <Reg id="RunActiveXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1200"
+            value="00000001"/>
+ <Reg id="ScriptSafeActiveXInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1405"
+            value="00000000"/>
+ <Reg id="PromptFileDownloadInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2200"
+            value="00000003"/>
+ <Reg id="FileDownloadInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1803"
+            value="00000000"/>
+ <Reg id="FontDownloadInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1604"
+            value="00000000"/>
+ <Reg id="FrameworkSetupInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2600"
+            value="00000000"/>
+ <Reg id="AccessDataAcrossDomainsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1406"
+            value="00000003"/>
+ <Reg id="AllowMETAREFRESHInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1608"
+            value="00000000"/>
+ <Reg id="AllowScriptingInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1206"
+            value="00000003"/>
+ <Reg id="AllowScriptInitiatedWindowsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2102"
+            value="00000003"/>
+ <Reg id="AllowRestrictedProtocolsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2300"
+            value="00000001"/>
+ <Reg id="AllowNoAddressStatusInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2104"
+            value="00000003"/>
+ <Reg id="DisplayMixedContentInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1609"
+            value="00000001"/>
+ <Reg id="DontPromptForCertificateInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1A04"
+            value="00000003"/>
+ <Reg id="DragAndDropInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1802"
+            value="00000000"/>
+ <Reg id="LocalDirOnULInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="160A"
+            value="00000000"/>
+ <Reg id="InstallDesktopItemsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1800"
+            value="00000001"/>
+ <Reg id="AppsUnsafeFilesInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1806"
+            value="00000001"/>
+ <Reg id="LaunchProgramsInIFRAMEInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1804"
+            value="00000001"/>
+ <Reg id="NavigateSubFramesAcrossDomainsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1607"
+            value="00000003"/>
+ <Reg id="FileContentInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2100"
+            value="00000000"/>
+ <Reg id="ChannelPermissionsInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1E05"
+            value="00020000"/>
+ <Reg id="SubmitNonEncryptedFormInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1601"
+            value="00000000"/>
+ <Reg id="UsePhishingInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2301"
+            value="00000000"/>
+ <Reg id="UsePopUpBlockerInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1809"
+            value="00000000"/>
+ <Reg id="UserdataPersistenceInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1606"
+            value="00000000"/>
+ <Reg id="LessPrivilegedWebsitesInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2101"
+            value="00000000"/>
+ <Reg id="ActiveScriptingInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1400"
+            value="00000000"/>
+ <Reg id="AllowClipboardInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1407"
+            value="00000001"/>
+ <Reg id="AllowStatusBarInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2103"
+            value="00000003"/>
+ <Reg id="PromptForInfoInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="2105"
+            value="00000003"/>
+ <Reg id="AppletScriptingInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1402"
+            value="00000000"/>
+ <Reg id="LogonInternet"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Zones\3"
+            name="1A00"
+            value="00020000"/>
+ <Reg id="TurnOnPopupBlocker"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\New Windows"
+            name="PopupMgr"
+            value="1"/>
+ <Reg id="DefaultInternet"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\RAS AutoDial\Default"
+            name="DefaultInternet"
+            value=""/>
+ <Reg id="EnableAutodial"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="EnableAutodial"
+            value="0"/>
+ <Reg id="NoNetAutodial"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="NoNetAutodial"
+            value="0"/>
+ <Reg id="DisableWizard"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Connection Wizard"
+            name="Completed"
+            value="0"/>
+ <Reg id="AlwaysExpandALTText"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Expand Alt Text"
+            value="no"/>
+ <Reg id="MoveSystemCaret"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Move System Caret"
+            value="no"/>
+ <Reg id="ResetTextSizeOnStartup"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Zoom"
+            name="ResetTextSizeOnStartup"
+            value="no"/>
+ <Reg id="ResetTextSizeOnZoom"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Zoom"
+            name="ResetTextSizeOnZoom"
+            value="yes"/>
+ <Reg id="ResetZoomOnStartup"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Zoom"
+            name="ResetZoomOnStartup"
+            value="yes"/>
+ <Reg id="CheckForIEUpdates"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="NoUpdateCheck"
+            value="00000001"/>
+ <Reg id="CloseUnusedFolders"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="NscSingleExpand"
+            value="00000000"/>
+ <Reg id="DisableScriptDebuggingIE"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="DisableScriptDebuggerIE"
+            value="yes"/>
+ <Reg id="DisableScriptDebugging"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Disable Script Debugger"
+            value="yes"/>
+ <Reg id="DisplayErrorNotification"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Error Dlg Displayed On Every Error"
+            value="no"/>
+ <Reg id="FTPFolderView"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Ftp"
+            name="Use Web Based FTP"
+            value="no"/>
+ <Reg id="PageTransitions"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Page_Transitions"
+            value="00000001"/>
+ <Reg id="PersonalizedFavorites"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="FavIntelliMenus"
+            value="no"/>
+ <Reg id="3rdPartyExtensions"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Enable Browser Extensions"
+            value="yes"/>
+ <Reg id="UseThemes"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="UseThemes"
+            value="00000001"/>
+ <Reg id="EnableSearchPane"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="EnableSearchPane"
+            value="00000000"/>
+ <Reg id="OffscreenCompositing"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Force Offscreen Composition"
+            value="00000000"/>
+ <Reg id="NotifyDownloadComplete"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="NotifyDownloadComplete"
+            value="yes"/>
+ <Reg id="ReuseWindows"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="AllowWindowReuse"
+            value="00000001"/>
+ <Reg id="ShowFriendlyHTTP"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Friendly http errors"
+            value="yes"/>
+ <Reg id="UnderlineLinks"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Anchor Underline"
+            value="yes"/>
+ <Reg id="InlineAutoComplete"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Explorer\
+                                                      AutoComplete"
+            name="Append Completion"
+            value="no"/>
+ <Reg id="UseMRUSwitching"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\TabbedBrowsing"
+            name="UseMRUSwitching"
+            value="no"/>
+ <Reg id="PassiveFTP"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Ftp"
+            name="Use PASV"
+            value="yes"/>
+ <Reg id="SmoothScrolling"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="SmoothScroll"
+            value="00000001"/>
+ <Reg id="HTTP1_1"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="EnableHTTP1_1"
+            value="00000001"/>
+ <Reg id="HTTP1_1ThroughProxy"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="ProxyHTTP1.1"
+            value="00000001"/>
+ <Reg id="ShowPunycode"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="ShowPunycode"
+            value="00000000"/>
+ <Reg id="EnablePunycode"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="EnablePunycode" 
+            defaultValue="00000001" 
+            bitfield="1">
+ <SubProp id="EnablePunycodeGlobal"
+            value="00000001" mask="00000001"/>
+ <SubProp id="EnablePunycodeIntranet"
+            value="00000000" mask="00000002"/>
+ </Reg>
+ <Reg id="UrlEncoding"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="UrlEncoding"
+            value="00000001"/>
+ <Reg id="DisableIDNPropmt"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="DisableIDNPropmt"
+            value="00000000"/>
+ <Reg id="MailtoUTF8Encoding"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="MailtoUTF8Encoding"
+            value="00000000"/>
+ <Reg id="UseClearType"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="UseClearType"
+            value="yes"/>
+ <Reg id="AutoImageResize"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Enable AutoImageResize"
+            value="yes"/>
+ <Reg id="PlayAnimations"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Play_Animations"
+            value="yes"/>
+ <Reg id="PlaySounds"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Play_Background_Sounds"
+            value="yes"/>
+ <Reg id="ImagePlaceholders"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Show image placeholders"
+            value="00000000"/>
+ <Reg id="ShowPictures"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Display Inline Images"
+            value="yes"/>
+ <Reg id="SmartDithering"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer"
+            name="SmartDithering"
+            value="00000001"/>
+ <Reg id="PrintBackground"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Print_Background"
+            value="no"/>
+ <Reg id="WhenSearching"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="AutoSearch"
+            value="00000004"/>
+ <Reg id="LocalMachineCDUnlock"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="SOFTWARE\Microsoft\Internet Explorer\Main\
+                FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN\Settings"
+            name="LOCALMACHINE_CD_UNLOCK"
+            value="00000000"/>
+ <Reg id="LocalMachineFilesUnlock"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="SOFTWARE\Microsoft\Internet Explorer\Main\
+                         FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN"
+            name="iexplore.exe"
+            value="00000000"/>
+ <Reg id="RunInvalidSignatures"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="SOFTWARE\Microsoft\Internet Explorer\Download"
+            name="RunInvalidSignaturesnatures"
+            value="00000000"/>
+ <Reg id="PubCertRevocation"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\WinTrust\
+                                Trust Providers\Software Publishing"
+            name="State"
+            value="000000C9"/>
+ <Reg id="ServerCertRevocation"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="CertificateRevocation"
+            value="00000000"/>
+ <Reg id="CheckExeSignatures"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="SOFTWARE\Microsoft\Internet Explorer\Download"
+            name="CheckExeSignatures"
+            value="yes"/>
+ <Reg id="DoNotSaveEncrypted"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="DisableCachingOfSSLPages"
+            value="00000000"/>
+ <Reg id="EmptyTemporary"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings\Cache"
+            name="Persistent"
+            value="00000001"/>
+ <Reg id="EnableIntegrated"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="EnableNegotiate"
+            value="00000001"/>
+ <Reg id="XmlHttp"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="XMLHTTP"
+            value="00000001"/>
+ <Reg id="PhishingFilter"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\PhishingFilter"
+            name="Enabled"
+            value="00000001"/>
+ <Reg id="SecureProtocols"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="SecureProtocols" 
+            defaultValue="000000A0" 
+            bitfield="1">
+ <SubProp id="SecureProtocolsSsl2"
+            value="00000000" mask="00000008"/>
+ <SubProp id="SecureProtocolsSsl3"
+            value="00000020" mask="00000020"/>
+ <SubProp id="SecureProtocolsTls1"
+            value="00000080" mask="00000080"/>
+ </Reg>
+ <Reg id="WarnOnBadCert"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="WarnonBadCertRecving"
+            value="00000001"/>
+ <Reg id="WarnChangeSecure"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="WarnonZoneCrossing"
+            value="00000000"/>
+ <Reg id="WarnPostRedirect"
+            type="REG_DWORD"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Windows\CurrentVersion\Internet
+                                                    Settings"
+            name="WarnOnPostRedirect"
+            value="00000001"/>
+ <Reg id="IEDefault"
+            type="REG_SZ"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\Main"
+            name="Check_Associations"
+            value="yes"/>
+ </Properties>
+ <Collection clsid="{53B533F5-224C-47e3-B01B-CA3B3F3FF4BF}">
+ <Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}"
+            name="www.efax.com">
+ <Properties action="U" default="0"
+            hive="HKEY_CURRENT_USER"
+            key="Software\Microsoft\Internet Explorer\New Windows\
+                                                              Allow"
+            name="www.efax.com"
+            type="REG_BINARY"
+            value=""/>
+ </Registry>
+ </Collection>
+ </IE7>
+ </InternetSettings>

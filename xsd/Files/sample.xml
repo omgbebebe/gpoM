@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Files clsid="{215B2E53-57CE-475c-80FE-9EEC14635851}" 
+           disabled="1">
+   <File clsid="{50BE44C8-567A-4ed1-B1D0-9234FE1F38AF}" 
+           name="%TempDir%" 
+           status="%TempDir%" 
+           image="2" 
+           changed="2007-07-06 21:00:24" 
+           uid="{80AABDB7-4590-4623-96A8-0E35522D9E8F}">
+     <Properties 
+           action="U" 
+           fromPath="\\software\accounting\qb.msi" 
+           targetPath="%TempDir%" 
+           readOnly="0" 
+           archive="1" 
+           hidden="0" 
+           suppress="1"/>
+   </File>
+ </Files>

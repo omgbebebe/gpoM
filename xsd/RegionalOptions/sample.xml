@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+  
+ <Regional 
+           clsid="{BDBA23C2-DE02-434e-8D89-13E53CB6710B}"
+           disabled="1">
+   <RegionalOptions 
+           clsid="{C126A328-BECF-4acc-BA8D-C9C7F6B84E49}"
+           name="English (United States)" 
+           changed="2007-07-06 20:52:52"    
+           uid="{D846650F-DCB6-4664-9DE5-B65DA7B7800D}">
+     <Properties 
+           localeId="1033" 
+           localeName="English (United States)"
+           numDeciSymbol="." 
+           numNumDecimals="2" 
+           numGrpSymbol=","
+           numDigitGrpFmt="3;0" 
+           numNegSymbol="-" 
+           numNegFormat="1"
+           numLeadingZeros="1" 
+           numListSeparator="," 
+           numMeasurement="1"
+           currSymbol="$" 
+           currPosFormat="0" 
+           currNegFormat="0"
+           currDeciSymbol="." 
+           currNumDecimals="2" 
+           currGrpSymbol=","
+           currDigitGrpFmt="3;0" 
+           timeFormat="h:mm:ss tt"
+           timeSeparator=":" 
+           timeAmSymbol="AM" 
+           timePmSymbol="PM"
+           dateInterpretYearMax="2029" 
+           dateShortFormat="M/d/yyyy"
+           dateSeparator="/" 
+           dateLongFormat="dddd, MMMM dd, yyyy"/>
+   </RegionalOptions>
+ </Regional>

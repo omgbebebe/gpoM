@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <IniFiles 
+           clsid="{694C651A-08F2-47fa-A427-34C4F62BA207}" 
+           disabled="1">
+   <Ini clsid="{EEFACE84-D3D8-4680-8D4B-BF103E759448}" 
+           name="ARTIST" 
+           status="ARTIST" 
+           image="2" 
+           changed="2007-07-06 21:03:11" 
+           uid="{2E5509DA-18BB-49BD-953F-429B17DE053A}">
+     <Properties 
+           path="%SystemDir%" 
+           section="MP3" 
+           value="ALLOWED" 
+           property="ARTIST" 
+           action="U"/>
+   </Ini>
+ </IniFiles>

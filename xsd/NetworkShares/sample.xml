@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <NetworkShareSettings clsid="{520870D8-A6E7-47e8-A8D8-E6A4E76EAEC2}">
+   <NetShare clsid="{2888C5E7-94FC-4739-90AA-2C1536D68BC0}" 
+             image="2" 
+             name="Products" 
+             changed="2007-07-10 22:49:55" 
+             uid="{F9D9E426-A1B5-47D2-BDF4-D0FE15414C4F}">
+     <Properties action="U" 
+                 name="Products" 
+                 path="\\Products" 
+                 comment="Testing MSI Packages" 
+                 allRegular="0" 
+                 allHidden="0" 
+                 allAdminDrive="0" 
+                 limitUsers="NO_CHANGE" 
+                 abe="NO_CHANGE"/>
+   </NetShare>
+ </NetworkShareSettings>
