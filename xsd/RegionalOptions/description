@@ -1,0 +1,1 @@
+The Regional Options element implements the functionality of the Regional Options item in Control Panel. The SetLocaleInfo API, which is used to manage the settings, contains an explanation of the settings. For information on the SetLocaleInfo API, see at [MSDN-SetLocaleInfo].

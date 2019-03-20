@@ -1,0 +1,1 @@
+The Power Options and Power Schemes elements allow configuration of power-management behavior on the client. A client SHOULD implement either the GlobalPowerOptions element (section 2.2.1.14.1) and the PowerScheme element (section 2.2.1.14.2) or the GlobalPowerOptionsV2 element (section 2.2.1.14.3). For more information on power settings, see [MSDN-POWER].

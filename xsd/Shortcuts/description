@@ -1,0 +1,1 @@
+The Shortcuts element creates and maintains shortcuts. A shortcut is a link to a local or remote resource. The way that shortcuts are made visible to the user is implementation-specific. For information on shortcuts and their settings, see [MSDN-SHELLLINKS].

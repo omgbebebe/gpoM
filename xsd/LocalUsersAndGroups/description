@@ -1,0 +1,14 @@
+This topic contains a number of related sections. The list below provides links to each section.
+
+2.2.1.11.1 Group Inner Element
+This element refers to a security group object that is local to the client computer. The group can be created, deleted, or modified by the element.
+
+The Local Groups element maintains local groups and delivers the same functionality as the NetLocalGroupAdd API. For more information, see [MSDN-NETLCLGRPADD].
+
+2.2.1.11.2 User Inner Element
+This element refers to a user object that is local to the client computer.
+
+The Local Users element maintains local users and in general delivers the same functionality as the NetUserAdd API. For more information on NetUserAdd, see [MSDN-NETUSERADD].
+
+2.2.1.11.3 Groups Schema
+

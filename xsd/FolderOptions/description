@@ -1,0 +1,11 @@
+The Folder Options outer element is a container for operations related to the client's desktop and shell. Four different inner elements are defined. The FolderOptions preference type encompasses three different types of preferences:
+
+FolderOptions: Controls attributes of the desktop and shell.
+
+FileTypes: Associates applications with a given file extension.
+
+OpenWith: Defines the default application associated with a given file extension.
+
+Two types of Folder Options are defined in elements GlobalFolderOptions and GlobalFolderOptionsVista. A client SHOULD support both sets of settings.
+
+For more information on folders and files, see [MSDN-OPENWITH] and [MSDN-FILETYPES].

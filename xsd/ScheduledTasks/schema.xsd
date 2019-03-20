@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ScheduledTasks">
+       <xs:complexType>
+          <xs:sequence>
+             <xs:element name="Task">
+                <xs:complexType>
+                   <xs:sequence>
+                      <xs:element name="Filters">
+                      </xs:element>
+                      <xs:element name="Properties">
+                         <xs:complexType>
+                            <xs:sequence>
+                               <xs:element name="Triggers">
+                                  <xs:complexType>
+                                     <xs:sequence>
+                                        <xs:element name="Trigger">
+                                           <xs:complexType>
+                                              <xs:attribute name="type" 
+                                                type="xs:string" use="required" />
+                                              <xs:attribute name="startHour" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="startMinutes" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="beginYear" 
+                                                type="xs:unsignedShort" use="optional" />
+                                              <xs:attribute name="beginMonth" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="beginDay" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="hasEndDate" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="repeatTask" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="interval" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="days" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="months" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="week" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="idleMinute" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="endYear" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="endMonth" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="endDay" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="minutesInterval" 
+                                                type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="killAtDurationEnd" 
+                                                type="xs:unsignedByte"  use="optional" />
+                                              <xs:attribute name="minutesDuration" 
+                                                type="xs:unsignedByte" use="optional" />
+                                           </xs:complexType>
+                                        </xs:element>
+                                     </xs:sequence>
+                                  </xs:complexType>
+                               </xs:element>
+                            </xs:sequence>
+                            <xs:attribute name="action" type="xs:string" use="optional" />
+                            <xs:attribute name="name" type="xs:string" use="required" />
+                            <xs:attribute name="appName" type="xs:string" use="required" />
+                            <xs:attribute name="args" type="xs:string" use="optional" />
+                            <xs:attribute name="startIn" type="xs:string" use="optional" />
+                            <xs:attribute name="comment" type="xs:string" use="optional" />
+                            <xs:attribute name="maxRunTime" type="xs:unsignedInt" use="optional" />
+                            <xs:attribute name="runAs" type="xs:string" use="optional" />
+                            <xs:attribute name="cpassword" type="xs:string" use="optional" />
+                            <xs:attribute name="enabled" type="xs:boolean" use="required" />
+                            <xs:attribute name="deleteWhenDone" type="xs:boolean" use="optional" />
+                            <xs:attribute name="deadlineMinutes" type="xs:unsignedInt" use="optional" />
+                            <xs:attribute name="startOnlyIfIdle" type="xs:boolean" use="optional" />
+                            <xs:attribute name="stopOnIdleEnd" type="xs:boolean" use="optional" />
+                            <xs:attribute name="noStartIfOnBatteries" type="xs:boolean" use="optional" />
+                            <xs:attribute name="stopIfGoingOnBatteries" type="xs:boolean" use="optional" />
+                            <xs:attribute name="systemRequired" type="xs:boolean" use="optional" />
+                         </xs:complexType>
+                      </xs:element>
+                   </xs:sequence>
+                   <xs:attribute name="clsid" type="xs:string" use="required" />
+                   <xs:attribute name="name" type="xs:string" use="required" />
+                   <xs:attribute name="image" type="xs:unsignedByte" use="optional" />
+                   <xs:attribute name="changed" type="xs:string" use="optional" />
+                   <xs:attribute name="uid" type="xs:string" use="required" />
+                   <xs:attribute name="desc" type="xs:string" use="optional" />
+                   <xs:attribute name="bypassErrors" type="xs:boolean" use="optional" />
+                   <xs:attribute name="userContext" type="xs:boolean" use="optional" />
+                   <xs:attribute name="removePolicy" type="xs:boolean" use="optional" />
+                </xs:complexType>
+             </xs:element>
+             <xs:element name="ImmediateTask">
+                <xs:complexType>
+                   <xs:sequence>
+                      <xs:element name="Filters">
+                      </xs:element>
+                      <xs:element name="Properties">
+                         <xs:complexType>
+                            <xs:attribute name="name" type="xs:string" use="required" />
+                            <xs:attribute name="appName" type="xs:string" use="required" />
+                            <xs:attribute name="args" type="xs:string" use="optional" />
+                            <xs:attribute name="startIn" type="xs:string" use="optional" />
+                            <xs:attribute name="comment" type="xs:string" use="optional" />
+                            <xs:attribute name="runAs" type="xs:string" use="optional" />
+                            <xs:attribute name="cpassword" type="xs:string" use="optional" />
+                            <xs:attribute name="enabled" type="xs:boolean" use="required" />
+                            <xs:attribute name="deleteWhenDone" type="xs:boolean" use="optional" /> 
+                            <xs:attribute name="maxRunTime" type="xs:unsignedInt" use="optional" />
+                            <xs:attribute name="startOnlyIfIdle" type="xs:boolean" use="optional" />
+                            <xs:attribute name="idleMinutes" type="xs:unsignedInt" use="optional" />
+                            <xs:attribute name="deadlineMinutes" type="xs:unsignedInt" use="optional" />
+                            <xs:attribute name="stopOnIdleEnd" type="xs:boolean" use="optional" />
+                            <xs:attribute name="noStartIfOnBatteries" type="xs:boolean" use="optional" />
+                            <xs:attribute name="stopIfGoingOnBatteries" type="xs:boolean" use="optional" />
+                            <xs:attribute name="systemRequired" type="xs:boolean" use="optional" />
+                            <xs:attribute name="action" type="xs:string" use="optional" />
+                         </xs:complexType>
+                      </xs:element>
+                   </xs:sequence>
+                   <xs:attribute name="clsid" type="xs:string" use="required" />
+                   <xs:attribute name="name" type="xs:string" use="required" />
+                   <xs:attribute name="image" type="xs:unsignedByte" use="optional" />
+                   <xs:attribute name="changed" type="xs:string" use="optional" />
+                   <xs:attribute name="uid" type="xs:string" use="required" />
+                   <xs:attribute name="desc" type="xs:string" use="optional" />
+                   <xs:attribute name="bypassErrors" type="xs:boolean" use="optional" />
+                   <xs:attribute name="userContext" type="xs:boolean" use="optional" />
+                   <xs:attribute name="removePolicy" type="xs:boolean" use="optional" />
+                </xs:complexType>
+             </xs:element>
+               <xs:element name="TaskV2">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Properties">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Task">
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="action" type="xs:string" use="optional" />
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                        <xs:attribute name="runAs" type="xs:string" use="required" />
+                        <xs:attribute name="logonType" type="xs:string" use="required" />
+                        <xs:attribute name="cpassword" type="xs:string" use="optional" /> 
+                     </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Filters">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="FilterRunOnce">
+                            <xs:complexType>
+                              <xs:attribute name="hidden" type="xs:unsignedByte" use="optional" />
+                              <xs:attribute name="not" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="bool" type="xs:string" use="required" />
+                              <xs:attribute name="id" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="clsid" type="xs:string" use="required" />
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="changed" type="xs:string" use="optional" />
+                  <xs:attribute name="uid" type="xs:string" use="required" />
+                  <xs:attribute name="bypassErrors" type="xs:boolean" use="optional" />
+                  <xs:attribute name="userContext" type="xs:boolean" use="optional" />
+                  <xs:attribute name="removePolicy" type="xs:boolean" use="optional" />
+                  <xs:attribute name="image" type="xs:unsignedByte" use="optional" /> 
+                  <xs:attribute name="desc" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+               <xs:element name="ImmediateTaskV2">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Filters">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="FilterOs">
+                            <xs:complexType>
+                              <xs:attribute name="hidden" type="xs:unsignedByte" use="optional" />
+                              <xs:attribute name="not" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="bool" type="xs:string" use="required" />
+                              <xs:attribute name="class" type="xs:string" use="required" />
+                              <xs:attribute name="version" type="xs:string" use="required" />
+                              <xs:attribute name="type" type="xs:string" use="required" />
+                              <xs:attribute name="edition" type="xs:string" use="required" />
+                              <xs:attribute name="sp" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Properties">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Task">
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="action" type="xs:string" use="optional" />
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                        <xs:attribute name="runAs" type="xs:string" use="required" />
+                        <xs:attribute name="logonType" type="xs:string" use="required" />
+                       <xs:attribute name="cpassword" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="clsid" type="xs:string" use="required" />
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="changed" type="xs:string" use="optional" />
+                  <xs:attribute name="uid" type="xs:string" use="required" />
+                  <xs:attribute name="image" type="xs:unsignedByte" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          <xs:attribute name="clsid" type="xs:string" use="required" />
+          <xs:attribute name="disabled" type="xs:boolean" use="optional" />
+       </xs:complexType>
+    </xs:element>
+  </xs:schema>

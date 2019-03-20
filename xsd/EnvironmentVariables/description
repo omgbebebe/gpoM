@@ -1,0 +1,1 @@
+The <EnvironmentVariable> inner element refers to a single environment variable in the policy target's environment. The <EnvironmentVariables> element creates both system and user variables. For information on environment variables, see [MSDN-ENVMTVAR].

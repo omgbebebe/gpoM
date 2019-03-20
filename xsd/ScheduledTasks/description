@@ -1,0 +1,1 @@
+The Scheduled Task element implements most of the functionality of the Task Scheduler. A client SHOULD implement either the Task element (section 2.2.1.18.1) and the ImmediateTask element (section 2.2.1.18.2) or the TaskV2 element (section 2.2.1.18.3) and the ImmediateTaskV2 element (section 2.2.1.18.4). For information on tasks and scheduling, see [MSDN-TASKS].

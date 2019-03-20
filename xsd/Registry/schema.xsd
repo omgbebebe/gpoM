@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="RegistrySettings">
+       <xs:complexType>
+          <xs:sequence>
+             <xs:element name="Registry">
+                <xs:complexType>
+                   <xs:sequence>
+                      <xs:element name="Properties">
+                         <xs:complexType>
+                            <xs:attribute name="action" type="xs:string" use="optional" />
+                            <xs:attribute name="default" 
+                               type="xs:boolean" use="optional" />
+                            <xs:attribute name="hive" type="xs:string" use="required" />
+                            <xs:attribute name="key" type="xs:string" use="required" />
+                            <xs:attribute name="name" type="xs:string" use="optional" />
+                            <xs:attribute name="type" type="xs:string" use="optional" />
+                            <xs:attribute name="value" 
+                             type="xs:unsignedByte" use="optional" />
+                            <xs:attribute name="displayDecimal" 
+                             type="xs:boolean" use="optional" />
+                            <xs:attribute name="defaultValue" 
+                             type="xs:unsignedByte" use="optional" />
+                            <xs:attribute name="bitfield" 
+                             type="xs:unsignedByte" use="optional" />
+                            <xs:attribute name="disabled" 
+                             type="xs:boolean" use="optional" />
+                            <xs:sequence minOccurs="0">
+                            <xs:element maxOccurs="unbounded" name="SubProp">
+                              <xs:complexType>
+                                <xs:attribute name="id"
+                                              type="xs:string" 
+                                              use="required" />
+                                <xs:attribute name="value" 
+                                              type="xs:unsignedByte" 
+                                              use="required" />
+                                <xs:attribute name="mask" 
+                                              type="xs:unsignedByte" 
+                                              use="required" />
+                             </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                         </xs:complexType>
+                      </xs:element>
+                   </xs:sequence>
+                   <xs:attribute name="clsid" type="xs:string" use="required" />
+                   <xs:attribute name="name" type="xs:string" use="required" />
+                   <xs:attribute name="status" type="xs:string" use="optional" />
+                   <xs:attribute name="image" type="xs:unsignedByte" use="optional" />
+                   <xs:attribute name="changed" type="xs:string" use="optional" />
+                   <xs:attribute name="uid" type="xs:string" use="required" />
+                </xs:complexType>
+             </xs:element>
+             <xs:element maxOccurs="unbounded" name="Collection">
+                <xs:complexType>
+                   <xs:sequence minOccurs="0">
+                      <xs:element name="Collection">
+                         <xs:complexType>
+                            <xs:sequence>
+                               <xs:element name="Collection">
+                                  <xs:complexType>
+                                     <xs:sequence>
+                                        <xs:element name="Collection">
+                                           <xs:complexType>
+                                              <xs:sequence>
+                                                 <xs:element name="Registry">
+                                                    <xs:complexType>
+                                                       <xs:sequence>
+                                                          <xs:element name="Properties">
+                                                             <xs:complexType>
+                                                                <xs:attribute
+                                                                  name="action" 
+                                                                  type="xs:string" 
+                                                                  use="optional" />
+                                                                <xs:attribute
+                                                                  name="default" 
+                                                                  type="xs:boolean" 
+                                                                  use="optional" />
+                                                                <xs:attribute name="hive" 
+                                                                  type="xs:string"
+                                                                  use="required" />
+                                                                <xs:attribute name="key" 
+                                                                  type="xs:string" 
+                                                                  use="required" />
+                                                                <xs:attribute name="type" 
+                                                                  type="xs:string" 
+                                                                  use="optional" />
+                                                                <xs:attribute name="name" 
+                                                                  type="xs:string" 
+                                                                  use="optional" />
+                                                                <xs:attribute name="value" 
+                                                                  type="xs:string" 
+                                                                  use="optional" />
+                                                                <xs:attribute 
+                                                                  name="defaultValue" 
+                                                                  type="xs:unsignedByte" 
+                                                                  use="optional" />
+                                                                <xs:attribute
+                                                                  name="displayDecimal"
+                                                                   type="xs:boolean" 
+                                                                   use="optional" />
+                                                                <xs:attribute 
+                                                                  name="bitfield" 
+                                                                  type="xs:unsignedByte" 
+                                                                  use="optional" />
+                                                                <xs:sequence minOccurs="0">
+                                                                 <xs:element 
+                                                                  maxOccurs="unbounded" 
+                                                                  name="SubProp">
+                                                                  <xs:complexType>
+                                                                   <xs:attribute name="id" 
+                                                                     type="xs:string" 
+                                                                     use="required" />
+                                                                   <xs:attribute name="value" 
+                                                                     type="xs:unsignedByte" 
+                                                                     use="required" />
+                                                                   <xs:attribute name="mask" 
+                                                                     type="xs:unsignedByte" 
+                                                                     use="required" />
+                                                                  </xs:complexType>
+                                                                 </xs:element>
+                                                                </xs:sequence>
+                                                             </xs:complexType>
+                                                          </xs:element>
+                                                       </xs:sequence>
+                                                       <xs:attribute name="clsid" 
+                                                         type="xs:string" 
+                                                         use="required" />
+                                                       <xs:attribute name="name" 
+                                                         type="xs:string" 
+                                                         use="required" />
+                                                       <xs:attribute name="image" 
+                                                         type="xs:unsignedByte" 
+                                                         use="optional" />
+                                                       <xs:attribute name="desc" 
+                                                         type="xs:string" 
+                                                         use="optional" />
+                                                       <xs:attribute name="status" 
+                                                         type="xs:string" 
+                                                         use="optional" />
+                                                       <xs:attribute name="uid"
+                                                         type="xs:string" use="required" />                                                   </xs:complexType>
+                                                 </xs:element>
+                                              </xs:sequence>
+                                              <xs:attribute name="clsid"
+                                                  type="xs:string" use="required" />
+                                              <xs:attribute name="name"
+                                                  type="xs:string" use="required" />
+                                              <xs:attribute name="disabled"
+                                                  type="xs:boolean" use="optional" />
+                                                                                        </xs:complexType>
+                                        </xs:element>
+                                     </xs:sequence>
+                                     <xs:attribute name="clsid" 
+                                        type="xs:string" use="required" />
+                                     <xs:attribute name="name" 
+                                        type="xs:string" use="required" />
+                                  </xs:complexType>
+                               </xs:element>
+                            </xs:sequence>
+                            <xs:attribute name="clsid" type="xs:string" use="required" />
+                            <xs:attribute name="name" type="xs:string" use="required" />
+                         </xs:complexType>
+                      </xs:element>
+                   </xs:sequence>
+                   <xs:attribute name="clsid" type="xs:string" use="required" />
+                   <xs:attribute name="name" type="xs:string" use="required" />
+                   <xs:attribute name="image" type="xs:unsignedByte" use="optional" />
+                   <xs:attribute name="changed" type="xs:string" use="optional" />
+                   <xs:attribute name="uid" type="xs:string" use="required" />
+                   <xs:attribute name="desc" type="xs:string" use="optional" />
+                   <xs:attribute name="bypassErrors" type="xs:boolean" use="optional" />
+                   <xs:attribute name="userContext" type="xs:boolean" use="optional" />
+                   <xs:attribute name="removePolicy" type="xs:boolean" use="optional" />
+                   <xs:attribute name="status" type="xs:string" use="optional" />
+                </xs:complexType>
+             </xs:element>
+          </xs:sequence>
+          <xs:attribute name="clsid" type="xs:string" use="required" />
+          <xs:attribute name="disabled" type="xs:boolean" use="optional" />
+       </xs:complexType>
+    </xs:element>
+ </xs:schema>

@@ -1,0 +1,3 @@
+The InternetSettings element is composed of all registry key and registry value settings. The examples provided in section 4.2 include all available settings. For the structure of the registry elements, see section 2.2.1.17.<8>
+
+For information on Internet settings, refer to the following documents:[MSDN-INF], [MSDN-RAS], [MSDN-RAS2], [MSDN-SECZONES], [MSDN-WININET1], [MSDN-WININET2], [MSFT-IEM], and [MSFT-IESECZNREGENTRY].

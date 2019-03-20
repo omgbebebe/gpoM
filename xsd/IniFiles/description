@@ -1,0 +1,11 @@
+The <Ini> inner element MUST refer to a text file containing sections and key-value pairs in the following format.
+
+  
+ [sectionA]
+ key=string
+  
+ [sectionB]
+ key=string
+ key=string
+  
+The file structure is documented as part of the primary application programming interface (API) call GetProfileString that is used to read .ini files (for more information see [MSDN-GetProfString]).

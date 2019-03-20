@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Regional">
+       <xs:complexType>
+          <xs:sequence>
+             <xs:element name="RegionalOptions">
+                <xs:complexType>
+                   <xs:sequence>
+                      <xs:element name="Properties">
+                         <xs:complexType>
+                            <xs:attribute name="localeId" 
+                              type="xs:unsignedShort" use="optional" />
+                            <xs:attribute name="localeName" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="numDeciSymbol" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="numNumDecimals" 
+                              type="xs:unsignedByte" use="optional" />
+                            <xs:attribute name="numGrpSymbol" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="numDigitGrpFmt" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="numNegSymbol" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="numNegFormat" 
+                              type="xs:unsignedByte" use="optional" />
+                            <xs:attribute name="numLeadingZeros" 
+                              type="xs:unsignedByte" use="optional" />
+                            <xs:attribute name="numListSeparator" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="numMeasurement" 
+                              type="xs:unsignedByte" use="optional" />
+                            <xs:attribute name="currSymbol" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="currPosFormat" 
+                              type="xs:unsignedByte" use="optional" />
+                            <xs:attribute name="currNegFormat" 
+                              type="xs:unsignedByte" use="optional" />
+                            <xs:attribute name="currDeciSymbol" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="currNumDecimals" 
+                              type="xs:unsignedByte" use="optional" />
+                            <xs:attribute name="currGrpSymbol" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="currDigitGrpFmt" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="timeFormat" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="timeSeparator" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="timeAmSymbol" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="timePmSymbol" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="dateInterpretYearMax"
+                              type="xs:unsignedShort" use="optional" />
+                            <xs:attribute name="dateShortFormat" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="dateSeparator" 
+                              type="xs:string" use="optional" />
+                            <xs:attribute name="dateLongFormat" 
+                              type="xs:string" use="optional" />
+                           <xs:attribute name="disabled" 
+                             type="xs:boolean" use="optional" />
+                         </xs:complexType>
+                      </xs:element>
+                   </xs:sequence>
+                   <xs:attribute name="clsid" type="xs:string" use="required" />
+                   <xs:attribute name="name" type="xs:string" use="required" />
+                   <xs:attribute name="image" type="xs:unsignedByte" use="optional" />
+                   <xs:attribute name="changed" type="xs:string" use="optional" />
+                   <xs:attribute name="uid" type="xs:string" use="required" />
+                   <xs:attribute name="desc" type="xs:string" use="optional" />
+                   <xs:attribute name="bypassErrors" type="xs:boolean" use="optional" />
+                   <xs:attribute name="userContext" type="xs:boolean" use="optional" />
+                   <xs:attribute name="removePolicy" type="xs:boolean" use="optional" />
+                </xs:complexType>
+             </xs:element>
+          </xs:sequence>
+          <xs:attribute name="clsid" type="xs:string" use="required" />
+          <xs:attribute name="disabled" type="xs:boolean" use="optional" />
+       </xs:complexType>
+    </xs:element>
+ </xs:schema>
