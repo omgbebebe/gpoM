@@ -1,0 +1,7 @@
+*~
+*#
+*_flymake.hs
+.stack-work/*
+tmp/
+dist-newstyle/
+.ghc.environment.*
