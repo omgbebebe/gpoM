@@ -11,13 +11,11 @@ import Data.Word (Word8)
 import Data.Text (Text)
 import Data.Aeson
 
-type MyBool = String
-
 data Properties = Properties { name :: String
                              , value :: String
-                             , disabled :: Maybe MyBool
-                             , partial :: Maybe MyBool
-                             , user :: Maybe MyBool
+                             , disabled :: Maybe Bool
+                             , partial :: Maybe Bool
+                             , user :: Maybe Bool
                              , action :: Maybe String
                              }
   deriving (Eq, Show, Generic)
@@ -122,9 +120,9 @@ xpProperties = xpElem "Properties" $
   xp6Tuple
   (xpAttr "name" xpText)
   (xpAttr "value" xpText)
-  (xpOption (xpAttr "disabled" xpText))
-  (xpOption (xpAttr "partial" xpText))
-  (xpOption (xpAttr "user" xpText))
+  (xpOption (xpAttr "disabled" xpBool))
+  (xpOption (xpAttr "partial" xpBool))
+  (xpOption (xpAttr "user" xpBool))
   (xpOption (xpAttr "action" xpText))
 
 
