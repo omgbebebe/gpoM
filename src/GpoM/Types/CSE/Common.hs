@@ -1,5 +1,5 @@
 {-# LANGUAGE DuplicateRecordFields #-}
-module Types.CSE.Common where
+module GpoM.Types.CSE.Common where
 
 import Data.List.NonEmpty
 import Data.Text (Text)

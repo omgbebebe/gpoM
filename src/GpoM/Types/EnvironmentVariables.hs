@@ -1,5 +1,5 @@
 {-# LANGUAGE DuplicateRecordFields #-}
-module Types.EnvironmentVariables where
+module GpoM.Types.EnvironmentVariables where
 
 import Data.Time.LocalTime(ZonedTime)
 import Data.ByteString.Char8 as BS
