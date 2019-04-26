@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft FIDO-hitelesítés</displayName>
+  <description>Microsoft FIDO-hitelesítés konfigurációja</description>
+  <resources>
+    <stringTable>
+        <string id="MSFidoAuthenticationCategory">Microsoft FIDO-hitelesítés</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogon">FIDO-eszközök használatának engedélyezése a bejelentkezéshez</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogonExplain">Ez a házirend lehetővé teszi a felhasználók számára, hogy egy FIDO-eszköz – például telefon vagy NFC-kártya – használatával jelentkezzenek be egy Windows 10-es asztali számítógépre.
+
+Ha engedélyezi ezt a házirend-beállítást, akkor a felhasználók bejelentkezhetnek a Windowsba egy FIDO-eszköz használatával.
+
+Ha letiltja vagy nem konfigurálja ezt a házirendet, akkor a felhasználók nem használhatnak FIDO-eszközt a bejelentkezéshez.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

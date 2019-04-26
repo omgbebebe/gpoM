@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Paramètres de stratégie de groupe du Gestionnaire de connexions Windows</displayName>
+  <description>Paramètres de stratégie de groupe du Gestionnaire de connexions Windows</description>
+  <resources>
+    <stringTable>
+      <string id="WCM_Category">Gestionnaire de connexions Windows</string>
+      <string id="WCM_BlockNonDomain">Interdire la connexion à des réseaux sans domaine en cas de connexion à un réseau authentifié par son domaine</string>
+      <string id="WCM_BlockNonDomain_Help">Ce paramètre de stratégie empêche les ordinateurs de se connecter simultanément à un réseau avec domaine et à un réseau sans domaine.
+      
+      Si ce paramètre de stratégie est activé, l’ordinateur répond aux tentatives de connexion automatique et manuelle au réseau en fonction des circonstances :
+      
+      Tentatives de connexion automatique
+      - Lorsque l’ordinateur est déjà connecté à un réseau avec domaine, toutes les tentatives de connexion automatique aux réseaux sans domaine sont bloquées.
+      - Lorsque l’ordinateur est déjà connecté à un réseau sans domaine, les tentatives de connexion automatique aux réseaux avec domaine sont bloquées
+      
+      Tentatives de connexion manuelle
+      - Lorsque l’ordinateur est déjà connecté à un réseau sans domaine ou à un réseau avec domaine via un média autre qu’Ethernet et qu’un utilisateur tente de créer une connexion manuelle à un réseau supplémentaire, allant ainsi à l’encontre de ce paramètre de stratégie, la connexion réseau existante est déconnectée et la connexion manuelle est autorisée.
+      - Lorsque l’ordinateur est déjà connecté à un réseau sans domaine ou à un réseau avec domaine via Ethernet et qu’un utilisateur tente de créer une connexion manuelle à un réseau supplémentaire, allant ainsi à l’encontre de ce paramètre de stratégie, la connexion Ethernet existante est maintenue et la tentative de connexion manuelle est bloquée.
+
+      Si ce paramètre de stratégie est désactivé ou n’est pas configuré, les ordinateurs sont autorisés à se connecter simultanément aux réseaux avec domaine et sans domaine.
+      
+      </string>
+      <string id="WCM_DisableRoaming">Interdire la connexion aux réseaux haut débit mobiles itinérants</string>
+      <string id="WCM_DisableRoaming_Help">Ce paramètre de stratégie empêche les clients de se connecter à des réseaux haut débit mobiles lorsque le client est inscrit sur un réseau de fournisseur d’itinérance. 
+
+      Si ce paramètre de stratégie est activé, toutes les tentatives de connexion automatique et manuelle aux réseaux de fournisseurs d’itinérance sont bloquées jusqu’à ce que le client s’inscrive sur le réseau du fournisseur local.
+      
+      Si ce paramètre de stratégie est désactivé ou n’est pas configuré, les clients sont autorisés à se connecter aux réseaux haut débit mobiles du fournisseur d’itinérance.
+      
+      </string>
+      <string id="WCM_MinimizeConnections">Minimiser le nombre de connexions simultanées à Internet ou à un domaine Windows</string>
+      <string id="WCM_MinimizeConnections_Help">Ce paramètre de stratégie empêche les ordinateurs d'établir des connexions simultanées multiples à Internet ou à un domaine Windows. Par défaut, lorsque ce paramètre de stratégie a la valeur Non configuré, il est activé.
+      
+      Si ce paramètre de stratégie est activé, lorsque l'ordinateur a au moins une connexion Internet active, une nouvelle tentative de connexion automatique à Internet est bloquée. Lorsque l'ordinateur a au moins une connexion active à un domaine Windows, une nouvelle connexion automatique au même domaine Windows est également bloquée. Les tentatives de connexion manuelle supplémentaires à Internet ou à un domaine Windows par un utilisateur ne sont pas bloquées par ce paramètre de stratégie.
+      
+      En cas de connexions simultanées multiples à Internet ou à un domaine Windows, Windows déconnecte la connexion la moins favorite lorsque la quantité de trafic réseau sur la connexion la moins favorite tombe en dessous d'un certain seuil. Par exemple, lorsqu'un ordinateur est connecté à Internet à l'aide d'une connexion WLAN et l'utilisateur se connecte à un réseau Ethernet, le trafic réseau est acheminé via la connexion Ethernet la plus rapide et le trafic WLAN diminue. Windows détecte cette condition et répond en déconnectant la connexion WLAN.
+
+      Si ce paramètre de stratégie est désactivé, plusieurs connexions simultanées à Internet, à un domaine Windows ou aux deux sont autorisées.
+
+      Si ce paramètre de stratégie a la valeur Non configuré, le paramètre de stratégie par défaut est activé. Cela diffère de l'activation du paramètre de stratégie avec la stratégie de groupe. Cependant, lorsque le paramètre de stratégie a la valeur Non configuré, il peut être configuré sur l'ordinateur local. Lorsque le paramètre de stratégie est appliqué avec la stratégie de groupe, il n'est pas configurable localement. Avec la valeur de paramètre de stratégie Non configuré, aucune nouvelle tentative de connexion automatique n'est effectuée et les connexions qui ne sont pas des connexions par défaut sont déconnectées.
+      </string>
+      <string id="WCM_DisablePowerManagement">Désactiver la gestion de l’alimentation en mode veille connectée</string>
+      <string id="WCM_DisablePowerManagement_Help">Ce paramètre de stratégie spécifie que la gestion de l’alimentation est désactivée lorsque l’ordinateur passe en mode veille connectée. 
+
+      Si ce paramètre de stratégie est activé, le Gestionnaire de connexions Windows ne gère pas la consommation électrique lorsque l’ordinateur passe en mode veille connectée.
+
+      Si ce paramètre de stratégie est désactivé ou n’est pas configuré, la gestion de l’alimentation est activée lorsque l’ordinateur passe en mode veille connectée.
+      
+      </string>
+      <string id="WCM_EnableSoftDisconnect">Permettre à Windows une déconnexion logicielle d'un ordinateur d'un réseau</string>
+      <string id="WCM_EnableSoftDisconnect_Help">Ce paramètre de stratégie détermine si Windows va procéder à une déconnexion logicielle d'un ordinateur d'un réseau.
+
+      Si ce paramètre de stratégie est activé ou n'est pas configuré, Windows procède à une déconnexion logicielle d'un ordinateur d'un réseau s'il détermine que l'ordinateur ne doit plus être connecté à un réseau.
+
+      Si ce paramètre de stratégie est désactivé, Windows déconnecte immédiatement un ordinateur d'un réseau s'il détermine que l'ordinateur ne doit plus être connecté à un réseau.
+
+      Lorsque la déconnexion logicielle est activée :
+      - Lorsque Windows décide que l'ordinateur ne doit plus être connecté à un réseau, il attend que le trafic s'installe sur ce réseau. La session TCP existante se poursuit sans interruption.
+      - Windows vérifie ensuite périodiquement le niveau de trafic sur le réseau. Si le niveau de trafic est supérieur à un certain seuil, aucune autre mesure n'est prise. L'ordinateur reste connecté au réseau et continue de l'utiliser. Par exemple, si la connexion réseau est actuellement utilisée pour télécharger des fichiers à partir d'Internet, les fichiers continuent à être téléchargés à l'aide de cette connexion réseau.
+      - Si le trafic réseau descend sous ce seuil, l'ordinateur est déconnecté du réseau. Les applications qui maintiennent une connexion réseau active, même lorsqu'elles ne l'utilisent pas activement (par exemple, les applications de messagerie) risquent de perdre leur connexion. Si cela se produit, ces applications doivent rétablir leur connexion sur un autre réseau. 
+
+      Ce paramètre de stratégie dépend d'autres paramètres de stratégie de groupe. Par exemple, si l'option « Minimiser le nombre de connexions simultanées à Internet ou à un domaine Windows » est désactivée, Windows ne se déconnecte d'aucun réseau.
+      </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

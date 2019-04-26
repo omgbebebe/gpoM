@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>表示名をここに入力する</displayName>
+  <description>説明をここに入力する</description>
+  <resources>
+    <stringTable>
+      <string id="DisplayLastLogonInfoDescription">ユーザー ログオン時に以前のログオンに関する情報を表示する</string>
+      <string id="DisplayLastLogonInfoDescription_Help">このポリシー設定では、以前のログオンおよびログオンの失敗に関する情報をユーザーに表示するかどうかを制御します。
+
+ローカル ユーザー アカウントおよび少なくとも 1 つの Windows Server 2008 機能レベル ドメインのドメイン ユーザー アカウントでは、この設定を有効にした場合、ユーザーがログオンした後に、そのユーザーが前回ログオンに成功した日時、そのユーザー名で前回ログオンに失敗した日時、および前回の正常なログオン以降に、そのユーザーがログオンに失敗した回数を示すメッセージが表示されます。Microsoft Windows デスクトップで作業するには、ユーザーがこのメッセージを確認する必要があります。
+
+Windows Server 2003、Windows 2000 ネイティブ、または Windows 2000 混在機能レベル ドメインのドメイン ユーザー アカウントでは、この設定を有効にした場合、情報を取得できなかったことを示す警告メッセージが表示され、ユーザーはログオンできません。そのため、ドメインが Windows Server 2008 ドメインの機能レベルでない場合は、このポリシー設定を有効にしないでください。
+
+この設定を無効にした場合、または構成しなかった場合は、以前のログオンまたはログオンの失敗に関するメッセージは表示されません。</string>
+      <string id="Logon">Windows ログオンのオプション</string>
+      <string id="LogonHoursAction_Disconnect">切断</string>
+      <string id="LogonHoursAction_Lock">ロック</string>
+      <string id="LogonHoursAction_Logoff">ログオフ</string>
+      <string id="LogonHoursNotificationPolicyDescription">ログオン時間の有効期間切れの警告を表示しない</string>
+      <string id="LogonHoursNotificationPolicyDescription_Help">このポリシーでは、ログオンしているユーザーに、ログオン時間の有効期間がもうすぐ切れることを通知するかどうかを制御します。ログオン時間の有効期間が切れたときにアクションを実行するように設定されている場合、既定では、ログオン時間の有効期間が切れる前にユーザーに通知されます。
+
+この設定を有効にした場合、ログオン時間の有効期間が切れる前に、ユーザーに警告は表示されません。
+
+この設定を無効にした場合、または構成しなかった場合は、ログオン時間の有効期間が切れたときにアクションを実行するように設定されている場合、ログオン時間の有効期間が切れる前にユーザーに警告が表示されます。
+
+注: この設定を構成する場合は、[ログオン時間の有効期間が切れたときに実行するアクションを設定する] 設定を確認し、この設定を適切に構成してください。[ログオン時間の有効期間が切れたときに実行するアクションを設定する] が無効または構成されていない場合、[ログオン時間の有効期間切れの警告を表示しない] 設定には効力がなく、ログオン時間の有効期間切れに関する警告はユーザーに表示されません。</string>
+      <string id="LogonHoursPolicyDescription">ログオン時間の有効期間が切れたときに実行するアクションを設定する</string>
+      <string id="LogonHoursPolicyDescription_Help">このポリシーでは、ログオンしているユーザーのログオン時間の有効期間が切れたときに実行するアクションを制御します。このアクションには、ワークステーションのロック、ユーザーの切断、またはユーザーの完全なログオフがあります。
+
+セッションのロックまたは切断を選択した場合、許可されたログオン時間内を除き、ユーザーはセッションのロックを解除したり、再接続したりできません。
+
+ユーザーのログオフを選択した場合、許可されたログオン時間内を除き、ユーザーは再びログオンできません。ユーザーのログオフを選択した場合、ユーザーは保存されていないデータを失う可能性があります。
+
+この設定を有効にした場合、ユーザーのログオン時間の有効期間が切れたときに、指定したアクションが実行されます。
+
+この設定を無効にした場合、または構成しなかった場合は、ユーザーのログオン時間の有効期間が切れても、アクションは何も実行されません。ユーザーは既存のセッションを続行できますが、新しいセッションにログオンすることはできません。
+
+注: この設定を構成する場合は、[ログオン時間の有効期間切れの警告を表示しない] 設定を確認し、この設定を適切に構成してください。</string>
+      <string id="ReportCachedLogonPolicyDescription">ユーザー ログオン時にログオン サーバーに接続できなかった場合に報告する</string>
+      <string id="ReportCachedLogonPolicyDescription_Help">このポリシーでは、ユーザーが以前に保存されたアカウント情報を使用してログオンしたときに、ログオン サーバーに接続できなかった場合に、ユーザーに通知するかどうかを制御します。
+
+有効にした場合、ユーザーがキャッシュされた資格情報を使用してログオンしたときに、ユーザーに通知のポップアップが表示されます。
+
+無効にした場合、または構成しなかった場合は、ユーザーにポップアップは表示されません。</string>
+
+      <string id="SoftwareSASGenerationDescription">ソフトウェアの Secure Attention Sequence を無効または有効にする</string>
+      <string id="SoftwareSASGenerationDescription_Help">このポリシー設定は、ソフトウェアで SAS (Secure Attention Sequence) をシミュレートできるかどうかを制御します。
+
+このポリシー設定を有効にした場合、次の 4 つのオプションのうちいずれかを使用できます。
+
+このポリシー設定を [なし] に設定した場合、ユーザー モード ソフトウェアでは SAS をシミュレートできません。
+このポリシー設定を [サービス] に設定した場合、サービスで SAS をシミュレートできます。
+このポリシー設定を [コンピューターの簡単操作アプリケーション] に設定した場合、コンピューターの簡単操作アプリケーションで SAS をシミュレートできます。
+このポリシー設定を [サービスとコンピューターの簡単操作アプリケーション] に設定した場合、サービスとコンピューターの簡単操作アプリケーションの両方で SAS をシミュレートできます。
+
+この設定を無効にした場合、または構成しなかった場合は、セキュリティで保護されたデスクトップで実行されているコンピューターの簡単操作アプリケーションでのみ、SAS をシミュレートできます。</string>
+
+      <string id="SoftwareSASGeneration_None">なし</string>
+      <string id="SoftwareSASGeneration_SYSTEM">サービス</string>
+      <string id="SoftwareSASGeneration_UIAccess">コンピューターの簡単操作アプリケーション</string>
+      <string id="SoftwareSASGeneration_Both">サービスとコンピューターの簡単操作アプリケーション</string>
+
+      <string id="CustomShellPolicyDescription">ユーザー インターフェイスのカスタム設定</string>
+      <string id="CustomShellPolicyDescription_Help">代替ユーザー インターフェイスを指定します。
+
+エクスプローラー プログラム (%windir%\explorer.exe) はよく知られている Windows インターフェイスを表示しますが、ユーザーはこの設定を使って代替インターフェイスを指定できます。この設定を有効にした場合、指定したインターフェイスが Explorer.exe の代わりに起動されます。
+
+この設定を使用するには、インターフェイス プログラムをネットワーク共有またはシステム ドライブにコピーします。次に、この設定を有効にし、[シェル名] ボックスにインターフェイス プログラムの名前を入力します (拡張子も含む)。システムの Path 環境変数で指定されているフォルダーにインターフェイス プログラム ファイルがない場合は、ファイルへの完全修飾パスを入力してください。
+
+この設定を無効にした場合、または構成しなかった場合は、設定は無視され、エクスプローラーのインターフェイスが表示されます。
+
+ヒント: Path 環境変数で指定されているフォルダーを見つけるには、コントロール パネルの [システム] を開き、[詳細] タブの [環境変数] ボタンをクリックしてから、[システム環境変数] ボックスの [Path] をクリックします。</string>
+
+      <string id="AutomaticRestartSignOnDescription">システムによる再起動後に自動的に前回の対話ユーザーでサインインする</string>
+      <string id="AutomaticRestartSignOnDescription_Help">このポリシー設定では、Windows Update によるシステムの再起動後にデバイスが前回の対話ユーザーで自動的にサインインするかどうかを制御します。
+
+このポリシー設定を有効にした場合、または構成しなかった場合、デバイスでは、ユーザーの資格情報 (ユーザー名、ドメイン、暗号化されたパスワードなど) を安全に保存し、Windows Update による再起動後の自動サインインを構成します。Windows Update による再起動後、ユーザーは自動的にサインインし、そのユーザー用に構成されたすべてのロック画面アプリでセッションは自動的にロックされます。
+
+このポリシー設定を無効にした場合、デバイスでは、Windows Update による再起動後の自動サインインのためにユーザーの資格情報が保存されることはありません。システムの再起動後、ユーザーのロック画面アプリは再起動されません。</string>
+
+    </stringTable>
+    <presentationTable>
+      <presentation id="LogonHoursPolicyDescription">
+        <dropdownList refId="LogonHoursPolicyDescription" noSort="true">ログオン時間の有効期間が切れたときに実行するアクションを設定する</dropdownList>
+      </presentation>
+      <presentation id="SoftwareSASGenerationDescription">
+        <dropdownList refId="SoftwareSASGenerationDescription" noSort="true">Secure Attention Sequence の生成が許可されるソフトウェアを設定する</dropdownList>
+      </presentation>
+      <presentation id="CustomShell">
+        <textBox refId="CustomShellInst">
+          <label>インターフェイス ファイル名 (例: Explorer.exe)</label>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

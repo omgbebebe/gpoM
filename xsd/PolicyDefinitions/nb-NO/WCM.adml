@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Gruppepolicyinnstillinger for Windows Tilkoblingsbehandling</displayName>
+  <description>Gruppepolicyinnstillinger for Windows Tilkoblingsbehandling</description>
+  <resources>
+    <stringTable>
+      <string id="WCM_Category">Windows Tilkoblingsbehandling</string>
+      <string id="WCM_BlockNonDomain">Forhindre tilkobling til ikke-domenenettverk når koblet til domenegodkjente nettverk</string>
+      <string id="WCM_BlockNonDomain_Help">Denne policyinnstillingen forhindrer datamaskiner fra å koble til både et domenebasert nettverk og et ikke-domenebasert nettverk samtidig.
+      
+      Hvis denne policyinnstillingen er aktivert, svarer datamaskinen på automatiske og manuelle forsøk på nettverkstilkobling basert på følgende tilfeller:
+      
+      Forsøk på automatisk tilkobling
+      – Når datamaskinen allerede er koblet til et domenebasert nettverk, blokkeres alle forsøk automatiske tilkobling til ikke-domenenettverk.
+      – Når datamaskinen allerede er koblet til et ikke-domenebasert nettverk, blokkeres forsøk på automatisk tilkobling til domenebaserte nettverk.
+      
+      Forsøk på manuell tilkobling
+      – Når datamaskinen allerede er koblet til et ikke-domenebasert nettverk eller et domenebasert nettverk via andre medier enn Ethernet, og en bruker prøver å opprette en manuell tilkobling til et tilleggsnettverk som bryter med denne policyinnstillingen, kobles den eksisterende nettverkstilkoblingen fra og den manuelle tilkoblingen tillates.
+      – Når datamaskinen allerede er koblet til et ikke-domenebasert nettverk eller et domenebasert nettverk via Ethernet, og en bruker prøver å opprette en manuell tilkobling til et tilleggsnettverk som bryter med denne policyinnstillingen, beholdes den eksisterende Ethernet-tilkoblingen, og forsøk på manuell tilkobling blokkeres.
+
+      Hvis du deaktiverer eller ikke konfigurerer denne policyinnstillingen, kan datamaskiner koble til både domene- og ikke-domenenettverk samtidig.
+      
+      </string>
+      <string id="WCM_DisableRoaming">Forhindre tilkobling til roaming-nettverk for mobilt bredbånd</string>
+      <string id="WCM_DisableRoaming_Help">Denne policyinnstillingen forhindrer klienter fra å koble til nettverk for mobilt bredbånd når klienten er registrert på et nettverk for roaming-leverandør. 
+
+      Hvis denne policyinnstillingen er aktivert, blokkeres alle forsøk på automatisk og manuell tilkobling til nettverk for roaming-leverandør til klienten er registrert på nettverket for hjemmeleverandør.
+      
+      Hvis du deaktiverer eller ikke konfigurerer denne policyinnstillingen, kan klienter koble til nettverk for roaming-leverandør for mobilt bredbånd.
+      
+      </string>
+      <string id="WCM_MinimizeConnections">Minimer antallet samtidige tilkoblinger til Internett eller et Windows-domene</string>
+      <string id="WCM_MinimizeConnections_Help">Denne policyinnstillingen forhindrer datamaskiner fra å opprette flere samtidige tilkoblinger til Internett eller til et Windows-domene. Hvis verdien for denne policyinnstillingen er Ikke konfigurert, er den aktivert som standard.
+      
+      Hvis denne policyinnstillingen er aktivert, blokkeres et nytt forsøk på automatisk tilkobling til Internett når datamaskinen har minst én aktiv tilkobling til Internett. Når datamaskinen har minst én aktiv tilkobling til et Windows-domene, blokkeres også en ny automatisk tilkobling til det samme Windows-domene. Flere forsøk på manuell tilkobling av brukere til Internett eller til et Windows-domene blokkeres ikke av denne policyinnstillingen.
+      
+      I tilfeller der det er flere samtidige tilkoblinger til Internett eller til et Windows-domene kobler Windows fra den minst foretrukne tilkoblingen når mengden med nettverkstrafikk via den minst foretrukne tilkoblingen faller under en viss terskel. Når en datamaskin for eksempel er koblet til Internett ved hjelp av en WLAN-tilkobling og brukeren kobler seg til et Ethernet-nettverk, dirigeres nettverkstrafikken via den hurtigere Ethernet-tilkoblingen, og det blir mindre WLAN-trafikk. Windows oppdager dette tilfellet og svarer ved å koble fra WLAN-tilkoblingen.
+
+      Hvis denne policyinnstillingen er deaktivert, tillates flere samtidige tilkoblinger til Internett, til et Windows-domene eller til begge.
+
+      Hvis verdien for denne policyinnstillingen er Ikke konfigurert, blir standard policyinnstilling aktivert. Dette er forskjellig fra å aktivere policyinnstillingen med policygruppe. Imidlertid – hvis policyinnstillingen er Ikke konfigurert, er policyinnstillingen konfigurerbar på den lokale datamaskinen. Hvis policyinnstillingen blir brukt med gruppepolicy, kan den ikke konfigureres lokalt. Med policyinnstillingsverdien Ikke konfigurert, blir det ikke foretatt nye automatiske tilkoblingsforsøk, og mindre foretrukne tilkoblinger blir frakoblet.
+      </string>
+      <string id="WCM_DisablePowerManagement">Deaktiver strømstyring i tilkoblet ventemodus</string>
+      <string id="WCM_DisablePowerManagement_Help">Denne policyinnstillingen angir at strømstyring er deaktivert når maskinen går over i tilkoblet ventemodus. 
+
+      Hvis denne policyinnstillingen er aktivert, behandler ikke Windows Tilkoblingsbehandling kortradioer for å redusere strømforbruk når maskinen går over i tilkoblet ventemodus.
+
+      Hvis denne policyinnstillingen ikke er konfigurert eller er deaktivert, aktiveres strømstyring når maskinen går over i tilkoblet ventemodus.
+      
+      </string>
+      <string id="WCM_EnableSoftDisconnect">Aktiver at Windows utfører myk frakobling av en datamaskin fra et nettverk</string>
+      <string id="WCM_EnableSoftDisconnect_Help">Denne policyen bestemmer om Windows vil utføre myk frakobling av en datamaskin fra et nettverk.
+
+      Hvis denne policyinnstillingen er aktivert eller ikke konfigurert, vil Windows utføre myk frakobling av en datamaskin fra et nettverk når det avgjøres at datamaskinen ikke lenger skal være tilkoblet et nettverk.
+
+      Hvis denne policyinnstillingen er deaktivert, vil Windows koble en datamaskin fra et nettverk umiddelbart når det avgjøres at datamaskinen ikke lenger skal være tilkoblet et nettverk.
+
+      Når myk frakobling er aktivert:
+      – Når Windows bestemmer at datamaskinen ikke lenger skal være tilkoblet et nettverk, venter Windows til trafikken roer seg på nettverket. Den eksisterende TCP-økten fortsetter uavbrutt.
+      – Windows kontrollerer deretter trafikknivået på nettverket regelmessig. Hvis trafikknivået er over en bestemt terskel, utføres ingen flere handlinger. Datamaskinen forblir tilkoblet til nettverket og fortsetter å bruke det. Hvis nettverkstilkoblingen for eksempel brukes til å laste ned filer fra Internett, fortsetter nedlastingen av filer ved hjelp av denne nettverkstilkoblingen.
+      – Når nettverkstrafikken kommer under denne terskelen, kobles datamaskinen fra nettverket. Apper som holder en nettverkstilkobling aktiv selv når de ikke bruker den aktivt (for eksempel e-postapper), kan miste tilkoblingen. Hvis dette skjer, skal disse appene koble til på nytt via et annet nettverk. 
+
+      Denne policyinnstillingen avhenger av andre gruppepolicyinnstillinger. Hvis Minimer antallet samtidige tilkoblinger til Internett eller et Windows-domene for eksempel er deaktivert, vil ikke Windows koble fra noen nettverk.
+      </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft-fiók</displayName>
+  <description>Microsoft-fiók konfigurációja</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Microsoft-fiók</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Az összes lakossági Microsoft-fiókos felhasználói hitelesítés letiltása</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Ha engedélyezi ezt a házirendet, az eszközön lévő alkalmazások és szolgáltatások nem használhatják a Windows OnlineID és WebAccountManager API-kon keresztül az új lakossági Microsoft-fiókos hitelesítést. A házirend a hitelesítési gyorsítótár lejártáig nincs feltétlenül hatással azokra az alkalmazásokra, amelyek már végrehajtották a hitelesítést, ezért ezt a házirendet ajánlott az eszköz beállításakor bekapcsolni, hogy az eszközön ne legyenek gyorsítótárazott jogkivonatok. A házirend nincs hatással a közvetlenül a felhasználó által, OAuth szabványt használó böngészőben vagy alkalmazásokban végzett hitelesítésre.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

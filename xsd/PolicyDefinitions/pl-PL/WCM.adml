@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Ustawienia zasad grupy Menedżera połączeń systemu Windows</displayName>
+  <description>Ustawienia zasad grupy Menedżera połączeń systemu Windows</description>
+  <resources>
+    <stringTable>
+      <string id="WCM_Category">Menedżer połączeń systemu Windows</string>
+      <string id="WCM_BlockNonDomain">Zabroń nawiązywania połączeń z sieciami nienależącymi do domeny, gdy jest nawiązane połączenie z siecią uwierzytelnioną w domenie</string>
+      <string id="WCM_BlockNonDomain_Help">To ustawienie zasad uniemożliwia łączenie się komputera jednocześnie z siecią należącą do domeny i z siecią nienależącą do domeny.
+      
+      Jeśli to ustawienie zasad jest włączone, komputer reaguje na automatyczne i ręczne próby nawiązania połączenia sieciowego w zależności od następujących okoliczności:
+      
+      Automatyczne próby połączenia
+      - Jeśli komputer jest już połączony z siecią należącą do domeny, wszystkie automatyczne próby połączenia z sieciami nienależącymi do domeny są blokowane.
+      - Jeśli komputer jest już połączony z siecią nienależącą do domeny, automatyczne próby połączenia z sieciami należącymi do domeny są blokowane.
+      
+      Ręczne próby połączenia
+      - Jeśli komputer jest już połączony z siecią nienależącą do domeny lub z siecią należącą do domeny inaczej niż przez sieć Ethernet i użytkownik próbuje ręcznie utworzyć połączenie z dodatkową siecią wbrew temu ustawieniu zasad, istniejące połączenie sieciowe zostanie rozłączone i będzie możliwe ręczne nawiązanie połączenia.
+      - Jeśli komputer jest już połączony z siecią nienależącą do domeny lub z siecią należącą do domeny przez sieć Ethernet i użytkownik próbuje ręcznie utworzyć połączenie z dodatkową siecią wbrew temu ustawieniu zasad, istniejące połączenie Ethernet zostanie zachowane, a próba ręcznego nawiązania połączenia zostanie zablokowana.
+
+      Jeśli to ustawienie zasad nie zostanie skonfigurowane lub zostanie wyłączone, komputery mogą się łączyć jednocześnie zarówno z sieciami należącymi do domeny, jak i nienależącymi do domeny.
+      
+      </string>
+      <string id="WCM_DisableRoaming">Zabroń nawiązywania połączeń z komórkowymi sieciami szerokopasmowymi w roamingu</string>
+      <string id="WCM_DisableRoaming_Help">To ustawienie zasad uniemożliwia klientom łączenie się z komórkowymi sieciami szerokopasmowymi, gdy są oni zarejestrowani w sieciach dostawców roamingu. 
+
+      Jeśli to ustawienie zasad zostanie włączone, wszystkie ręczne i automatyczne próby połączenia z sieciami dostawców roamingu zostaną zablokowane, dopóki klient nie zarejestruje się w sieci dostawcy domowego.
+      
+      Jeśli to ustawienie zasad nie zostanie skonfigurowane lub zostanie wyłączone, klienci mogą się łączyć z komórkowymi sieciami szerokopasmowymi dostawcy roamingu.
+      
+      </string>
+      <string id="WCM_MinimizeConnections">Minimalizuj liczbę jednoczesnych połączeń z Internetem lub z domeną systemu Windows</string>
+      <string id="WCM_MinimizeConnections_Help">To ustawienie zasad zapobiega nawiązywaniu przez komputery wielu jednoczesnych połączeń z Internetem lub z domeną systemu Windows. Domyślnie, jeśli to ustawienie zasad ma wartość Nieskonfigurowane, jest ono włączone.
+      
+      Jeśli to ustawienie zasad zostanie włączone, gdy na komputerze będzie aktywne co najmniej jedno połączenie z Internetem, nowa automatyczna próba połączenia z Internetem zostanie zablokowana. Jeśli na komputerze jest aktywne co najmniej jedno połączenie z domeną systemu Windows, nowe automatyczne połączenie z tą samą domeną systemu Windows również zostanie zablokowane. Dodatkowe ręczne próby nawiązania połączenia z Internetem lub z domeną systemu Windows przez użytkowników nie są blokowane przez to ustawienie zasad.
+      
+      Gdy istnieje wiele jednoczesnych połączeń z Internetem lub z domeną systemu Windows, system Windows rozłącza mniej preferowane połączenie, jeśli natężenie ruchu sieciowego tego połączenia spadnie poniżej pewnej wartości progowej. Jeśli na przykład komputer jest połączony z Internetem za pomocą połączenia z siecią WLAN i użytkownik podłączy komputer do sieci Ethernet, ruch sieciowy zostanie skierowany przez szybsze połączenie Ethernet, a ruch w sieci WLAN zostanie zmniejszony. System Windows wykryje taką sytuację i zareaguje przez rozłączenie połączenia z siecią WLAN.
+
+      Jeśli to ustawienie zasad zostanie wyłączone, będzie dozwolonych wiele jednoczesnych połączeń z Internetem lub z domeną systemu Windows (albo obu rodzajów połączeń).
+
+      Jeśli to ustawienie zasad będzie mieć wartość Nieskonfigurowane, zostanie włączone domyślne ustawienie zasad. Ta sytuacja różni się od włączenia ustawienia zasad za pomocą zasad grupy, ale jeśli ustawienie zasad nie zostanie skonfigurowane, będzie można je skonfigurować na komputerze lokalnym. Jeśli ustawienie zasad zostanie zastosowane za pomocą zasad grupy, nie będzie można go skonfigurować lokalnie. Jeśli ustawienie zasad będzie mieć wartość Nieskonfigurowane, nie będą podejmowane automatyczne próby nawiązania nowego połączenia, a mniej preferowane połączenia zostaną rozłączone.
+      </string>
+      <string id="WCM_DisablePowerManagement">Wyłącz zarządzanie energią w trybie wstrzymania przy zachowaniu połączenia</string>
+      <string id="WCM_DisablePowerManagement_Help">To ustawienie zasad określa, że funkcje zarządzania energią są wyłączone po przejściu komputera do trybu wstrzymania przy zachowaniu połączenia. 
+
+      Jeśli to ustawienie zasad zostanie włączone, Menedżer połączeń systemu Windows nie będzie zarządzał modułami łączności bezprzewodowej karty sieciowej po przejściu komputera do trybu wstrzymania przy zachowaniu połączenia.
+
+      Jeśli to ustawienie zasad nie zostanie skonfigurowane lub zostanie wyłączone, funkcje zarządzania energią zostaną włączone po przejściu komputera do trybu wstrzymania przy zachowaniu połączenia.
+      
+      </string>
+      <string id="WCM_EnableSoftDisconnect">Zezwalaj systemowi Windows na programowe odłączanie komputera od sieci</string>
+      <string id="WCM_EnableSoftDisconnect_Help">To ustawienie zasad określa, czy system Windows będzie programowo odłączał komputer od sieci.
+
+      Jeśli to ustawienie zasad zostanie włączone lub nie zostanie skonfigurowane, system Windows będzie programowo odłączał komputer od sieci, gdy ustali, że komputer nie powinien być dłużej podłączony do sieci.
+
+      Jeśli to ustawienie zasad zostanie wyłączone, system Windows będzie odłączał komputer od sieci, gdy tylko ustali, że komputer nie powinien być dłużej podłączony do sieci.
+
+      Gdy odłączanie programowe jest włączone:
+      - Gdy system Windows zdecyduje, że komputer nie powinien być już podłączony do sieci, czeka na ustabilizowanie ruchu w tej sieci. Istniejące sesje protokołu TCP będą kontynuowane bez zakłóceń.
+      - Następnie system Windows okresowo sprawdza poziom ruchu w danej sieci. Jeśli poziom ruchu przekracza określony próg, nie jest wykonywana żadna dodatkowa akcja. Komputer pozostaje podłączony do sieci i nadal jej używa. Na przykład, jeśli połączenie sieciowe jest aktualnie używane do pobierania plików z Internetu, pobieranie plików za pośrednictwem tego połączenia sieciowego będzie kontynuowane.
+      - Gdy natężenie ruchu w sieci spadnie poniżej tego progu, komputer zostanie odłączony od sieci. Aplikacje utrzymujące aktywne połączenia sieciowe nawet wtedy, gdy nie używają ich aktywnie (na przykład aplikacje poczty e-mail), mogą utracić swoje połączenia. Jeśli tak się stanie, te aplikacje będą musiały ustanowić ponownie swoje połączenia za pośrednictwem innej sieci. 
+
+      To ustawienie zasad jest zależne do innych ustawień zasad grupy. Na przykład jeśli ustawienie Minimalizuj liczbę jednoczesnych połączeń z Internetem lub z domeną systemu Windows jest wyłączone, system Windows nie będzie odłączał komputera od żadnej sieci.
+      </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

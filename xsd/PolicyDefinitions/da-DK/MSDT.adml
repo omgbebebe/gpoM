@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>indtast det viste navn her</displayName>
+  <description>indtast beskrivelsen her</description>
+  <resources>
+    <stringTable>
+      <string id="WdiScenarioCategory">MSDT (Diagnosticeringsværktøj til Microsoft Support)</string>
+      <string id="WdiScenarioExecutionPolicy">Diagnosticeringsværktøj til Microsoft Support: Konfigurer udførselsniveau</string>
+      <string id="WdiScenarioExecutionPolicyExplain">Denne politikindstilling angiver udførselsniveauet for MSDT (Diagnosticeringsværktøj til Microsoft Support).
+
+Diagnosticeringsværktøj til Microsoft Support indsamler diagnosticeringsdata, som analyses af fagfolk.
+
+Hvis du aktiverer denne politikindstilling, kan administratorer bruge MSDT til at indsamle og sende diagnosticeringsdata til en supportmedarbejder for at få løst et problem.
+
+Hvis du deaktiverer denne politikindstilling, kan MSDT ikke indsamle diagnosticeringsdata.
+
+Hvis du undlader at konfigurere denne politikindstilling, er MSDT som standard slået til.
+
+Denne politikindstilling træder kun i kraft, hvis den diagnosticeringsdækkende politik for scenarieudførsel ikke er konfigureret.
+
+Du skal ikke genstarte computeren eller tjenesten, for at politikindstillingen kan træde i kraft. Ændringerne træder i kraft med det samme.
+
+Denne politikindstilling træder kun i kraft, når Diagnosticeringspolitik (DPS) kører. Når tjenesten er stoppet eller deaktiveret, udføres diagnosticeringsscenarier ikke. Diagnosticeringspolitik kan konfigureres med snap-in-programmet Tjenester til Microsoft Management Console.</string>
+
+      <string id="MsdtToolDownloadPolicy">MSDT (Diagnosticeringsværktøj til Microsoft Support): Begræns hentning af værktøjer</string>
+      <string id="MsdtToolDownloadPolicyExplain">Denne politikindstilling begrænser politikken for hentning af værktøjer for MSDT (Diagnosticeringsværktøj til Microsoft Support).
+
+Diagnosticeringsværktøj til Microsoft Support indsamler diagnosticeringsdata, som analyses af fagfolk.  Ved nogle problemer kan MSDT bed brugere om at hente yderligere værktøjer til fejlfinding.
+
+Disse værktøjer er nødvendige for at kunne foretage fuld fejlfinding på problemet.  Hvis hentning af værktøjer er begrænset, kan det vise sig umuligt at finde årsagen til problemet.
+
+Hvis du aktiverer denne politikindstilling for fjernfejlfinding, vil MSDT bede brugeren hente ekstra værktøjer til kun at diagnosticere problemer på fjerncomputere.  Hvis du aktiverer denne politikindstilling for lokal fejlfinding og fjernfejlfinding, vil MSDT altid bede om hentning af ekstra værktøjer.
+
+Hvis du deaktiverer denne politikindstilling, vil MSDT aldrig hente værktøjer, og det kan ikke diagnosticere problemer på fjerncomputere.
+
+Hvis du undlader at konfigurere denne politikindstilling, vil MSDT spørge brugeren, inden der hentes flere værktøjer.
+
+Du skal ikke genstarte computeren eller tjenesten, for at politikindstillingen kan træde i kraft. Ændringerne træder i kraft med det samme.
+
+Denne politikindstilling bruges kun, når MSDT er aktiveret.
+
+Denne politikindstilling træder kun i kraft, når Diagnosticeringspolitik (DPS) kører.  Når tjenesten er stoppet eller deaktiveret, udføres diagnosticeringsscenarier ikke.  Diagnosticeringspolitik kan konfigureres med snap-in-programmet Tjenester til Microsoft Management Console.</string>
+      <string id="MsdtToolDownloadPolicyLevelRemoteOnly">Kun fjernfejlfinding</string>
+      <string id="MsdtToolDownloadPolicyLevelAllowAll">Lokal fejlfinding og fjernfejlfinding</string>
+      <string id="MsdtSupportProvider">Diagnosticeringsværktøj til Microsoft Support: Slå interaktiv kommunikation med supportudbyderen til for MSDT</string>
+      <string id="MsdtSupportProviderExplain">Denne politikindstilling konfigurerer interaktiv kommunikation for MSDT (Diagnosticeringsværktøj til Microsoft Support) med supportudbyderen. MSDT indsamler diagnosticeringsdata for analyse med supportmedarbejdere.
+
+Hvis du aktiverer denne politikindstilling, kan brugerne bruge MSDT til at indsamle og sende diagnosticeringsdata til en supportmedarbejder for at få løst et problem.
+
+Supportudbyderen er som standard indstillet til Microsoft Corporation.
+
+Hvis du deaktiverer denne politikindstilling, kan MSDT ikke køre i supporttilstand, og data kan hverken indsamles eller sendes til supportudbyderen.
+
+Hvis du undlader at konfigurere denne politikindstilling, er supporttilstand i MSDT som standard slået til.
+
+Du skal ikke genstarte computeren eller tjenesten, for at politikindstillingen kan træde i kraft. Ændringerne træder i kraft med det samme.
+
+
+
+</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="MsdtToolDownloadPolicy">
+        <dropdownList refId="MsdtToolDownloadPolicyLevel" noSort="true" defaultItem="1">Hentning af værktøjer tilladt</dropdownList>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

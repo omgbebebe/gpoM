@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>voer hier de weergegeven naam in</displayName>
+  <description>typ hier een beschrijving</description>
+  <resources>
+    <stringTable>
+      <string id="WdiScenarioCategory">Het Diagnostisch hulpprogramma van Microsoft Ondersteuning</string>
+      <string id="WdiScenarioExecutionPolicy">Diagnostisch hulpprogramma van Microsoft Ondersteuning: Uitvoeringsniveau configureren</string>
+      <string id="WdiScenarioExecutionPolicyExplain">Deze beleidsinstelling bepaalt het uitvoeringsniveau van het Diagnostisch hulpprogramma van Microsoft Ondersteuning.
+
+MSDT (Diagnostisch hulpprogramma van Microsoft Ondersteuning) verzamelt diagnostische gegevens voor analyse door supportmedewerkers.
+
+Als u deze beleidsinstelling inschakelt, kunnen beheerders MSDT gebruiken om diagnostische gegevens te verzamelen en te versturen naar een supportmedewerker voor probleemoplossing.
+
+Als u deze beleidsinstelling uitschakelt, kan MSDT geen diagnostische gegevens verzamelen.
+
+Als u deze beleidsinstelling niet configureert, wordt MSDT standaard ingeschakeld.
+
+Deze beleidsinstelling wordt alleen doorgevoerd, als het beleid voor uitvoering van diagnostische scenario's niet is geconfigureerd.
+
+Het systeem of de service hoeft niet opnieuw te worden opgestart om dit beleid te activeren. Wijzigingen zijn onmiddellijk van kracht.
+
+Deze beleidsinstelling wordt alleen van kracht als de Diagnostic Policy-service wordt uitgevoerd. Wanneer de service wordt gestopt of uitgeschakeld, worden diagnostische scenario's niet uitgevoerd. De Diagnostic Policy-service kan worden geconfigureerd met de module Services in de MMC (Microsoft Management Console).</string>
+
+      <string id="MsdtToolDownloadPolicy">Het Diagnostisch hulpprogramma van Microsoft Ondersteuning: Downloaden van hulpprogramma's beperken</string>
+      <string id="MsdtToolDownloadPolicyExplain">Deze beleidsinstelling beperkt het downloadbeleid voor hulpprogramma's voor het Diagnostisch hulpprogramma van Microsoft Ondersteuning.
+
+MSDT (Diagnostisch hulpprogramma van Microsoft Ondersteuning) verzamelt diagnostische gegevens voor analyse door supportmedewerkers.  Bij sommige problemen wordt de gebruiker door het Diagnostisch hulpprogramma van Microsoft Ondersteuning mogelijk gevraagd om aanvullende hulpprogramma's voor het oplossen van problemen te downloaden.
+
+Dergelijke hulpprogramma's zijn noodzakelijk om het desbetreffende probleem volledig op te lossen.  Als het downloaden van hulpprogramma's is beperkt, is het wellicht niet mogelijk om de hoofdoorzaak van het probleem op te lossen.
+
+Als u deze beleidsinstelling voor het oplossen van problemen op afstand inschakelt, worden gebruikers door het Diagnostisch hulpprogramma van Microsoft Ondersteuning alleen gevraagd om aanvullende hulpprogramma's te downloaden als er problemen op externe computers in kaart moet worden gebracht.  Als deze instelling wordt ingeschakeld voor het oplossen van lokale problemen en voor het oplossen van externe problemen, wordt de gebruiker altijd gevraagd om aanvullende hulpprogramma's te downloaden.
+
+Als u dit beleid uitschakelt, worden er door het Diagnostisch hulpprogramma van Microsoft Ondersteuning geen hulpprogramma's gedownload en kunnen problemen op externe computers niet met behulp van het Diagnostisch hulpprogramma van Microsoft Ondersteuning in kaart worden gebracht.
+
+Als u deze beleidsinstelling niet configureert, wordt de gebruiker door het Diagnostisch hulpprogramma van Microsoft Ondersteuning gevraagd of hij of zij aanvullende hulpprogramma's wil downloaden.
+
+Het systeem of de service hoeft niet opnieuw te worden gestart om dit beleid te activeren.  Wijzigingen zijn onmiddellijk van kracht.
+
+Deze beleidsinstelling wordt alleen van kracht als het Diagnostisch hulpprogramma van Microsoft Ondersteuning is ingeschakeld
+
+Deze beleidsinstelling wordt alleen van kracht als de Diagnostic Policy-service (DPS) wordt uitgevoerd.  Wanneer de service wordt gestopt of uitgeschakeld, worden diagnostische scenario's niet uitgevoerd.   De Diagnostic Policy-service kan worden geconfigureerd met de module Services in de MMC (Microsoft Management Console).</string>
+      <string id="MsdtToolDownloadPolicyLevelRemoteOnly">Alle externe problemen oplossen</string>
+      <string id="MsdtToolDownloadPolicyLevelAllowAll">Lokale en externe problemen oplossen</string>
+      <string id="MsdtSupportProvider">Microsoft Support Diagnostic Tool: schakel interactieve communicatie van het Diagnostisch hulpprogramma van Microsoft Ondersteuning in met de ondersteuningsprovider.</string>
+      <string id="MsdtSupportProviderExplain">Deze beleidsinstelling configureert de interactieve communicatie van het Diagnostisch hulpprogramma van Microsoft Ondersteuning (MSDT) met de ondersteuningsprovider. Het diagnostisch hulpprogramma van Microsoft Ondersteuning verzamelt diagnostische gegevens voor analyse door supportmedewerkers.
+
+Als u deze beleidsinstelling inschakelt, kunnen gebruikers het Diagnostisch hulpprogramma van Microsoft Ondersteuning gebruiken om diagnostische gegevens te verzamelen en te versturen naar een supportmedewerker om een probleem op te lossen.
+
+De ondersteuningsprovider is standaard ingesteld op Microsoft Corporation.
+
+Als u deze beleidsinstelling uitschakelt, kan het Diagnostisch hulpprogramma van Microsoft Ondersteuning niet uitgevoerd worden in de ondersteuningsmodus, en kunnen er geen gegevens verzameld of verstuurd worden naar de  ondersteuningsprovider.
+
+Als u deze beleidsinstelling niet configureert, wordt de ondersteuningsmodus van het Diagnostisch hulpprogramma van Microsoft Ondersteuning standaard ingeschakeld.
+
+Het systeem of de service hoeft niet opnieuw te worden gestart om dit beleid te activeren. Wijzigingen zijn onmiddellijk van kracht.
+
+
+
+</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="MsdtToolDownloadPolicy">
+        <dropdownList refId="MsdtToolDownloadPolicyLevel" noSort="true" defaultItem="1">Downloaden van hulpprogramma's toestaan</dropdownList>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

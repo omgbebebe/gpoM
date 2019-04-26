@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Windows 连接管理器组策略设置</displayName>
+  <description>Windows 连接管理器组策略设置</description>
+  <resources>
+    <stringTable>
+      <string id="WCM_Category">Windows 连接管理器</string>
+      <string id="WCM_BlockNonDomain">当连接到域验证的网络时禁止连接到非域网络</string>
+      <string id="WCM_BlockNonDomain_Help">此策略设置阻止计算机同时连接到基于域的网络和并非基于域的网络。
+      
+      如果启用此策略设置，则计算机将基于以下情况响应自动和手动网络连接尝试:
+      
+      自动连接尝试
+      - 当计算机已连接到基于域的网络时，将阻止所有对非域网络的自动连接尝试。
+      - 当计算机已连接到并非基于域的网络时，将阻止所有对基于域的网络的自动连接尝试。
+      
+      手动连接尝试
+      - 当计算机已通过除以太网以外的介质连接到并非基于域的网络或基于域的网络，并且用户尝试违反此策略设置，创建到其他网络的手动连接时，将断开现有网络连接将，并允许手动连接。
+      - 当计算机已通过以太网连接到并非基于域的网络或基于域的网络，并且用户尝试违反此策略设置，创建到其他网络的手动连接时，将断开现有以太网连接，并阻止手动连接尝试。
+
+      如果未配置或禁用此策略设置，则计算机可以同时连接到域网络和非域网络。
+      
+      </string>
+      <string id="WCM_DisableRoaming">禁止连接到漫游移动宽带网络</string>
+      <string id="WCM_DisableRoaming_Help">当客户端已在漫游提供商网络上注册时，此策略设置将阻止客户端连接到移动宽带网络。
+
+      如果启用此策略设置，在客户端注册到家庭提供商网络之前，将阻止所有到漫游提供程序网络的自动和手动连接尝试。
+      
+      如果未配置或禁用此策略设置，则客户端可以连接到漫游提供商移动宽带网络。
+      
+      </string>
+      <string id="WCM_MinimizeConnections">最小化到 Internet 或 Windows 域的同时连接数</string>
+      <string id="WCM_MinimizeConnections_Help">此策略设置阻止计算机建立多个到 Internet 或 Windows 域的同时连接。当此策略设置值为“未配置”时，默认是启用的。
+      
+      如果启用此策略设置，当计算机至少有一个到 Internet 的活动连接时，将阻止到 Internet 的新自动连接尝试。当计算机至少有一个到 Windows 域的活动连接时，也将阻止到同一 Windows 域的新自动连接。此策略设置不会阻止用户到 Internet 或 Windows 域的其他手动连接尝试。
+      
+      在有多个到 Internet 或 Windows 域的同时连接的情况下，当通过非首选连接的网络流量降低到某一阈值以下时，Windows 将断开该非首选连接。例如，当计算机使用 WLAN 连接连接到 Internet 且用户接入以太网网络时，网络流量将通过较快的以太网连接路由，WLAN 流量将降低。Windows 能够检测到这种情况，并通过断开 WLAN 连接来做出响应。
+
+      如果禁用此策略设置，将允许多个到 Internet 和/或 Windows 域的同时连接。
+
+      如果此策略设置值为“未配置”，则启用默认策略设置。不过，这与针对组策略启用此策略设置有所不同，当此策略设置为“未配置”时，可在本地计算机上配置此策略设置。此策略设置应用于组策略时，不能在本地配置。此策略设置值为“未配置”时，不会进行新的自动连接尝试，并会断开非首选连接。
+      </string>
+      <string id="WCM_DisablePowerManagement">在连接备用模式下禁用电源管理</string>
+      <string id="WCM_DisablePowerManagement_Help">此策略设置指定在计算机进入连接备用模式时禁用电源管理。
+
+      如果启用此策略设置，当计算机进入连接备用模式时，Windows 连接管理器将不会管理适配器广播以减少电源消耗。
+
+      如果未配置或禁用此策略设置，当计算机进入连接备用模式时，将启用电源管理。
+      
+      </string>
+      <string id="WCM_EnableSoftDisconnect">启用 Windows 以从网络软断开计算机连接</string>
+      <string id="WCM_EnableSoftDisconnect_Help">此策略设置决定 Windows 是否将断开计算机的网络连接。
+
+      如果启用或未配置此策略设置，当 Windows 确定某一计算机不应再连接网络时，将软断开该计算机的网络连接。
+
+      如果禁用此策略设置，当 Windows 确定某一计算机不应再连接网络时，会立即断开该计算机的网络连接。
+
+      软断开连接启用时:
+      - 当 Windows 确定某一计算机不应再连接网络时，会等待网络流量结束。现有 TCP 会话将继续而不间断。
+      - 然后，Windows 将定期检查网络上的流量级别。如果流量级别高于特定阈值，将不采取进一步操作。计算机保持网络连接并继续使用相应网络。例如，如果网络连接目前用于从 Internet 下载文件，则将继续使用该网络连接下载文件。
+      - 当网络流量降到此阈值下时，计算机将断开网络连接。在不使用网络连接时也保持活动网络连接的应用(例如，电子邮件应用)可能会丢失连接。如果发生这种情况，这些应用应通过不同的网络重新建立连接。
+
+      此策略设置取决于其他组策略设置。例如，如果禁用“最小化到 Internet 或 Windows 域的同时连接数”，Windows 将不会断开任何网络连接。
+      </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

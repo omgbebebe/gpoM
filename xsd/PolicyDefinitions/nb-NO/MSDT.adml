@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>skriv inn visningsnavn her</displayName>
+  <description>skriv inn beskrivelse her</description>
+  <resources>
+    <stringTable>
+      <string id="WdiScenarioCategory">Diagnoseverktøy for Microsoft Kundestøtte</string>
+      <string id="WdiScenarioExecutionPolicy">Diagnoseverktøy for Microsoft Kundestøtte: Konfigurer kjørenivå</string>
+      <string id="WdiScenarioExecutionPolicyExplain">Denne policyinnstillingen angir kjørenivå for diagnoseverktøy for Microsoft Kundestøtte.
+
+Diagnoseverktøy for Microsoft Kundestøtte (MSDT) samler inn diagnosedata for kundestøttepersonell.
+
+Hvis du aktiverer denne policyinnstillingen, kan administratorer bruke MSDT til å samle inn og sende diagnosedata til kundestøttepersonell for å løse et problem.
+
+Hvis du deaktiverer denne policyinnstillingen, kan ikke MSDT samle inn diagnosedata.
+
+Hvis du ikke konfigurerer denne policyinnstillingen, kan ikke MSDT aktiveres som standard.
+
+Denne policyinnstillingen trer bare i kraft hvis det ikke er konfigurert scenariokjøringspolicy på diagnostiseringsnivå.
+
+Det er ikke nødvendig å starte systemet eller tjenestene på nytt for at denne policyinnstillingen skal tre i kraft. Endringene trer i kraft umiddelbart.
+
+Denne policyinnstillingen trer bare i kraft når DPS (Diagnostic Policy Service) kjører. Når denne tjenesten er stoppet eller deaktivert, kjøres ikke diagnosescenarier. DPS kan konfigureres med snapin-modulen for tjenester i Microsoft Management Console.</string>
+
+      <string id="MsdtToolDownloadPolicy">Diagnoseverktøy for Microsoft Kundestøtte: Begrens verktøynedlasting</string>
+      <string id="MsdtToolDownloadPolicyExplain">Denne policyinnstillingen begrenser verktøynedlastingspolicyen for diagnoseverktøy for Microsoft Kundestøtte.
+
+Diagnoseverktøy for Microsoft Kundestøtte (MSDT) samler inn diagnosedata for kundestøttepersonell.  For enkelte problemer kan brukeren bli bedt om å laste ned tilleggsverktøy for feilsøking.
+
+Disse verktøyene trengs for en grundig feilsøking av problemet.  Hvis verktøynedlasting er begrenset, er det kanskje ikke mulig å finne årsaken til problemet.
+
+Hvis du aktiverer denne policyinnstillingen for ekstern feilsøking, ber MSDT brukeren laste ned tilleggsverktøy for diagnostisering av problemer bare på eksterne datamaskiner.  Hvis du aktiverer policyinnstillingen for lokal og ekstern feilsøking, spør MSDT alltid om nedlasting av tilleggsverktøy.
+
+Hvis du deaktiverer denne policyinnstillingen, laster MSDT aldri ned verktøy og kan ikke diagnostisere problemer på eksterne datamaskiner.
+
+Hvis du ikke konfigurerer denne policyinnstillingen, spør MSDT brukeren før tilleggsverktøy blir lastet ned.
+
+Det er ikke nødvendig å starte systemet eller tjenestene på nytt for at denne policyinnstillingen skal tre i kraft. Endringene trer i kraft umiddelbart.
+
+Denne policyinnstillingen trer bare i kraft når MSDT er aktivert.
+
+Denne policyinnstillingen trer bare i kraft når DPS (Diagnostic Policy Service) kjører.  Når tjenesten er stoppet eller deaktivert, kjøres ikke diagnosescenarier.  DPS kan konfigureres med snapin-modulen for tjenester i Microsoft Management Console.</string>
+      <string id="MsdtToolDownloadPolicyLevelRemoteOnly">Bare ekstern feilsøking</string>
+      <string id="MsdtToolDownloadPolicyLevelAllowAll">Lokal og ekstern feilsøking</string>
+      <string id="MsdtSupportProvider">Diagnoseverktøy for Microsoft Kundestøtte: Aktiver interaktiv MSDT-kommunikasjon med støtteleverandøren</string>
+      <string id="MsdtSupportProviderExplain">Denne policyinnstillingen konfigurerer interaktiv MSDT-kommunikasjon med støtteleverandøren. MSDT samler inn diagnosedata for kundestøttepersonell.
+
+Hvis du aktiverer denne policyinnstillingen, kan brukerne bruke MSDT til å samle inn og sende diagnosedata til kundestøttepersonell for å løse et problem.
+
+Som standard er støtteleverandøren satt til Microsoft Corporation.
+
+Hvis du deaktiverer denne policyinnstillingen, kan ikke MSDT kjøre i støttemodus, og ingen data kan samles inn eller sendes til støtteleverandøren.
+
+Hvis du ikke konfigurerer denne policyinnstillingen, aktiveres støttemodus for MSDT som standard.
+
+Det er ikke nødvendig å starte systemet eller tjenestene på nytt for at denne policyinnstillingen skal tre i kraft. Endringene trer i kraft umiddelbart.
+
+
+
+</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="MsdtToolDownloadPolicy">
+        <dropdownList refId="MsdtToolDownloadPolicyLevel" noSort="true" defaultItem="1">Nedlasting av verktøy tillates</dropdownList>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

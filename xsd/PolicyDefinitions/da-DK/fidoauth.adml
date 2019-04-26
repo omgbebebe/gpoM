@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft FIDO-godkendelse</displayName>
+  <description>Konfiguration til Microsoft FIDO-godkendelse</description>
+  <resources>
+    <stringTable>
+        <string id="MSFidoAuthenticationCategory">Microsoft FIDO-godkendelse</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogon">Aktivér brugen af FIDO-enheder til logon</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogonExplain">Denne politik giver brugerne mulighed for at bruge en FIDO-enhed som f.eks. en telefon eller et NFC-kort til at logge på en stationær computer, der kører Windows 10.
+
+Hvis du aktiverer denne politikindstilling, kan brugerne logge på Windows via en FIDO-enhed.
+
+Hvis du deaktiverer eller ikke konfigurerer denne politik, kan brugerne ikke bruge en FIDO-enhed til at logge på med.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

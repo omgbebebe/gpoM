@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Autenticação de Microsoft FIDO</displayName>
+  <description>Configuração de Autenticação para Microsoft FIDO</description>
+  <resources>
+    <stringTable>
+        <string id="MSFidoAuthenticationCategory">Autenticação de Microsoft FIDO</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogon">Ativar utilização de dispositivos FIDO para início de sessão</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogonExplain">Esta política permite aos utilizadores a utilização de um dispositivo FIDO, como um telefone, cartão NFC para início de sessão num computador de secretária a executar o Windows 10.
+
+Se ativar esta definição da política, os utilizadores podem iniciar sessão no Windows utilizando um dispositivo FIDO.
+
+Se desativar ou não configurar esta política, os utilizadores não podem utilizar um dispositivo FIDO para iniciar sessão.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

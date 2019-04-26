@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft FIDO 認証</displayName>
+  <description>Microsoft FIDO 認証の構成</description>
+  <resources>
+    <stringTable>
+        <string id="MSFidoAuthenticationCategory">Microsoft FIDO 認証</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogon">FIDO デバイスを使用したサインオンを有効にします</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogonExplain">このポリシーを設定すると、ユーザーは NFC カードなどの FIDO デバイスを使用して、Windows 10 を実行しているデスクトップ コンピューターにサインオンできます。
+
+このポリシー設定を有効にした場合、ユーザーは FIDO デバイスを使用して Windows にサインオンできます。
+
+このポリシーを無効にした場合、または構成しなかった場合、ユーザーは FIDO デバイスを使用してサインオンできません。</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

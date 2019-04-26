@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Учетная запись Майкрософт</displayName>
+  <description>Настройка учетной записи Майкрософт</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Учетная запись Майкрософт</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Блокировать проверку подлинности всех потребителей учетной записи пользователя Майкрософт</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">При включении этой политики она запрещает всем приложениям и службам на устройстве выполнять проверку подлинности нового потребителя учетной записи Майкрософт с помощью API Windows OnlineID и WebAccountManager. Эта политика может не затронуть приложения, которые уже выполнили проверку пользователя до истечения срока действия кэша проверки подлинности, поэтому рекомендуется настраивать эту политику при настройке устройства для предотвращения появления каких-либо кэшированных токенов на устройстве. Эта политика не влияет на проверку подлинности, выполненную непосредственно пользователем в браузерах или в приложениях, использующих OAuth .
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

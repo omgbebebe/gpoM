@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Compte Microsoft</displayName>
+  <description>Configuration du compte Microsoft</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Compte Microsoft</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Bloquer toute authentification utilisateur au compte Microsoft client</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Lorsqu’elle est activée, cette stratégie empêche l’authentification de compte Microsoft du nouveau consommateur via les API Windows OnlineID et WebAccountManager de s’appliquer à l’ensemble des services et des applications de l’appareil. Dans la mesure où cette stratégie peut ne pas affecter les applications déjà authentifiées avant l’expiration du cache d’authentification, il est recommandé de la définir lors de la configuration de l’appareil afin d’éviter la présence de jetons mis en cache. Cette stratégie n’affecte pas l’authentification effectuée directement par l’utilisateur dans les navigateurs ou applications utilisant OAuth.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

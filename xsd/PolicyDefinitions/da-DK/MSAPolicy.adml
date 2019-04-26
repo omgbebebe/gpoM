@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft-konto</displayName>
+  <description>Konfiguration til Microsoft-konto</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Microsoft-konto</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Bloker alle funktioner til brugergodkendelse med Microsoft-konto</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Når denne politik er aktiveret, forhindres alle programmer og tjenester på enheden i at bruge den nye Microsoft-kontogodkendelse via API'erne Windows OnlineID og WebAccountManager. Politikken påvirker muligvis ikke programmer, som allerede er godkendt, før godkendelsescachen udløber, så det anbefales at angive politikken, når du konfigurerer en enhed for at forhindre, at der findes cachelagrede tokens på enheden. Politikken påvirker ikke godkendelse, der udføres direkte af brugeren i browsere eller i apps, der bruger OAuth.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

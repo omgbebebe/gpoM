@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft アカウント</displayName>
+  <description>Microsoft アカウントの構成</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Microsoft アカウント</string>
+        <string id="MicrosoftAccount_DisableUserAuth">すべてのコンシューマー Microsoft アカウント ユーザーの認証をブロックする</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">このポリシーを有効にすると、デバイスのすべてのアプリケーションおよびサービスについて、Windows OnlineID および WebAccountManager API による新しいコンシューマー Microsoft アカウントの認証が行われなくなります。このポリシーは既に認証が済んでいるアプリケーションについては認証キャッシュが切れるまで影響を与えないので、キャッシュされたトークンがデバイス上に存在しないようにデバイスをセットアップするときは、このポリシーを設定することをお勧めします。ブラウザーまたは OAuth を使用するアプリでユーザーによって直接実行される認証には、このポリシーによる影響はありません。
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

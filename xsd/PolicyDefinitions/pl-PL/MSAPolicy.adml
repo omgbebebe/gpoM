@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Konto Microsoft</displayName>
+  <description>Konfiguracja konta Microsoft</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Konto Microsoft</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Blokuj uwierzytelnianie użytkowników na wszystkich indywidualnych kontach Microsoft</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Włączenie tego ustawienia zasad uniemożliwi wszystkim aplikacjom i usługom na urządzeniu uwierzytelnianie indywidualnych kont Microsoft przy użyciu interfejsów API OnlineID i WebAccountManager systemu Windows. To ustawienie może nie działać na już uwierzytelnione aplikacje do czasu wygaśnięcia pamięci podręcznej uwierzytelniania. Dlatego zaleca się włączenie tego ustawienia zasad podczas konfigurowania urządzenia, aby mieć pewność, że na urządzeniu nie znajdują się żadne tokeny zapisane w pamięci podręcznej. To ustawienie nie dotyczy uwierzytelniania wykonywanego bezpośrednio przez użytkownika w przeglądarkach lub aplikacjach korzystających z protokołu OAuth.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

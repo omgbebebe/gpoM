@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Windowsin yhteyksien hallinnan ryhmäkäytäntöasetukset</displayName>
+  <description>Windowsin yhteyksien hallinnan ryhmäkäytäntöasetukset</description>
+  <resources>
+    <stringTable>
+      <string id="WCM_Category">Windowsin yhteyksien hallinta</string>
+      <string id="WCM_BlockNonDomain">Estä yhteydet ei-toimialueverkkoihin, kun olet yhteydessä toimialuetodennettuun verkkoon</string>
+      <string id="WCM_BlockNonDomain_Help">Tämä käytäntö estää tietokoneita muodostamasta yhteyttä samanaikaisesti sekä toimialueperustaiseen verkkoon että ei-toimialueperustaiseen verkkoon.
+      
+      Jos tämä käytäntöasetus on käytössä, tietokone vastaa automaattisiin ja manuaalisiin verkkoyhteysyrityksiin seuraavien olosuhteiden mukaan:
+      
+      Automaattiset yhteysyritykset
+      - Kun tietokone on jo yhteydessä toimialueperustaiseen verkkoon, kaikki automaattiset yhteysyritykset ei-toimialueverkkoihin estetään.
+      - Kun tietokone on jo yhteydessä ei-toimialueperustaiseen verkkoon, automaattiset yhteysyritykset toimialueverkkoihin estetään.
+      
+      Manuaaliset yhteysyritykset
+      - Kun tietokone on jo yhteydessä joko ei-toimialueperustaiseen verkkoon tai toimialueperustaiseen verkkoon muulla kuin Ethernet-yhteydellä, ja käyttäjä yrittää muodostaa manuaalisesti yhteyden uuteen verkkoon tämän käytännön vastaisesti, voimassa oleva verkkoyhteys katkaistaan ja manuaalinen yhteys sallitaan.
+      - Kun tietokone on jo yhteydessä joko ei-toimialueperustaiseen verkkoon tai toimialueperustaiseen verkkoon Ethernet-yhteydellä, ja käyttäjä yrittää muodostaa manuaalisesti yhteyden uuteen verkkoon tämän käytännön vastaisesti, voimassa oleva Ethernet-yhteys säilytetään ja manuaalinen yhteysyritys estetään.
+
+      Jos tämä käytäntöasetus poistetaan käytöstä tai sitä ei määritetä, tietokoneet voivat muodostaa samanaikaisesti yhteyden toimialue- ja ei-toimialueverkkoihin.
+      
+      </string>
+      <string id="WCM_DisableRoaming">Estä yhteys verkkovieraileviin mobiililaajakaistaverkkoihin</string>
+      <string id="WCM_DisableRoaming_Help">Tämä käytäntöasetus estää asiakkaita muodostamasta yhteyttä mobiililaajakaistaverkkoihin, kun asiakas on rekisteröitynyt verkkovierailupalveluntarjoajan verkkoon. 
+
+      Jos tämä käytäntöasetus on käytössä, kaikki automaattiset ja manuaaliset yhteysyritykset verkkovierailupalveluntarjoajan verkkoihin estetään, kunnes asiakas rekisteröity kotiverkkopalvelun verkkoon.
+      
+      Jos tämä käytäntöasetus poistetaan käytöstä tai sitä ei määritetä, asiakkaat voivat muodostaa yhteyden verkkovierailupalveluntarjoajien mobiililaajakaistaverkkoihin.
+      
+      </string>
+      <string id="WCM_MinimizeConnections">Rajoita Internetiin tai Windows-toimialueelle muodostettujen samanaikaisten yhteyksien määrä yhteen</string>
+      <string id="WCM_MinimizeConnections_Help">Tämä käytäntöasetus estää tietokoneita muodostamasta useita yhteyksiä samanaikaisesti joko Internetiin tai Windows-toimialueeseen. Kun tämän käytäntöasetuksen arvona on Ei määritetty, se on oletusarvon mukaan käytössä.
+      
+      Jos tämä käytäntöasetus on käytössä ja tietokoneessa on ainakin yksi aktiivinen yhteys Internetiin, uusi automaattinen yhteysyritys Internetiin estetään. Kun tietokoneessa on ainakin yksi aktiivinen yhteys Windows-toimialueeseen, uusi automaattinen yhteys samaan Windows-toimialueeseen estetään samaan tapaan. Tämä käytäntöasetus ei estä käyttäjien manuaalisia lisäyhteysyrityksiä Internetiin tai Windows-toimialueeseen.
+      
+      Jos Internetiin tai Windows-toimialueeseen on useita samanaikaisia yhteyksiä, Windows katkaisee vähiten tärkeän yhteyden, kun sen tietoliikenne vähenee tietyn raja-arvon alle. Esimerkiksi kun tietokone on yhteydessä Internetiin langattomalla yhteydellä ja käyttäjä muodostaa yhteyden Ethernet-verkkoon kaapelilla, verkkoyhteys reitittyy nopeamman Ethernet-yhteyden kautta ja langaton tietoliikenne vähenee. Windows havaitsee tämän tilanteen ja reagoi katkaisemalla langattoman yhteyden.
+
+      Jos tämä käytäntöasetus poistetaan käytöstä, useat samanaikaiset yhteydet Internetiin, Windows-toimialueeseen tai molempiin ovat sallittuja.
+
+      Jos tämän käytäntöasetuksen arvona on Ei määritetty, oletusarvoinen käytäntöasetus on käytössä. Tämä eroaa käytäntöasetuksen ottamisesta käyttöön ryhmäkäytännön avulla. Kun käytäntöasetuksen arvona on Ei määritetty, käytäntöasetus voidaan kuitenkin määrittää paikallisessa tietokoneessa. Kun käytäntöasetus otetaan käyttöön ryhmäkäytännön avulla, sitä ei voi määrittää paikallisesti. Kun käytäntöasetuksen arvona on Ei määritetty, uusia automaattisia yhteysyrityksiä ei tehdä, ja vähiten tärkeitä yhteyksiä katkaistaan.
+      </string>
+      <string id="WCM_DisablePowerManagement">Poista virranhallintakäytäntö yhteyksellisessä valmiustilassa</string>
+      <string id="WCM_DisablePowerManagement_Help">Tämä käytäntö määrittää, että virranhallinta on poissa käytöstä, kun tietokone siirtyy yhteykselliseen valmiustilaan. 
+
+      Jos tämä käytäntöasetus on käytössä, Windowsin yhteyksien hallinta ei hallitse sovittimien radioita virrankulutuksen vähentämiseksi tietokoneen siirtyessä yhteykselliseen valmiustilaan.
+
+      Jos tätä käytäntöä ei määritetä tai se on poistettu käytöstä, virranhallinta on käytössä koneen siirtyessä yhteykselliseen valmiustilaan.
+      
+      </string>
+      <string id="WCM_EnableSoftDisconnect">Anna Windowsin katkaista tietokoneen yhteys verkkoon</string>
+      <string id="WCM_EnableSoftDisconnect_Help">Tämä käytäntö määrittää, katkaiseeko Windows tietokoneen yhteyden verkkoon.
+
+      Jos tämä käytäntöasetus on otettu käyttöön tai sitä ei ole määritetty, Windows katkaisee tietokoneen yhteyden verkkoon, kun se määrittää, että tietokoneen ei enää pitäisi olla yhteydessä verkkoon.
+
+      Jos tämä käytäntöasetus poistetaan käytöstä, Windows katkaisee tietokoneen yhteyden verkkoon heti, kun se määrittää, että tietokoneen ei enää pitäisi olla yhteydessä verkkoon.
+
+      Kun yhteyden katkaisu on käytössä:
+      - Kun Windows määrittää, että tietokoneen ei enää pitäisi olla yhteydessä verkkoon, se odottaa, että tietoliikenne hiljenee kyseisessä verkossa. Nykyistä TCP-istuntoa jatketaan keskeytyksettä.
+      - Windows tarkistaa tämän jälkeen ajoittain tietoliikenteen tason. Jos tietoliikenteen taso on tietyn tason yläpuolella, lisätoimenpiteisiin ei ryhdytä. Tietokone pysyy yhdistettynä verkkoon ja jatkaa sen käyttöä. Jos verkkoyhteys on esimerkiksi sillä hetkellä käytössä tiedostojen lataamiseksi Internetistä, tiedostojen lataamista jatketaan kyseisen verkkoyhteyden kautta.
+      - Kun tietoliikenne laskee tämän kynnysarvon alle, tietokoneen yhteys verkkoon katkaistaan. Sovellukset, jotka pitävät verkkoyhteyden käytössä myös silloin, kun ne eivät aktiivisesti käytä sitä (esimerkiksi sähköpostiohjelmat), saattavat menettää yhteytensä. Tällöin näiden sovellusten pitäisi muodostaa yhteytensä uudelleen toisen verkon kautta. 
+
+      Tämä käytäntöasetus riippuu muista ryhmäkäytäntöasetuksista. Jos esimerkiksi Rajoita Internetiin tai Windows-toimialueelle muodostettujen samanaikaisten yhteyksien määrä yhteen -asetus poistetaan käytöstä, Windows ei katkaise yhteyttä mihinkään verkkoon.
+      </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

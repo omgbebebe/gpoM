@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Autenticazione Microsoft FIDO</displayName>
+  <description>Configurazione per autenticazione Microsoft FIDO</description>
+  <resources>
+    <stringTable>
+        <string id="MSFidoAuthenticationCategory">Autenticazione Microsoft FIDO</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogon">Abilita l'utilizzo di dispositivi FIDO per l'accesso</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogonExplain">Questo criterio consente agli utenti di usare un dispositivo FIDO, come un telefono o una carta NFC, per eseguire l'accesso in un computer desktop che esegue Windows 10.
+
+Se abiliti questa impostazione dei criteri, gli utenti possono eseguire l'accesso a Windows usando un dispositivo FIDO.
+
+Se disabiliti o non configuri questi criteri, gli utenti non possono usare un dispositivo FIDO per eseguire l'accesso.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

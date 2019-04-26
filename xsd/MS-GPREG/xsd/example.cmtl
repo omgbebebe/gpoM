@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <commentDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" 
+ schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+   <resources>
+     <stringTable>
+       <string id="ns0_WF_FileAndPrint_Name_1">
+ Microsoft recommends configuring the Windows Firewall using the Windows Firewall with Advanced Security available in the Group Policy Object Editor. However, several of the settings recommendations in the Network Connections\Windows Firewall container help maintain compatibility with computers running Windows XP in the Enterprise client environment described in the Windows XP Security Guide. For more information about each of these settings, see the Windows XP Security Guide (http://go.microsoft.com/fwlink/?LinkID=121854).
+       </string>
+     </stringTable>
+   </resources>
+ </commentDefinitionResources>

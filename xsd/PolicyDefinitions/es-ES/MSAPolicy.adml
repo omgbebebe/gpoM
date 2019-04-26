@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Cuenta de Microsoft</displayName>
+  <description>Configuración de una cuenta de Microsoft</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Cuenta de Microsoft</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Bloquear la autenticación de usuarios para las cuentas de Microsoft de todos los consumidores</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Cuando se habilita, esta directiva evita la autenticación de las cuentas de Microsoft de todas las aplicaciones y servicios en los dispositivos de los nuevos consumidores a través de las API de WebAccountManager y Windows OnlineID. Puede que esta directiva no afecte a las aplicaciones que ya se han autenticado hasta que caduque la caché de autenticación, por lo que se recomienda establecer esta directiva al configurar el dispositivo para impedir que los tokens almacenados en caché estén presentes en el dispositivo. Esta directiva no afecta a la autenticación realizada directamente por el usuario en los navegadores o en las aplicaciones que usen OAuth.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

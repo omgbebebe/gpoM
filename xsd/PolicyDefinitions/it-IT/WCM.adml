@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Impostazioni di Criteri di gruppo per Windows Connection Manager</displayName>
+  <description>Impostazioni di Criteri di gruppo per Windows Connection Manager</description>
+  <resources>
+    <stringTable>
+      <string id="WCM_Category">Windows Connection Manager</string>
+      <string id="WCM_BlockNonDomain">Proibisci connessione a reti non di dominio in caso di connessione a una rete di dominio autenticata</string>
+      <string id="WCM_BlockNonDomain_Help">Questa impostazione dei criteri impedisce ai computer di connettersi contemporaneamente sia a una rete di dominio che a una rete non di dominio.
+      
+      Se si abilita questa impostazione dei criteri, il computer risponderà ai tentativi di connessione automatica e manuale a una rete in base alle circostanze seguenti:
+      
+      Tentativi di connessione automatica
+      - Quando il computer è già connesso a una rete di dominio, tutti i tentativi di connessione automatica a reti non di dominio vengono bloccati.
+      - Quando il computer è già connesso a una rete non di dominio, i tentativi di connessione automatica a reti di dominio vengono bloccati.
+      
+      Tentativi di connessione manuale
+      - Quando il computer è già connesso a una rete di dominio o a una rete non di dominio su supporti diversi da Ethernet e un utente tenta di creare una connessione manuale a una rete aggiuntiva in violazione di questa impostazione dei criteri, la connessione di rete esistente viene disconnessa e viene consentita la connessione manuale.
+      - Quando il computer è già connesso a una rete di dominio o a una rete non di dominio su Ethernet e un utente tenta di creare una connessione manuale a una rete aggiuntiva in violazione di questa impostazione dei criteri, la connessione Ethernet esistente viene mantenuta e il tentativo di connessione manuale viene bloccato.
+
+      Se si disabilita o non si configura questa impostazione dei criteri, ai computer verrà consentito di connettersi contemporaneamente a reti sia di dominio che non di dominio.
+      
+      </string>
+      <string id="WCM_DisableRoaming">Proibisci connessione a reti Mobile Broadband di provider di roaming</string>
+      <string id="WCM_DisableRoaming_Help">Questa impostazione dei criteri impedisce ai client di connettersi a reti Mobile Broadband quando il client è registrato su una rete di un provider di roaming. 
+
+      Se si abilita questa impostazione dei criteri, tutti i tentativi di connessione automatica e manuale a reti di provider di roaming verranno bloccati finché il client non si registra con la rete del provider principale.
+      
+      Se si disabilita o non si configura questa impostazione dei criteri, ai client verrà consentito di connettersi a reti Mobile Broadband di provider di roaming.
+      
+      </string>
+      <string id="WCM_MinimizeConnections">Riduci al minimo il numero di connessioni simultanee a Internet o a un dominio Windows</string>
+      <string id="WCM_MinimizeConnections_Help">Questa impostazione dei criteri impedisce ai computer di stabilire più connessioni simultanee a Internet o a un dominio Windows. Per impostazione predefinita, quando il valore è Non configurata, questa impostazione dei criteri è abilitata.
+      
+      Se si abilita questa impostazione dei criteri, quando per il computer è attiva almeno una connessione a Internet, un nuovo tentativo di connessione automatica a Internet verrà bloccato. Quando per il computer è attiva almeno una connessione a un dominio Windows, un nuovo tentativo di connessione automatica allo stesso dominio Windows verrà bloccato. Ulteriori tentativi di connessione manuale a Internet o a un dominio Windows non verranno bloccati da questa impostazione dei criteri.
+      
+      In circostanze in cui sono attive più connessioni simultanee a Internet o a un dominio Windows, Windows disconnetterà la connessione meno preferita quando la quantità di traffico di rete su tale connessione scende sotto una determinata soglia. Ad esempio, quando un computer è connesso a Internet mediante una connessione WLAN e l'utente accede a una rete Ethernet, il traffico di rete viene instradato tramite la connessione Ethernet più veloce e il traffico WLAN diminuisce. Windows rileva questa circostanza e risponde disconnettendo la connessione WLAN.
+
+      Se si disabilita questa impostazione dei criteri, saranno consentite più connessioni simultanee a Internet e/o a un dominio Windows.
+
+      Se il valore è Non configurata, questa impostazione dei criteri predefinita è abilitata. Questo non equivale ad abilitare l'impostazione dei criteri con Criteri di gruppo, tuttavia quando il valore è Non configurata, l'impostazione dei criteri è configurabile nel computer locale. Quando viene applicata con Criteri di gruppo, l'impostazione dei criteri non è configurabile in locale. Se il valore dell'impostazione dei criteri è Non configurata, non verranno effettuati nuovi tentativi di connessione automatici e le connessioni meno usate verranno chiuse.
+      </string>
+      <string id="WCM_DisablePowerManagement">Disabilita risparmio energia in modalità di standby connesso</string>
+      <string id="WCM_DisablePowerManagement_Help">Questa impostazione dei criteri specifica la disabilitazione del risparmio energia quando il computer entra in modalità di standby connesso. 
+
+      Se si abilita questa impostazione dei criteri, Windows Connection Manager non gestirà i radio adattatori per ridurre il consumo energetico quando il computer entra in modalità di standby connesso.
+
+      Se si disabilita o non si configura questa impostazione dei criteri, il risparmio energia verrà abilitato quando il computer entra in modalità di standby connesso.
+      
+      </string>
+      <string id="WCM_EnableSoftDisconnect">Consenti a Windows di effettuare la disconnessione del software di un computer da una rete</string>
+      <string id="WCM_EnableSoftDisconnect_Help">Questa impostazione dei criteri determina se Windows disconnette automaticamente il software di un computer da una rete.
+
+      Se questa impostazione dei criteri è abilitata o non configurata, Windows disconnette automaticamente un computer da una rete quando determina che il computer non deve più essere connesso a una rete.
+
+      Se questa impostazione dei criteri è disabilitata, Windows disconnette immediatamente un computer da una rete quando determina che il computer non deve più essere connesso a una rete.
+
+      Quando la disconnessione del software è abilitata:
+      - Quando Windows decide che il computer non deve più essere connesso a una rete, attende che il traffico si stabilizzi su quella rete. La sessione TCP esistente continuerà senza interruzioni.
+      - Windows controlla quindi periodicamente il livello del traffico sulla rete. Se il livello di traffico supera una certa soglia, non viene intrapresa alcuna ulteriore azione. Il computer rimane connesso alla rete e continua a utilizzarla. Ad esempio, se la connessione di rete è attualmente in uso per scaricare file da Internet, i file continueranno a essere scaricati utilizzando quella connessione di rete.
+      - Quando il traffico di rete scende al di sotto di questa soglia, il computer verrà disconnesso dalla rete. Le app che mantengono attiva una connessione di rete anche quando non la utilizzano attivamente (ad esempio, le app di posta elettronica) potrebbero perdere la connessione. Se ciò accade, queste app dovrebbero ristabilire la connessione su una rete diversa. 
+
+      Questa impostazione dei criteri dipende da altre impostazioni dei criteri di gruppo. Ad esempio, se "Riduci al minimo il numero di connessioni simultanee a Internet o a un dominio Windows" è disabilitato, Windows non si disconnetterà da alcuna rete.
+      </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

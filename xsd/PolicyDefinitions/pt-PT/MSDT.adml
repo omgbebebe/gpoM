@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>introduza o nome a apresentar aqui</displayName>
+  <description>introduza a descrição aqui</description>
+  <resources>
+    <stringTable>
+      <string id="WdiScenarioCategory">Ferramenta de Diagnóstico de Suporte da Microsoft</string>
+      <string id="WdiScenarioExecutionPolicy">Ferramenta de Diagnóstico de Suporte da Microsoft: configurar nível de execução</string>
+      <string id="WdiScenarioExecutionPolicyExplain">Esta definição de política determina o nível de execução para a Ferramenta de Diagnóstico de Suporte da Microsoft.
+
+A Ferramenta de Diagnóstico de Suporte da Microsoft (MSDT) reúne dados de diagnóstico para análise por profissionais de suporte.
+
+Se ativar esta definição de política, os administradores podem utilizar a MSDT para recolher e enviar dados de diagnóstico para um profissional de suporte para resolver um problema.
+
+Se desativar esta definição de política, a MSDT não consegue recolher dados de diagnóstico.
+
+Se não configurar esta definição de política, a MSDT é ativada por predefinição.
+
+Esta definição de política só produz efeitos se a política de execução de cenário a nível de diagnósticos não estiver configurada.
+
+Não são necessários reinícios de sistema ou de serviços para que esta definição de política produza efeitos. As alterações produzem efeitos imediatamente.
+
+Esta definição de política só produzirá efeitos quando o Serviço de Políticas de Diagnóstico (DPS) estiver no estado Em execução. Quando o serviço for parado ou desativado, não serão executados cenários de diagnóstico. O DPS pode ser configurado com o snap-in Serviços na Consola de Gestão da Microsoft.</string>
+
+      <string id="MsdtToolDownloadPolicy">Ferramenta de Diagnóstico de Suporte da Microsoft: restringir transferências da ferramenta</string>
+      <string id="MsdtToolDownloadPolicyExplain">Esta definição de política restringe a política de transferências para a Ferramenta de Diagnóstico de Suporte da Microsoft.
+
+A Ferramenta de Diagnóstico de Suporte da Microsoft (MSDT) reúne dados de diagnóstico para análise por profissionais de suporte.  Para alguns problemas, a MSDT poderá pedir ao utilizador para transferir ferramentas adicionais para resolução de problemas.
+
+Estas ferramentas são necessárias para concluir a resolução do problema.  Se as transferências de ferramentas estiverem restringidas, poderá não ser possível determinar a causa principal do problema.
+
+Se ativar esta definição de política para resolução de problemas remota, a MSDT pede ao utilizador para transferir ferramentas adicionais apenas para diagnosticar problemas em computadores remotos.  Se ativar esta definição de política para resolução de problemas local e remota, a MSDT pede sempre a transferência de ferramentas adicionais.
+
+Se desativar esta definição de política, a MSDT nunca transfere ferramentas, pelo que não consegue diagnosticar problemas em computadores remotos.
+
+Se não configurar esta definição de política, a MSDT avisa o utilizador antes de transferir quaisquer ferramentas adicionais.
+
+Não são necessários reinícios de sistema ou de serviços para que esta definição de política produza efeitos. As alterações produzem efeitos imediatamente.
+
+Esta definição de política só produzirá efeitos quando a MSDT estiver ativada.
+
+Esta definição de política só produzirá efeitos quando o Serviço de Políticas de Diagnóstico (DPS) estiver no estado Em execução.  Quando o serviço está parado ou desativado, não são executados cenários de diagnóstico.  O DPS pode ser configurado com o snap-in Serviços na Consola de Gestão da Microsoft.</string>
+      <string id="MsdtToolDownloadPolicyLevelRemoteOnly">Apenas resolução de problemas remota</string>
+      <string id="MsdtToolDownloadPolicyLevelAllowAll">Resolução de problemas local e remota</string>
+      <string id="MsdtSupportProvider">Ferramenta de Diagnóstico de Suporte da Microsoft: ativar comunicação interativa MSDT com Fornecedor de Suporte</string>
+      <string id="MsdtSupportProviderExplain">Esta definição de política configura a comunicação interativa da Ferramenta de Diagnóstico de Suporte da Microsoft (MSDT) com o fornecedor de suporte. A MSDT reúne dados de diagnóstico para análise por profissionais de suporte.
+
+Se ativar esta definição de política, os utilizadores podem usar a MSDT para recolher e enviar dados de diagnóstico para um profissional de suporte para resolver um problema.
+
+Por predefinição, o fornecedor de suporte está definido como Microsoft Corporation.
+
+Se desativar esta definição de política, não é possível executar a MSDT em modo de suporte, pelo que não serão recolhidos ou enviados dados para o fornecedor de suporte.
+
+Se não configurar esta definição de política, o modo de suporte da MSDT é ativado por predefinição.
+
+Não são necessários reinícios de sistema ou de serviços para que esta definição de política produza efeitos. As alterações produzem efeitos imediatamente.
+
+
+
+</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="MsdtToolDownloadPolicy">
+        <dropdownList refId="MsdtToolDownloadPolicyLevel" noSort="true" defaultItem="1">Transferências de ferramentas permitidas</dropdownList>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

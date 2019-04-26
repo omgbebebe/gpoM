@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft-konto</displayName>
+  <description>Konfiguration för Microsoft-konto</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Microsoft-konto</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Blockera alla funktioner för användarautentisering med Microsoft-konto</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">När den här principen är aktiverad hindras alla program och tjänster på enheten från att använda den nya Microsoft-kontoautentiseringen via API:erna Windows OnlineID och WebAccountManager. Den här principen påverkar eventuellt inte program som redan har autentiserats förrän autentiseringscache förfaller. Därför rekommenderar vi att du ställer in den här principen när du konfigurerar enheten för att förhindra att cachelagrade tokens finns på enheten. Principen påverkar inte autentisering som utförs direkt av användarna i webbläsare eller appar som använder OAuth.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

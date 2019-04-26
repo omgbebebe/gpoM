@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Účet Microsoft</displayName>
+  <description>Konfigurace pro účet Microsoft</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Účet Microsoft</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Blokovat veškeré ověřování uživatele účtem Microsoft pro individuálního uživatele</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Pokud je tato zásada povolená, bude všem aplikacím a službám v zařízení bránit v ověřování novým účtem Microsoft pro individuálního uživatele prostřednictvím Windows OnlineID a rozhraní API WebAccountManager. Tato zásada nemá vliv na aplikace, které se už ověřily, dokud nevyprší platnost mezipaměti ověřování. Proto se doporučuje nastavit tuto zásadu při prvním nastavování zařízení, aby na zařízení nemohly být žádné tokeny uložené v mezipaměti. Tato zásada nemá vliv na ověřování prováděné přímo uživatelem v prohlížečích nebo v aplikacích, které používají OAuth.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

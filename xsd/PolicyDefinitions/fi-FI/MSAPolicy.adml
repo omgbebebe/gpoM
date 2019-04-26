@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft-tili</displayName>
+  <description>Microsoft-tilin määritys</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Microsoft-tili</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Estä kaikkien kuluttajien Microsoft-tilin käyttäjätodennus</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Kun tämä käytäntöasetus on käytössä, se estää laitteen kaikkia sovelluksia ja palveluita todentamasta uuden kuluttajan Microsoft-tiliä Windowsin OnlineID- ja WebAccountManager-ohjelmointirajapintojen kautta. Tämä käytäntöasetus ei ehkä vaikuta sovelluksiin, jotka ovat jo suorittaneet todennuksen, ennen kuin todennusvälimuisti vanhenee. Tämän käytäntöasetuksen asettamista suositellaan laitteen määrityksen yhteydessä, jotta laitteessa ei ole välimuistiin tallennettuja tunnuksia. Tämä käytäntöasetus ei vaikuta todennukseen, jonka käyttäjä suorittaa suoraan OAuthia käyttävissä selaimissa tai sovelluksissa.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Nastavení zásad skupiny pro službu Správce připojení systému Windows</displayName>
+  <description>Nastavení zásad skupiny pro službu Správce připojení systému Windows</description>
+  <resources>
+    <stringTable>
+      <string id="WCM_Category">Správce připojení systému Windows</string>
+      <string id="WCM_BlockNonDomain">Při připojení k síti ověřované pomocí domény zakázat připojení k sítím, které nejsou založeny na doméně</string>
+      <string id="WCM_BlockNonDomain_Help">Toto nastavení zásad brání počítačům v současném připojení jak k síti založené na doméně, tak k síti, která není založena na doméně.
+      
+      Je-li toto nastavení zásad povoleno, počítač reaguje na pokusy o automatické a ruční připojení k síti na základě následujících okolností:
+      
+      Pokusy o automatické připojení
+      - Pokud již je počítač připojen do sítě založené na doméně, jsou blokovány všechny pokusy o automatické připojení k sítím, které nejsou založeny na doméně.
+      - Pokud již je počítač připojen k síti, která není založena na doméně, jsou blokovány pokusy o automatické připojení k sítím založeným na doméně.
+      
+      Pokusy o ruční připojení
+      - Pokud již je počítač připojen k síti, která není založena na doméně, nebo k síti, která je založena na doméně prostřednictvím jiného média, než je síť Ethernet, a uživatel se pokusí vytvořit ruční připojení k další síti porušující toto nastavení zásad, je existující připojení k síti odpojeno a je povoleno ruční připojení.
+      - Pokud již je počítač připojen prostřednictvím sítě Ethernet k síti, která není založena na doméně, nebo k síti, která je založena na doméně, a uživatel se pokusí vytvořit ruční připojení k další síti porušující toto nastavení zásad, bude existující ethernetové připojení zachováno a budou blokovány pokusy o ruční připojení.
+
+      Pokud toto nastavení zásad zakážete nebo nenakonfigurujete, počítače se mohou současně připojit jak k sítím založeným na doméně, tak i k sítím, které nejsou založeny na doméně.
+      
+      </string>
+      <string id="WCM_DisableRoaming">Zakázat připojení k mobilním širokopásmovým sítím při roamingu</string>
+      <string id="WCM_DisableRoaming_Help">Toto nastavení zásad klientům brání v připojení k mobilním širokopásmovým sítím, když je klient registrován v síti roamingového operátora. 
+
+      Pokud toto nastavení zásad povolíte, všechny pokusy o automatické a ruční připojení k sítím roamingových operátorů jsou blokovány, dokud se klient nezaregistruje do sítě domovského operátora.
+      
+      Pokud toto nastavení zásad zakážete nebo nenakonfigurujete, klienti se mohou připojovat k mobilním širokopásmovým sítím roamingových operátorů.
+      
+      </string>
+      <string id="WCM_MinimizeConnections">Minimalizovat počet současných připojení k Internetu nebo doméně systému Windows</string>
+      <string id="WCM_MinimizeConnections_Help">Toto nastavení zásad brání počítačům v navazování vícenásobných současných připojení k internetu nebo k doméně Windows. Ve výchozím nastavení platí, že když hodnota tohoto nastavení zásad není nakonfigurovaná, je toto nastavení povolené.
+      
+      Pokud je toto nastavení zásad povolené a počítač má aspoň jedno aktivní připojení k internetu, budou se blokovat pokusy o nové automatické připojení k internetu. Pokud má počítač aspoň jedno aktivní připojení k doméně Windows, bude se blokovat taky nové automatické připojení do stejné domény Windows. Další pokusy uživatelů o ruční připojení k internetu nebo k doméně Windows se nebudou tímto nastavením zásad blokovat.
+      
+      Pokud existuje víc současných připojení k internetu nebo k doméně Windows, pak v případě, že intenzita síťového provozu míň preferovaného připojení klesne pod určitou mez, systém Windows toto připojení odpojí. Pokud je například počítač připojený k internetu pomocí Wi-Fi připojení a uživatel se připojí k síti Ethernet, bude se síťový provoz směrovat rychlejším ethernetovým připojením a provoz v síti Wi-Fi zeslábne. Systém Windows tuto okolnost zaznamená a zareaguje odpojením připojení Wi-Fi.
+
+      Pokud je toto nastavení zásad zakázané, bude povolené vícenásobné připojení k internetu, k doméně Windows nebo obojí.
+
+      Pokud hodnota tohoto nastavení zásad není nakonfigurovaná, je toto nastavení zásad ve výchozím nastavení povolené. Tato možnost se ale liší od situace, kdy je nastavení zásad povolené zásadami skupiny – pokud toto nastavení zásad není nakonfigurované, je možné ho nakonfigurovat v místním počítači. Pokud je tato zásada nastavená pomocí zásad skupiny, není místně konfigurovatelné. Když hodnota tohoto nastavení zásad není nakonfigurovaná, neprobíhají pokusy o nové automatické připojení a míň preferovaná připojení se odpojí.
+      </string>
+      <string id="WCM_DisablePowerManagement">Zakázat řízení spotřeby v pohotovostním režimu s připojením</string>
+      <string id="WCM_DisablePowerManagement_Help">Toto nastavení zásad určuje, že při přechodu počítače do pohotovostního režimu s připojením bude zakázáno řízení spotřeby. 
+
+      Pokud toto nastavení zásad povolíte, Správce připojení systému Windows při přechodu počítače do pohotovostního režimu s připojením neřídí radiové moduly adaptéru, aby snížily spotřebu energie.
+
+      Pokud toto nastavení zásad zakážete nebo nenakonfigurujete, bude při přechodu počítače do pohotovostního režimu povoleno řízení spotřeby.
+      
+      </string>
+      <string id="WCM_EnableSoftDisconnect">Povolit systému Windows měkké odpojení počítače od sítě</string>
+      <string id="WCM_EnableSoftDisconnect_Help">Nastavení této zásady určuje, jestli systém Windows provede měkké odpojení počítače od sítě.
+
+      Pokud je tato zásada povolená nebo není nakonfigurovaná, systém Windows provede měkké odpojení počítače od sítě, když zjistí, že by už neměl být k síti připojený.
+
+      Pokud je tato zásada zakázaná, pak když systém Windows zjistí, že počítač by už neměl být k síti připojený, odpojí počítač od sítě okamžitě.
+
+      Pokud je měkké odpojení povolené:
+      - Když systém Windows rozhodne, že počítač by už neměl být k síti připojený, počká na dokončení přenosů v této síti. Existující relace TCP bude pokračovat bez přerušení.
+      - Systém Windows pak pravidelně kontroluje úroveň provozu v síti. Pokud je úroveň provozu nad určitou prahovou hodnotou, neproběhne žádná další akce. Počítač zůstane připojený k síti a bude ji dál používat. Pokud se například přes síťové připojení aktuálně stahují soubory z internetu, bude tento proces pokračovat.
+      - Pokud síťový provoz klesne pod prahovou hodnotou, počítač bude od sítě odpojen. Aplikace, které udržují síťové připojení aktivní, i když ho aktivně nepoužívají (například e-mailové aplikace), můžou ztratit připojení. Pokud k tomu dojde, měly by tyto aplikace obnovit připojení přes jinou síť. 
+
+      Nastavení této zásady závisí na nastavení jiných zásad skupiny. Pokud je například zakázaná zásada Minimalizovat počet současných připojení k internetu nebo doméně systému Windows, neodpojí se systém Windows od žádných sítí.
+      </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

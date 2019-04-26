@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft FIDO 驗證</displayName>
+  <description>Microsoft FIDO 驗證設定</description>
+  <resources>
+    <stringTable>
+        <string id="MSFidoAuthenticationCategory">Microsoft FIDO 驗證</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogon">允許使用 FIDO 裝置登入</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogonExplain">此原則可讓使用者使用 FIDO 裝置 (例如手機、NFC 卡) 來登入執行 Windows 10 的桌上型電腦。
+
+如果啟用此原則設定，使用者可以使用 FIDO 裝置登入 Windows。
+
+如果停用或未設定此原則，使用者無法使用 FIDO 裝置來登入。</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

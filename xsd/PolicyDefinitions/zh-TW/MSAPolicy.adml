@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft 帳戶</displayName>
+  <description>Microsoft 帳戶的設定</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Microsoft 帳戶</string>
+        <string id="MicrosoftAccount_DisableUserAuth">封鎖所有消費者 Microsoft 帳戶使用者驗證</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">啟用時，此原則將防止裝置上的所有應用程式與服務透過 Windows OnlineID 與 WebAccountManager API 執行新的消費者 Microsoft 帳戶驗證。此原則不會影響已驗證的應用程式 (除非驗證快取到期)，因此當設定裝置以防止在裝置上出示任何已快取的權杖時，建議您設定此原則。此原則不會影響由使用者直接在使用 OAuth 之瀏覽器或 App 中執行的驗證。
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

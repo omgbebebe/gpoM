@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft 계정</displayName>
+  <description>Microsoft 계정에 대한 구성</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Microsoft 계정</string>
+        <string id="MicrosoftAccount_DisableUserAuth">모든 소비자 Microsoft 계정 사용자 인증 차단</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">사용하도록 설정하면 이 정책은 Windows OnlineID 및 WebAccountManager API를 통해 디바이스에 있는 모든 응용 프로그램 및 서비스의 새로운 소비자 Microsoft 계정 인증을 차단합니다. 이 정책은 인증 캐시가 만료될 때까지 이미 인증된 응용 프로그램에 영향을 주지 않으므로 디바이스를 설정할 때 이 정책을 설정하여 모든 캐시된 토큰이 디바이스에 표시되지 않도록 하는 것이 좋습니다. 이 정책은 브라우저 또는 OAuth를 사용하는 앱에서 사용자가 직접 수행한 인증에 영향을 주지 않습니다.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

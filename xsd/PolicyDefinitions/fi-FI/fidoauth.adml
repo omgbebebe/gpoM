@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoftin FIDO-todennus</displayName>
+  <description>Microsoft-tilin määrityksen FIDO-todennus</description>
+  <resources>
+    <stringTable>
+        <string id="MSFidoAuthenticationCategory">Microsoftin FIDO-todennus</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogon">Ota FIDO-laitteiden käyttö käyttöön sisäänkirjautumista varten</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogonExplain">Tämän käytännön avulla käyttäjät voivat käyttää FIDO-laitetta, kuten puhelinta tai NFC-korttia, kirjautuakseen Windows 10 -pöytätietokoneeseen.
+
+Jos tämä käytäntöasetus otetaan käyttöön, käyttäjät voivat kirjautua Windowsiin käyttämällä FIDO-laitetta.
+
+Jos tämä käytäntöasetus poistetaan käytöstä tai sitä ei määritetä, käyttäjät eivät voi käyttää FIDO-laitetta sisäänkirjautumiseen.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Conta da Microsoft</displayName>
+  <description>Configuração da conta da Microsoft</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Conta da Microsoft</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Bloquear todas as autenticações de usuário da conta da Microsoft de consumidor</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Quando habilitada, esta política impede que todos os aplicativos e serviços no dispositivo usem a autenticação de nova conta da Microsoft de consumidor pelas APIs WebAccountManager e OnlineID do Windows. Esta política pode não afetar os aplicativos que já foram autenticados até que o cache de autenticação expirar. Portanto, convém definir esta política ao configurar um dispositivo para evitar que qualquer token armazenado em cache esteja presente no dispositivo. Esta política não afeta a autenticação executada diretamente pelo usuário em navegadores ou em aplicativos que usam OAuth.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

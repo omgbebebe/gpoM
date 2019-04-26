@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>tutaj wprowadź nazwę wyświetlaną</displayName>
+  <description>tutaj wprowadź opis</description>
+  <resources>
+    <stringTable>
+      <string id="DisplayLastLogonInfoDescription">Wyświetl informacje o poprzednich zalogowaniach podczas logowania użytkownika</string>
+      <string id="DisplayLastLogonInfoDescription_Help">To ustawienie zasad określa, czy system ma wyświetlać informacje o poprzednich logowaniach i niepowodzeniach logowania danego użytkownika.
+
+W przypadku lokalnych kont użytkownika i domenowych kont użytkownika w domenach co najmniej na poziomie funkcjonalnym domeny w systemie Windows Server 2008 włączenie tego ustawienie powoduje, że po zalogowaniu użytkownika będzie wyświetlany komunikat podający datę i godzinę poprzedniego pomyślnego logowania tego użytkownika, datę i godzinę ostatniego niepowodzenia logowania z użyciem tej nazwy użytkownika oraz liczbę nieudanych logowań od ostatniego pomyślnego logowania tego użytkownika. Ten komunikat musi zostać potwierdzony przez użytkownika przed wyświetleniem pulpitu systemu Microsoft Windows.
+
+W przypadku domenowych kont użytkownika w systemie Windows Server 2003, na natywnym poziomie funkcjonalnym domeny w systemie Windows 2000 lub na mieszanym poziomie funkcjonalnym domeny w systemie Windows 2000 włączenie tego ustawienia powoduje wyświetlanie komunikatu z ostrzeżeniem, że system Windows nie może pobrać tych informacji, a użytkownik nie będzie mógł się zalogować. Dlatego nie należy włączać tego ustawienia zasad, jeśli domena nie znajduje się na poziomie funkcjonalnym domeny w systemie Windows Server 2008.
+
+Jeśli to ustawienie zostanie wyłączone lub pozostanie nieskonfigurowane, komunikaty o poprzednich logowaniach i niepowodzeniach logowania nie będą wyświetlane.</string>
+      <string id="Logon">Opcje logowania systemu Windows</string>
+      <string id="LogonHoursAction_Disconnect">Odłącz</string>
+      <string id="LogonHoursAction_Lock">Zablokuj</string>
+      <string id="LogonHoursAction_Logoff">Wyloguj</string>
+      <string id="LogonHoursNotificationPolicyDescription">Usuń ostrzeżenia o upłynięciu czasu logowania</string>
+      <string id="LogonHoursNotificationPolicyDescription_Help">Ta zasada określa, czy zalogowany użytkownik powinien być powiadamiany o upływającym czasie logowania. Domyślnie użytkownik jest powiadamiany przed upływem czasu logowania, jeżeli ustawiono wykonanie akcji w przypadku upłynięcia czasu logowania.
+
+Jeśli to ustawienie zostanie włączone, ostrzeżenia nie będą wyświetlane przed upływem czasu logowania.
+
+Jeśli to ustawienie zostanie wyłączone lub pozostanie nieskonfigurowane, a ustawiono wykonanie akcji w przypadku upłynięcia czasu logowania, użytkownicy przed upływem czasu logowania otrzymają ostrzeżenie.
+
+Uwaga: Jeśli to ustawienie zostanie skonfigurowane, można sprawdzić i właściwie skonfigurować ustawienie „Ustaw akcję wykonywaną po upływie czasu logowania”. Jeśli ustawienie „Ustaw akcję wykonywaną po upływie czasu logowania” jest wyłączone lub nie zostało skonfigurowane, ustawienie „Usuń ostrzeżenia o upłynięciu czasu logowania” nie będzie działać i użytkownicy nie będą otrzymywać ostrzeżeń dotyczących upłynięcia czasu logowania</string>
+      <string id="LogonHoursPolicyDescription">Ustaw akcję wykonywaną po upływie czasu logowania</string>
+      <string id="LogonHoursPolicyDescription_Help">Ta zasada określa, jaka akcja będzie wykonana po upływie czasu logowania dla zalogowanego użytkownika. Akcje obejmują zablokowanie stacji roboczej, rozłączenie użytkownika lub całkowite wylogowanie użytkownika.
+
+Jeśli zostanie wybrane zablokowanie lub rozłączenie sesji, użytkownik nie będzie mógł odblokować sesji ani połączyć się ponownie z wyjątkiem dozwolonych godzin logowania.
+
+Jeśli zostanie wybrane wylogowanie użytkownika, użytkownik nie będzie mógł ponownie się zalogować z wyjątkiem dozwolonych godzin logowania. Jeśli zostanie wybrane wylogowanie użytkownika, użytkownik może utracić niezapisane dane.
+
+Jeśli to ustawienie zostanie włączone, określona akcja zostanie wykonana przez system po upływie czasu logowania użytkownika.
+
+Jeśli to ustawienie zostanie wyłączone lub pozostanie nieskonfigurowane, po upływie czasu logowania system nie wykona żadnej akcji. Użytkownik może kontynuować istniejącą sesję, ale nie może zalogować się do nowej sesji.
+
+Uwaga: Jeśli to ustawienie zostanie skonfigurowane, można sprawdzić i właściwie skonfigurować ustawienie „Usuń ostrzeżenia o upłynięciu czasu logowania”.</string>
+      <string id="ReportCachedLogonPolicyDescription">Zgłoś, gdy serwer logowania był niedostępny podczas logowania użytkownika</string>
+      <string id="ReportCachedLogonPolicyDescription_Help">Ta zasada określa, czy zalogowany użytkownik ma być powiadamiany w przypadku, gdy serwer logowania był niedostępny podczas logowania, a logowanie odbyło się przy użyciu wcześniej zapisanych informacji o koncie.
+
+Jeśli ta zasada jest włączona, podczas logowania użytkownika przy użyciu buforowanych poświadczeń zostanie wyświetlone podręczne powiadomienie.
+
+Jeśli ta zasada jest wyłączona lub nie została skonfigurowana, powiadomienie nie będzie wyświetlane.</string>
+
+      <string id="SoftwareSASGenerationDescription">Włącz lub wyłącz sekwencję SAS dla oprogramowania</string>
+      <string id="SoftwareSASGenerationDescription_Help">To ustawienie zasad określa, czy oprogramowanie może symulować sekwencję SAS (Secure Attention Sequence).
+
+Jeśli to ustawienie zasad zostanie włączone, można wybrać jedną z czterech opcji: 
+
+Ustawienie zasady na „Brak” spowoduje, że oprogramowanie w trybie użytkownika nie będzie mogło symulować sekwencji SAS.
+Ustawienie zasady na „Usługi” spowoduje, że usługi będą mogły symulować sekwencję SAS.
+Ustawienie zasady na „Aplikacje ułatwiające dostęp” spowoduje, że aplikacje ułatwiające dostęp będą mogły symulować sekwencję SAS.
+Ustawienie zasady na „Usługi i aplikacje ułatwiające dostęp” spowoduje, że zarówno usługi, jak i aplikacje ułatwiające dostęp będą mogły symulować sekwencję SAS.
+
+Jeżeli to ustawienie zostanie wyłączone lub pozostanie nieskonfigurowane, to sekwencję SAS będą mogły symulować tylko aplikacje ułatwiające dostęp, uruchomione na bezpiecznym pulpicie.</string>
+
+      <string id="SoftwareSASGeneration_None">Brak</string>
+      <string id="SoftwareSASGeneration_SYSTEM">Usługi</string>
+      <string id="SoftwareSASGeneration_UIAccess">Aplikacje ułatwiające dostęp</string>
+      <string id="SoftwareSASGeneration_Both">Usługi i aplikacje ułatwiające dostęp</string>
+
+      <string id="CustomShellPolicyDescription">Niestandardowy interfejs użytkownika</string>
+      <string id="CustomShellPolicyDescription_Help">Określa alternatywny interfejs użytkownika.
+
+Eksplorator (%windir%\explorer.exe) tworzy znany interfejs systemu Windows, ale za pomocą tego ustawienia można określić interfejs alternatywny. Po włączeniu tego ustawienia, system będzie uruchamiany z wybranym interfejsem, a nie z interfejsem programu Explorer.exe.
+
+Aby korzystać z tego ustawienia, należy skopiować program tworzący interfejs na udział sieciowy lub na dysk systemowy. Następnie należy włączyć to ustawienie i w polu tekstowym Nazwa powłoki wpisać nazwę programu interfejsu, w tym rozszerzenie nazwy pliku. Jeżeli plik programu zapewniającego interfejs nie znajduje się w folderze podanym w zmiennej środowiskowej Path, należy wprowadzić w pełni kwalifikowaną ścieżkę do tego pliku.
+
+Jeśli to ustawienie zostanie wyłączone lub nie zostanie skonfigurowane, system zignoruje je i wyświetli interfejs Eksploratora.
+
+Porada: aby znaleźć foldery wskazane przez zmienną środowiskową Path, należy kliknąć ikonę System w Panelu sterowania, kliknąć kartę Zaawansowane, kliknąć przycisk Zmienne środowiskowe, a następnie w polu Zmienne systemowe kliknąć zmienną Path.</string>
+
+      <string id="AutomaticRestartSignOnDescription">Automatycznie zaloguj ostatniego użytkownika interakcyjnego po ponownym uruchomieniu zainicjowanym przez system</string>
+      <string id="AutomaticRestartSignOnDescription_Help">To ustawienie zasad steruje tym, czy urządzenie automatycznie zaloguje ostatniego użytkownika interakcyjnego po ponownym uruchomieniu systemu przez usługę Windows Update.
+
+Jeśli to ustawienie zasad zostanie włączone lub nie zostanie skonfigurowane, urządzenie bezpiecznie zapisze poświadczenia użytkownika (w tym nazwę użytkownika, domenę i zaszyfrowane hasło) w celu skonfigurowania automatycznego logowania po ponownym uruchomieniu systemu przez usługę Windows Update. Po ponownym uruchomieniu systemu Windows użytkownik zostanie automatycznie zalogowany i sesja zostanie automatycznie zablokowana ze wszystkimi aplikacjami ekranu blokady skonfigurowanymi dla tego użytkownika.
+
+Jeśli to ustawienie zasad zostanie wyłączone, urządzenie nie zapisze poświadczeń użytkownika na potrzeby automatycznego logowania po ponownym uruchomieniu systemu przez usługę Windows Update. Aplikacje ekranu blokady użytkownika nie zostaną ponownie uruchomione po ponownym uruchomieniu systemu.</string>
+
+    </stringTable>
+    <presentationTable>
+      <presentation id="LogonHoursPolicyDescription">
+        <dropdownList refId="LogonHoursPolicyDescription" noSort="true">Ustaw akcję wykonywaną po upływie czasu logowania</dropdownList>
+      </presentation>
+      <presentation id="SoftwareSASGenerationDescription">
+        <dropdownList refId="SoftwareSASGenerationDescription" noSort="true">Określ, jakie oprogramowanie może generować sekwencję SAS</dropdownList>
+      </presentation>
+      <presentation id="CustomShell">
+        <textBox refId="CustomShellInst">
+          <label>Nazwa pliku interfejsu (na przykład Explorer.exe)</label>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

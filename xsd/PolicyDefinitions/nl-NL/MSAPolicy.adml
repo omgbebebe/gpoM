@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft-account</displayName>
+  <description>Configuratie voor Microsoft-account</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Microsoft-account</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Alle gebruikersauthenticatie van Microsoft-consumentenaccounts blokkeren</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Wanneer deze beleidsinstelling is ingeschakeld, wordt voorkomen dat Microsoft-accountauthenticatie wordt gebruikt voor nieuwe gebruikers op alle toepassingen en services op het apparaat via de Windows OnlineID- en WebAccountManager-API's. Dit beleid is mogelijk niet van toepassing op toepassingen die al zijn geauthenticeerd voordat de authenticatiecache verloopt. Daarom wordt aanbevolen dit beleid in te stellen zodra u een apparaat configureert, om te voorkomen dat tokens in cache op het apparaat aanwezig zijn. Dit beleid heeft geen effect op authenticatie die rechtstreeks door de gebruiker wordt uitgevoerd in browsers of in apps die OAuth gebruiken.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

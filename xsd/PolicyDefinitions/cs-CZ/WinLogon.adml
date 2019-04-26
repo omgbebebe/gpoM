@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Sem zadejte zobrazovaný název.</displayName>
+  <description>Sem zadejte popis.</description>
+  <resources>
+    <stringTable>
+      <string id="DisplayLastLogonInfoDescription">Zobrazit informace o předchozích přihlášeních během přihlášení uživatele</string>
+      <string id="DisplayLastLogonInfoDescription_Help">Toto nastavení zásad určuje, zda systém uživateli zobrazí informace o předchozích přihlášeních a chybách přihlášení.
+
+Pokud toto nastavení povolíte, zobrazí se pro místní účty uživatelů a účty uživatelů domény v doménách s úrovní funkčnosti Windows Server 2008 po přihlášení uživatele zpráva s informacemi o datu a čase posledního úspěšného přihlášení tohoto uživatele, datu a čase posledního neúspěšného přihlášení s daným uživatelským jménem a počtu neúspěšných přihlášení od posledního úspěšného přihlášení uživatele. Tato zpráva musí být potvrzena uživatelem; teprve potom se uživateli zobrazí plocha systému Microsoft Windows.
+
+Pokud toto nastavení povolíte pro účty uživatelů domény v doménách s úrovní funkčnosti Windows Server 2003, Windows 2000 – nativní režim nebo Windows 2000 – smíšený režim, zobrazí se varovná zpráva, že systém Windows nemohl načíst informace, a uživatel se nebude moci přihlásit. Proto byste neměli toto nastavení zásad povolovat v případě, že se doména nenachází na úrovni funkčnosti Windows Server 2008.
+
+Jestliže toto nastavení zakážete nebo nenakonfigurujete, zprávy o předchozích přihlášeních a chybách přihlašování se nezobrazí.</string>
+      <string id="Logon">Možnosti přihlášení k systému Windows</string>
+      <string id="LogonHoursAction_Disconnect">Odpojit</string>
+      <string id="LogonHoursAction_Lock">Uzamknout</string>
+      <string id="LogonHoursAction_Logoff">Odhlásit</string>
+      <string id="LogonHoursNotificationPolicyDescription">Odebrat upozornění o vypršení přihlašovacích hodin</string>
+      <string id="LogonHoursNotificationPolicyDescription_Help">Nastavení této zásady určuje, zda má být přihlášený uživatel upozorněn, když se blíží vypršení jeho přihlašovacích hodin. Ve výchozím nastavení je uživatel před vypršením přihlašovacích hodin upozorňován, pokud byly nastaveny akce, které mají být podniknuty po vypršení přihlašovacích hodin.
+
+Pokud toto nastavení povolíte, nebudou zobrazována upozornění o blížícím se vypršení přihlašovacích hodin.
+
+Pokud toto nastavení zakážete nebo nenakonfigurujete, uživatelům se budou před vypršením přihlašovacích hodin zobrazovat upozornění, pokud byly nastaveny akce, které mají být podniknuty po vypršení přihlašovacích hodin.
+
+Poznámka: Pokud toto nastavení nakonfigurujete, pravděpodobně budete chtít zkontrolovat a nakonfigurovat nastavení Nastavit akci po vypršení přihlašovacích hodin. Pokud je nastavení Nastavit akci po vypršení přihlašovacích hodin zakázáno nebo není nakonfigurováno, nastavení Odebrat upozornění o vypršení přihlašovacích hodin nebude mít žádný vliv a uživatelé nebudou dostávat žádná upozornění o vypršení přihlašovacích hodin.</string>
+      <string id="LogonHoursPolicyDescription">Nastavit akci po vypršení přihlašovacích hodin</string>
+      <string id="LogonHoursPolicyDescription_Help">Nastavení této zásady určuje, jaká akce bude podniknuta, když přihlášenému uživateli vyprší přihlašovací hodiny. Akce zahrnují uzamknutí pracovní stanice, odpojení uživatele nebo úplné odhlášení uživatele.
+
+Pokud vyberete uzamknutí nebo odpojení relace, uživatel nebude moci relaci odemknout ani se znovu připojit mimo povolené přihlašovací hodiny.
+
+Pokud vyberete akci odhlášení uživatele, nebude se uživatel moci znovu přihlásit mimo povolené přihlašovací hodiny. Pokud vyberete akci odhlášení uživatele, uživatel může ztratit neuložená data.
+
+Pokud toto nastavení povolíte, systém po vypršení přihlašovacích hodin uživatele provede zadanou akci.
+
+Pokud toto nastavení zakážete nebo nenakonfigurujete, systém nebude po vypršení přihlašovacích hodin uživatele provádět žádnou akci. Uživatel bude moci pokračovat v existující relaci, ale nebude se moci přihlásit k nové relaci.
+
+Poznámka: Pokud toto nastavení nakonfigurujete, pravděpodobně budete chtít zkontrolovat a nakonfigurovat nastavení Odebrat upozornění o vypršení přihlašovacích hodin.</string>
+      <string id="ReportCachedLogonPolicyDescription">Hlásit nedostupnost přihlašovacího serveru během přihlašování uživatele</string>
+      <string id="ReportCachedLogonPolicyDescription_Help">Nastavení této zásady určuje, zda má být přihlášený uživatel upozorněn, pokud během přihlašování nemohl být kontaktován přihlašovací server a uživatel byl přihlášen pomocí dříve uložených informací o účtu.
+
+Pokud toto nastavení povolíte, zobrazí se uživateli zpráva, je-li přihlášen pomocí přihlašovacíc údajů v mezipaměti.
+
+Pokud toto nastavení zakážete nebo nenakonfigurujete, nezobrazí se uživateli žádná zpráva.</string>
+
+      <string id="SoftwareSASGenerationDescription">Zakázat nebo povolit software SAS (Secure Attention Sequence)</string>
+      <string id="SoftwareSASGenerationDescription_Help">Nastavení této zásady určuje, zda může software simulovat SAS (Secure Attention Sequence).
+
+Pokud toto nastavení povolíte, máte jednu ze čtyř možností: 
+
+Pokud nastavíte tuto zásadu na hodnotu Žádné, nemůže software uživatelského režimu simulovat SAS.
+Pokud nastavíte toto nastavení na hodnotu Služby, služby mohou simulovat SAS.
+Pokud nastavíte toto nastavení zásad na hodnotu Aplikace Usnadnění přístupu, mohou aplikace Usnadnění přístupu simulovat SAS.
+Pokud nastavíte toto nastavení zásad na hodnotu Služby a aplikace Usnadnění přístupu, mohou jak služby, tak aplikace Usnadnění přístupu simulovat SAS.
+
+Pokud toto nastavení zakážete nebo nenakonfigurujete, mohou simulovat SAS pouze aplikace Usnadnění přístupu na zabezpečené ploše.</string>
+
+      <string id="SoftwareSASGeneration_None">Žádné</string>
+      <string id="SoftwareSASGeneration_SYSTEM">Služby</string>
+      <string id="SoftwareSASGeneration_UIAccess">Aplikace Usnadnění přístupu</string>
+      <string id="SoftwareSASGeneration_Both">Služby a aplikace Usnadnění přístupu</string>
+
+      <string id="CustomShellPolicyDescription">Vlastní uživatelské rozhraní</string>
+      <string id="CustomShellPolicyDescription_Help">Tato možnost určuje alternativní uživatelské rozhraní.
+
+Program Průzkumník (%windir%\explorer.exe) vytvoří běžné rozhraní systému Windows, toto nastavení ale můžete použít pro určení alternativního rozhraní. Pokud toto nastavení povolíte, systém spustí místo programu Explorer.exe určené rozhraní.
+
+Chcete-li toto nastavení použít, zkopírujte program rozhraní do síťového sdílení nebo na systémovou jednotku. Potom povolte toto nastavení a zadejte název souboru rozhraní včetně přípony do textového pole Název prostředí. Jestliže není programový soubor rozhraní umístěn ve složce uvedené v proměnné prostředí Path vašeho systému, zadejte úplnou cestu k souboru.
+
+Pokud toto nastavení zakážete nebo nenakonfigurujete, bude ignorováno a systém zobrazí rozhraní programu Průzkumník.
+
+Tip: Chcete-li najít složky označené systémovou proměnnou Path, klikněte na ovládacím panelu na ikonu Vlastnosti systému, pak na kartu Upřesnit a na tlačítko Proměnné prostředí a v seznamu Systémové proměnné klikněte na položku Path.</string>
+
+      <string id="AutomaticRestartSignOnDescription">Automaticky přihlásit posledního interaktivního uživatele po restartování vyvolaném systémem</string>
+      <string id="AutomaticRestartSignOnDescription_Help">Toto nastavení zásad určuje, zda zařízení automaticky přihlásí posledního interaktivního uživatele poté, co služba Windows Update restartuje systém.
+
+Pokud nastavení této zásady povolíte nebo nenakonfigurujete, zařízení bezpečně uloží přihlašovací údaje uživatele (včetně uživatelského jména, domény a zašifrovaného hesla) pro konfiguraci automatického přihlášení po restartování služby Windows Update. Po restartování služby Windows Update je uživatel automaticky přihlášen a relace se automaticky zamkne se všemi aplikacemi na zamykací obrazovce nakonfigurovanými pro tohoto uživatele.
+
+Pokud toto nastavení zásad zakážete, zařízení neuloží přihlašovací údaje uživatele pro automatické přihlášení po restartování služby Windows Update. Aplikace na zamykací obrazovce se po restartování systému nerestartují.</string>
+
+    </stringTable>
+    <presentationTable>
+      <presentation id="LogonHoursPolicyDescription">
+        <dropdownList refId="LogonHoursPolicyDescription" noSort="true">Nastavit akci po vypršení přihlašovacích hodin</dropdownList>
+      </presentation>
+      <presentation id="SoftwareSASGenerationDescription">
+        <dropdownList refId="SoftwareSASGenerationDescription" noSort="true">Nastavit, který software může generovat SAS (Secure Attention Sequence)</dropdownList>
+      </presentation>
+      <presentation id="CustomShell">
+        <textBox refId="CustomShellInst">
+          <label>Název souboru rozhraní (například Explorer.exe)</label>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Gruppepolitikindstillinger for Windows Forbindelsesstyring</displayName>
+  <description>Gruppepolitikindstillinger for Windows Forbindelsesstyring</description>
+  <resources>
+    <stringTable>
+      <string id="WCM_Category">Windows Forbindelsesstyring</string>
+      <string id="WCM_BlockNonDomain">Forbyd forbindelse til ikke-domænenetværk, når der er forbindelse til domænegodkendt netværk</string>
+      <string id="WCM_BlockNonDomain_Help">Denne politikindstilling forhindrer computere i at oprette forbindelse til både et domænebaseret netværk og et ikke-domænebaseret netværk samtidig.
+      
+      Hvis denne politikindstilling er aktiveret, reagerer computeren på automatiske og manuelle forsøg på at få netværksforbindelse ud fra følgende betingelser:
+      
+      Forsøg på automatisk forbindelse
+      - Når computeren allerede har forbindelse til et domænebaseret netværk, blokeres alle forsøg på automatisk forbindelse til ikke-domænenetværk.
+      - Når computeren allerede har forbindelse til et ikke-domænebaseret netværk, blokeres forsøg på automatisk forbindelse til domænebaseret netværk.
+      
+      Forsøg på manuel forbindelse
+      - Når computeren allerede har forbindelse til enten et ikke-domænebaseret netværk eller et domænebaseret netværk via andre medier end Ethernet, og en bruger forsøger at oprette en manuel forbindelse til et ekstra netværk i modstrid med denne politikindstilling, afbrydes den eksisterende netværksforbindelse, og den manuelle forbindelse tillades.
+      - Når computeren allerede har forbindelse til enten et ikke-domænebaseret netværk eller et domænebaseret netværk via Ethernet, og en bruger forsøger at oprette en manuel forbindelse til et ekstra netværk i modstrid med denne politikindstilling, bevares den eksisterende Ethernet-forbindelse, og forsøget på manuel forbindelse blokeres.
+
+      Hvis denne politikindstilling ikke er konfigureret, eller den er deaktiveret, har computere tilladelse til at oprette samtidig forbindelse til både domæne- og ikke-domænenetværk.
+      
+      </string>
+      <string id="WCM_DisableRoaming">Forbyd forbindelse til roaming af mobile bredbåndsnetværk</string>
+      <string id="WCM_DisableRoaming_Help">Denne politikindstilling forhindrer klienter i at oprette forbindelse til mobile bredbåndsnetværk, når klienten er registreret på et roamingudbydernetværk. 
+
+      Hvis denne politikindstilling er aktiveret, blokeres alle automatiske og manuelle forsøg på forbindelse til roamingudbydernetværk, indtil klienten er registreret hos hjemmeudbydernetværket.
+      
+      Hvis denne politikindstilling ikke er konfigureret, eller den er deaktiveret, har klienter tilladelse til at oprette forbindelse til roamingudbyderes mobile bredbåndsnetværk.
+      
+      </string>
+      <string id="WCM_MinimizeConnections">Minimer antallet af samtidige forbindelser til internettet eller et Windows-domæne</string>
+      <string id="WCM_MinimizeConnections_Help">Denne politikindstilling forhindrer computere i at oprette flere samtidige forbindelser til enten internettet eller et Windows-domæne. Hvis denne politikindstilling er angivet til Ikke konfigureret, er den som standard aktiveret.
+      
+      Hvis denne politikindstilling er aktiveret, når computeren har mindst én aktiv forbindelse til internettet, blokeres et nyt automatisk forsøg på forbindelse til internettet. Når computeren har mindst én aktiv forbindelse til et Windows-domæne, blokeres også en ny automatisk forbindelse til det samme Windows-domæne. Flere manuelle brugerforsøg på forbindelse til internettet eller et Windows-domæne blokeres ikke af denne politikindstilling.
+      
+      I tilfælde, hvor der er flere samtidige forbindelser til enten internettet eller et Windows-domæne, afbrydes forbindelsen til den mindst foretrukne forbindelse, når mængden af netværkstrafik via den mindst foretrukne forbindelse falder under en vis tærskel. Hvis en computer f.eks. har en WLAN-forbindelse til internettet, og brugeren opretter forbindelse til et Ethernet-netværk, dirigeres netværkstrafikken gennem den hurtigere Ethernet-forbindelse, og WLAN-trafikken mindskes. Windows registrerer denne situation og reagerer ved at afbryde WLAN-forbindelsen.
+
+      Hvis denne politikindstilling ikke er konfigureret, eller den er deaktiveret, tillades flere samtidige forbindelser til internettet, til et Windows-domæne eller til begge dele.
+
+      Hvis denne politikindstilling er angivet til Ikke konfigureret, er den som standard aktiveret. Det adskiller sig dog fra at aktivere politikindstillingen med gruppepolitikken: Når politikindstillingen er Ikke konfigureret, kan politikindstillingen konfigureres på den lokale computer. Når politikindstillingen anvendes med gruppepolitik, kan den ikke konfigureres lokalt. Når politikindstillingen er angivet til Ikke konfigureret, foretages der ikke nye automatiske tilslutningsforsøg, og færre foretrukne forbindelser afbrydes.      
+      </string>
+      <string id="WCM_DisablePowerManagement">Deaktiver strømstyring i tilsluttet standbytilstand</string>
+      <string id="WCM_DisablePowerManagement_Help">Denne politikindstilling angiver, at strømstyring deaktiveres, når computeren går i tilsluttet standbytilstand. 
+
+      Hvis denne politikindstilling er aktiveret, får Windows Forbindelsesstyring ikke adapterradioer til at reducere strømforbruget, når computeren går i tilsluttet standbytilstand.
+
+      Hvis denne politikindstilling ikke er konfigureret, eller den er deaktiveret, aktiveres strømstyring, når computeren går i tilsluttet standbytilstand.
+      
+      </string>
+      <string id="WCM_EnableSoftDisconnect">Gør det muligt for Windows at foretage en blød afbrydelse af forbindelsen til en computer fra et netværk</string>
+      <string id="WCM_EnableSoftDisconnect_Help">Denne politikindstilling bestemmer, om Windows foretager en blød afbrydelse af forbindelsen mellem en computer og et netværk.
+
+      Hvis indstillingen er aktiveret eller ikke er konfigureret, foretages en blød afbrydelse af forbindelsen mellem en computer og et netværk, når Windows afgør, at computeren ikke længere skal have forbindelse til et netværk.
+
+      Hvis politikindstillingen er deaktiveret, afbrydes forbindelsen mellem en computer og et netværk straks, når Windows afgør, at computeren ikke længere skal have forbindelse til netværket.
+
+      Når blød afbrydelse er aktiveret:
+      - Når Windows afgør, at computeren ikke længere skal have forbindelse til et netværk, afventes, at trafikken falder til ro på dette netværk. Den eksisterende TCP-session fortsætter uden afbrydelse.
+      - Derefter kontrollerer Windows trafikniveauet på netværket med jævne mellemrum. Hvis trafikniveauet er over en bestemt tærskel, udføres der ingen yderligere handling. Computeren bevarer forbindelsen til netværket og fortsætter med at bruge det. Hvis netværksforbindelsen for eksempel i øjeblikket bruges til at downloade filer fra internettet, vil filerne fortsat blive downloadet ved hjælp af denne netværksforbindelse.
+      - Når netværkstrafikken falder til under denne tærskelværdi, afbrydes computerens forbindelse til netværket. Apps, der bevarer en netværksforbindelse aktiv, også selvom de ikke bruger den aktivt (for eksempel mailapps) risikerer at miste forbindelsen. Hvis dette sker, skal disse apps genoprette deres forbindelse via et andet netværk. 
+
+      Politikindstillingen, afhænger af andre indstillinger for gruppepolitik. Hvis "Minimer antallet af samtidige forbindelser til internettet eller et Windows-domæne" for eksempel er deaktiveret, vil Windows ikke afbryde forbindelsen til noget netværk.
+      </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

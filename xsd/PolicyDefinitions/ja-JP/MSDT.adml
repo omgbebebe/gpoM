@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>表示名をここに入力する</displayName>
+  <description>説明をここに入力する</description>
+  <resources>
+    <stringTable>
+      <string id="WdiScenarioCategory">Microsoft サポート診断ツール</string>
+      <string id="WdiScenarioExecutionPolicy">Microsoft サポート診断ツール: 実行レベルを構成する</string>
+      <string id="WdiScenarioExecutionPolicyExplain">このポリシー設定は、Microsoft サポート診断ツールの実行レベルを決定します。
+
+Microsoft サポート診断ツール (MSDT) は、サポート担当者による分析に使用される診断データを収集します。
+
+このポリシー設定を有効にすると、管理者は MSDT を使用して問題を解決するための診断データを収集し、サポート担当者に送信できます。
+
+このポリシー設定を無効にすると、MSDT による診断データの収集はできません。
+
+このポリシー設定を構成しない場合、既定で MSDT が有効になります。
+
+このポリシー設定は、診断全体のシナリオ実行ポリシーが構成されていない場合のみ有効です。
+
+このポリシー設定を有効にするために、再起動したり、サービスを再開したりする必要はありません。変更はすぐに有効になります。
+
+このポリシー設定は、診断ポリシー サービス (DPS) が実行状態である場合にのみ有効になります。サービスが停止している場合や無効になっている場合は、診断シナリオが実行されません。DPS は、Microsoft 管理コンソールのサービス スナップインを使用して構成できます。</string>
+
+      <string id="MsdtToolDownloadPolicy">Microsoft サポート診断ツール: ツールのダウンロードを制限する</string>
+      <string id="MsdtToolDownloadPolicyExplain">このポリシー設定は、Microsoft サポート診断ツールのツール ダウンロード ポリシーを制限します。
+
+Microsoft サポート診断ツール (MSDT) は、サポート担当者による分析に使用される診断データを収集します。 一部の問題については、トラブルシューティング用に追加ツールのダウンロードをユーザーに求めるメッセージが表示されることがあります。
+
+こうしたツールは、問題を完全にトラブルシューティングするために必要なツールです。 ツールのダウンロードが制限されていると、問題の根本的な原因を見つけられないことがあります。
+
+リモート トラブルシューティング用にこのポリシー設定を有効にすると、リモート コンピューターのみに関する問題を診断する追加のツールのダウンロードを求めるメッセージが、ユーザーに対して表示されます。 ローカルおよびリモートのトラブルシューティングに対してこのポリシー設定を有効にすると、MSDT により常に追加のツールのダウンロードを求めるメッセージが表示されます。
+
+このポリシー設定を無効にすると、MSDT によるツールのダウンロードが行われなくなり、リモート コンピューターに関する問題を診断できなくなります。
+
+このポリシー設定を構成しない場合、MSDT により、追加のツールをダウンロードする前にユーザーに対して確認メッセージが表示されます。
+
+このポリシー設定を有効にするために、再起動したり、サービスを再開したりする必要はありません。変更はすぐに有効になります。
+
+このポリシー設定は、MSDT が有効である場合にのみ有効になります。
+
+このポリシー設定は、診断ポリシー サービス (DPS) が実行状態である場合にのみ有効になります。 サービスが停止している場合や無効になっている場合は、診断シナリオが実行されません。 DPS は、Microsoft 管理コンソールのサービス スナップインを使用して構成できます。</string>
+      <string id="MsdtToolDownloadPolicyLevelRemoteOnly">リモート トラブルシューティングのみ</string>
+      <string id="MsdtToolDownloadPolicyLevelAllowAll">ローカルおよびリモート トラブルシューティング</string>
+      <string id="MsdtSupportProvider">Microsoft サポート診断ツール: MSDT とサポート プロバイダーとの対話型通信を有効にする</string>
+      <string id="MsdtSupportProviderExplain">このポリシー設定は、Microsoft サポート診断ツール (MSDT) とサポート プロバイダーとの対話型通信を構成します。MSDT は、サポート担当者による分析に使用される診断データを収集します。
+
+このポリシー設定を有効にすると、ユーザーは MSDT を使用して問題を解決するための診断データを収集し、サポート担当者に送信することができます。
+
+既定では、サポート プロバイダーは Microsoft Corporation に設定されています。
+
+このポリシー設定を無効にした場合、MSDT はサポート モードで実行できなくなり、データを収集することも、データをサポート プロバイダーに送信することもできません。
+
+このポリシー設定を構成しなかった場合、MSDT のサポート モードは既定で有効になります。
+
+このポリシー設定を有効にするために、再起動したり、サービスを再開したりする必要はありません。変更はすぐに有効になります。
+
+
+
+</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="MsdtToolDownloadPolicy">
+        <dropdownList refId="MsdtToolDownloadPolicyLevel" noSort="true" defaultItem="1">ツールのダウンロードが許可されました</dropdownList>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

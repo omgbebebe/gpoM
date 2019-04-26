@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Λογαριασμός Microsoft</displayName>
+  <description>Ρυθμίσεις παραμέτρων για λογαριασμό Microsoft</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Λογαριασμός Microsoft</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Αποκλεισμός κάθε ελέγχου ταυτότητας χρήστη καταναλωτικού λογαριασμού της Microsoft</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Όταν ενεργοποιηθεί, αυτή η πολιτική θα αποκλείει όλες τις εφαρμογές και υπηρεσίες στη συσκευή από έλεγχο ταυτότητας νέων καταναλωτικών λογαριασμών Microsoft μέσω των API OnlineID και WebAccountManager των Windows. Αυτή η πολιτική ενδέχεται να μην επηρεάσει εφαρμογές για τις οποίες έχει γίνει ήδη έλεγχος ταυτότητας έως ότου λήξει το cache ελέγχου ταυτότητας, συνεπώς συνιστάται να ορίζεται αυτή η πολιτική κατά την αρχική ρύθμιση παραμέτρων μιας συσκευής, ώστε να αποτρέπεται η ύπαρξη διακριτικών στο cache της συσκευής. Αυτή η πολιτική δεν επηρεάζει τον έλεγχο ταυτότητας που γίνεται κατευθείαν από το χρήστη σε προγράμματα περιήγησης ή σε εφαρμογές που χρησιμοποιούν OAuth.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

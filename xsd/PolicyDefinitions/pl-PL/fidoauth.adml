@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Uwierzytelnianie FIDO firmy Microsoft</displayName>
+  <description>Konfiguracja uwierzytelniania FIDO firmy Microsoft</description>
+  <resources>
+    <stringTable>
+        <string id="MSFidoAuthenticationCategory">Uwierzytelnianie FIDO firmy Microsoft</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogon">Włącz używanie urządzeń FIDO do logowania</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogonExplain">To ustawienie zasad umożliwia użytkownikom logowanie się do komputera stacjonarnego z systemem Windows 10 przy użyciu urządzenia FIDO, takiego jak telefon lub karta NFC.
+
+Jeśli włączysz to ustawienie zasad, użytkownicy będą mogli logować się do systemu Windows za pomocą urządzenia FIDO.
+
+Jeśli wyłączysz to ustawienie zasad albo go nie skonfigurujesz, użytkownicy nie będą mogli używać urządzeń FIDO do logowania.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

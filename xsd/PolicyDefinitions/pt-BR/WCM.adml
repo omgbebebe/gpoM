@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Definições de Política de Grupo do Gerenciador de Conexões do Windows</displayName>
+  <description>Definições de Política de Grupo do Gerenciador de Conexões do Windows</description>
+  <resources>
+    <stringTable>
+      <string id="WCM_Category">Gerenciador de Conexões do Windows</string>
+      <string id="WCM_BlockNonDomain">Proibir conexão com redes que não pertencem a domínios quando conectado a uma rede de domínio autenticada</string>
+      <string id="WCM_BlockNonDomain_Help">Esta configuração de política evita que os computadores se conectem simultaneamente a uma rede baseada em domínio e a outra rede não baseada em domínio.
+      
+      Se esta configuração de política for habilitada, o computador responderá a tentativas de conexão automática e manual com base nas seguintes circunstâncias:
+      
+      Tentativas de conexão automática
+      - Quando o computador já se encontra conectado a uma rede baseada em domínio, todas as tentativas de conexão automática a redes que não pertencem a um domínio são bloqueadas.
+      - Quando o computador já se encontra conectado a uma rede não baseada em domínio, as tentativas de conexão automática com redes baseadas em domínio são bloqueadas.
+      
+      Tentativas de conexão manual
+      - Quando o computador já se encontra conectado a uma rede não baseada em domínio ou a uma rede baseada em domínio por meio de outra mídia que não seja Ethernet e um usuário tenta criar uma conexão manual com uma rede adicional em violação a esta configuração de política, a conexão existente com a rede é desfeita e a conexão manual é permitida.
+            - Quando o computador já se encontra conectado a uma rede não baseada em domínio ou a uma rede baseada em domínio pela Ethernet e um usuário tenta criar uma conexão manual com uma rede adicional em violação a esta configuração de política, a conexão existente com a Ethernet é mantida e a tentativa de conexão manual é bloqueada.
+
+      Se esta configuração de política não for definida ou estiver desabilitada, será permitido que os computadores se conectem simultaneamente a redes que pertençam ou não a um domínio.
+      
+      </string>
+      <string id="WCM_DisableRoaming">Proibir conexão com redes de Banda Larga Móvel em roaming</string>
+      <string id="WCM_DisableRoaming_Help">Esta configuração de política evita que os clientes se conectem a redes de Banda Larga Móvel quando o cliente estiver registrado em uma rede de provedor em roaming. 
+
+      Se esta configuração de política for habilitada, todas as tentativas de conexão automática e manual com redes de provedor em roaming serão bloqueadas até que o cliente se registre na rede de provedor doméstica.
+      
+      Se esta configuração de política não for definida ou estiver desabilitada, será permitido que os clientes se conectem a redes de Banda Larga Móvel em roaming.
+      
+      </string>
+      <string id="WCM_MinimizeConnections">Minimizar o número de conexões simultâneas com a Internet ou com um Domínio do Windows</string>
+      <string id="WCM_MinimizeConnections_Help">Esta configuração de política evita que os computadores estabeleçam várias conexões simultâneas com a Internet ou com um domínio do Windows. Por padrão, quando o valor dessa configuração de política é Não Configurado, ela é habilitada.
+      
+      Se essa configuração de política for habilitada, quando o computador tiver pelo menos uma conexão ativa com a Internet, uma nova tentativa de conexão automática com a Internet será bloqueada. Quando o computador possui pelo menos uma conexão ativa com um domínio do Windows, uma nova conexão automática com esse mesmo domínio do Windows é bloqueada. Outras tentativas de conexão manual com a Internet ou com um domínio do Windows por parte dos usuários não são bloqueadas por esta configuração de política.
+      
+      Nos casos em que há diversas conexões simultâneas com a Internet ou com um domínio do Windows, o Windows desconecta a conexão menos relevante quando a quantidade de tráfego de rede na conexão menos relevante fica abaixo de um determinado limite mínimo. Por exemplo, quando um computador é conectado à Internet por uma conexão WLAN e o usuário o conecta fisicamente a uma rede Ethernet, o tráfego de rede é roteado através da conexão Ethernet mais rápida e o tráfego da conexão WLAN diminui. O Windows detecta essa circunstância e responde desconectando a conexão WLAN.
+
+      Se essa configuração de política for desabilitada, serão permitidas várias conexões simultâneas com a Internet ou com um domínio do Windows, ou com ambos.
+
+      Se o valor dessa configuração de política for Não Configurado, a configuração de política padrão será habilitada. Isso é diferente de habilitar a configuração de política com a Política de Grupo; porém, quando a configuração de política é Não Configurado, ela pode ser configurada no computador local. Quando a configuração de política é aplicada com a Política de Grupo, ela não pode ser configurada localmente. Com o valor da configuração de política Não Configurado, não são feitas novas tentativas de conexão automática, e as conexões menos preferenciais são desconectadas.
+      </string>
+      <string id="WCM_DisablePowerManagement">Desabilitar o gerenciamento de energia no modo em espera conectado</string>
+      <string id="WCM_DisablePowerManagement_Help">Esta configuração de política especifica que o gerenciamento de energia fica desabilitado quando o computador entra em modo de espera conectado. 
+
+      Se esta configuração de política for habilitada, o Gerenciador de Conexões do Windows não gerenciará os rádios de adaptador para reduzir o consumo de energia quando o computador entrar no modo de espera conectado.
+
+      Se esta configuração de política não for definida ou estiver desabilitada, o gerenciamento de energia será habilitado quando o computador entrar no modo de espera conectado.
+      
+      </string>
+      <string id="WCM_EnableSoftDisconnect">Habilitar o Windows a desconectar temporariamente um computador de uma rede</string>
+      <string id="WCM_EnableSoftDisconnect_Help">Essa configuração de política determina se o Windows desconectará um computador a partir de uma rede.
+
+Se essa configuração de política estiver habilitada ou não configurada, o Windows desconectará um computador de uma rede quando ele determinar que o computador não deve mais ser conectado a uma rede.
+
+Se essa configuração de política estiver desabilitada, o Windows desconectará um computador de uma rede imediatamente quando determinar que o computador não deve mais ser conectado a uma rede.
+
+Quando a desconexão soft está habilitada:
+      -Quando o Windows decide que o computador não deve mais ser conectado a uma rede, ele espera que o tráfego se estabeleça nessa rede. A sessão TCP existente continuará ininterrupta.
+      - O Windows, em seguida, verifica o nível de tráfego na rede periodicamente. Se o nível de tráfego estiver acima de um determinado limite, nenhuma outra ação será tomada. O computador permanece conectado à rede e continua a usá-lo. Por exemplo, se a conexão de rede estiver sendo usada no momento para baixar arquivos da Internet, os arquivos continuarão sendo baixados usando essa conexão de rede.
+      -Quando o tráfego de rede cair abaixo deste limite, o computador será desconectado da rede. Os apps que mantêm uma conexão de rede ativa mesmo quando não o estão usando ativamente (por exemplo, apps do email) puderam perder sua conexão. Se isso acontecer, esses aplicativos devem restabelecer sua conexão em uma rede diferente. 
+
+      Essa configuração de política depende de outras configurações de política de grupo. Por exemplo, se ' minimizar o número de conexões simultâneas com a Internet ou um domínio do Windows ' estiver desabilitado, o Windows não se desconectará de nenhuma rede.
+      </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

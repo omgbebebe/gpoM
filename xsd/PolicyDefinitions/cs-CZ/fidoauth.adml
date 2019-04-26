@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Ověřování Microsoft FIDO</displayName>
+  <description>Konfigurace pro ověřování Microsoft FIDO</description>
+  <resources>
+    <stringTable>
+        <string id="MSFidoAuthenticationCategory">Ověřování Microsoft FIDO</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogon">Povolit používání zařízení FIDO k přihlášení</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogonExplain">Tato zásada umožňuje uživatelům používat zařízení FIDO, jako je telefon nebo karta NFC, k přihlášení ke stolnímu počítači se systémem Windows 10.
+
+Pokud nastavení této zásady povolíte, uživatelé se budou moci do Windows přihlásit pomocí zařízení FIDO.
+
+Pokud tuto zásadu zakážete nebo nenakonfigurujete, uživatelé se nebudou moci přihlásit pomocí zařízení FIDO.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Authentification FIDO Microsoft</displayName>
+  <description>Configuration de l’authentification FIDO Microsoft</description>
+  <resources>
+    <stringTable>
+        <string id="MSFidoAuthenticationCategory">Authentification FIDO Microsoft</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogon">Autoriser l’utilisation des appareils FIDO pour l’authentification</string>
+        <string id="MSFidoAuthentication_AllowDeviceLogonExplain">Cette stratégie permet aux utilisateurs d’utiliser un appareil FIDO, comme un téléphone, une carte NFC pour s’authentifier sur un ordinateur de bureau exécutant Windows 10.
+
+Si vous activez ce paramètre de stratégie, les utilisateurs peuvent s’authentifier auprès de Windows à l’aide d’un appareil FIDO.
+
+Si vous désactivez ou ne configurez pas cette stratégie, les utilisateurs ne peuvent pas utiliser d’appareil FIDO pour s’authentifier.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>OOBE 群組原則</displayName>
+  <description>透過群組原則管理服務，定義管理 OOBE 設定的原則。</description>
+  <resources>
+    <stringTable>
+      <string id="OOBECategory_DisplayName">OOBE</string>
+      <string id="OOBECategory_Explain">設定特定的 OOBE 相關設定</string>
+
+      <string id="DisablePrivacyExperience">不要啟動使用者登入的隱私權設定體驗</string>
+      <string id="DisablePrivacyExperience_Explain">當第一次登入時，或在某些情況下升級後登入新的使用者帳戶時，使用者的螢幕或一系列螢幕上，會跳出供使用者選擇的帳戶隱私設定。啟用此原則後，能避免在啟動時再遇到類似的情形。
+
+如果原則已啟用，隱私權體驗將不會為新創建的使用者帳戶啟動，也不會為在升級後跳出隱私權設定選擇選項的帳戶啟動。
+
+如果原則停用或未設定，那隱私權體驗將會為新創建的使用者帳戶啟動，也會為在升級後跳出隱私權設定選擇選項的帳戶啟動。</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

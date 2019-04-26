@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft 帐户</displayName>
+  <description>Microsoft 帐户的配置</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Microsoft 帐户</string>
+        <string id="MicrosoftAccount_DisableUserAuth">阻止所有使用者进行 Microsoft 帐户用户身份验证</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">启用后，此策略将阻止设备上的所有应用程序和服务通过 Windows OnlineID 和 WebAccountManager API 进行新使用者 Microsoft 帐户身份验证。在身份验证缓存过期之前，此策略不会影响已验证的应用程序，因此建议在设置设备时设置此策略，防止设备上存在任何缓存令牌。此策略不会影响用户在浏览器或使用 OAuth 的应用中直接执行的身份验证。
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

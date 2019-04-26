@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Microsoft-Konto</displayName>
+  <description>Konfiguration für Microsoft-Konto</description>
+  <resources>
+    <stringTable>
+        <string id="MicrosoftAccountCategory">Microsoft-Konto</string>
+        <string id="MicrosoftAccount_DisableUserAuth">Benutzerauthentifizierung von Microsoft-Konten aller Anwender blockieren</string>
+        <string id="MicrosoftAccount_DisableUserAuthExplain">Falls aktiviert, hindert diese Richtlinie alle Anwendungen und Dienste auf dem Gerät an der Verwendung der neuen Microsoft-Kontoauthentifizierung für Anwender über die Windows OnlineID-API und WebAccountManager-API. Auf bereits authentifizierte Anwendungen hat diese Richtlinie bis zum Ablauf des Authentifizierungscaches u. U. keine Auswirkungen. Daher wird empfohlen, diese Richtlinie beim Einrichten eines Geräts festzulegen, um zwischengespeicherte Token auf dem Gerät zu vermeiden. Diese Richtlinie wirkt sich nicht auf Authentifizierungen aus, die vom Benutzer direkt in Browsern oder Apps ausgeführt werden, die OAuth verwenden.
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Grupprincipinställningar för Windows Connection Manager</displayName>
+  <description>Grupprincipinställningar för Windows Connection Manager</description>
+  <resources>
+    <stringTable>
+      <string id="WCM_Category">Windows Connection Manager</string>
+      <string id="WCM_BlockNonDomain">Förbjud anslutning till nätverk utanför domänen när ansluten till ett domänautentiserat nätverk (Prohibit connection to non-domain networks when connected to domain authenticated network)</string>
+      <string id="WCM_BlockNonDomain_Help">Den här principinställningen hindrar datorer från att ansluta till både ett domänbaserat nätverk och ett nätverk som inte är domänbaserat samtidigt.
+      
+      Om den här principinställningen är aktiverad svarar datorn på automatiska och manuella anslutningsförsök i följande omständigheter:
+      
+      Automatiska anslutningsförsök
+      - När datorn redan är ansluten till ett domänbaserat nätverk blockeras alla automatiska anslutningsförsök till nätverk som inte är domänbaserade.
+      - När datorn redan är ansluten till ett nätverk som inte är domänbaserat blockeras automatiska anslutningsförsök till domänbaserade nätverk.
+      
+      Manuella anslutningsförsök
+      - När datorn redan är ansluten till antingen ett nätverk som inte är domänbaserat eller ett domänbaserat nätverk via ett annat medium än Ethernet och användaren försöker skapa en manuell anslutning till ett nätverk till i brott mot den här principinställningen, stängs den befintliga nätverksanslutningen och den manuella anslutningen tillåts.
+      Manuella anslutningsförsök
+- När datorn redan är ansluten till antingen ett nätverk som inte är domänbaserat eller ett domänbaserat nätverk via Ethernet och användaren försöker skapa en manuell anslutning till ytterligare ett nätverk i strid mot den här principinställningen, blockeras det manuella anslutningsförsöket och den befintliga Ethernet-anslutningen behålls.
+
+      Om du inaktiverar eller inte konfigurerar den här principinställningen tillåts datorerna att ansluta samtidigt både domänbaserade och inte domänbaserade nätverk.
+      
+      </string>
+      <string id="WCM_DisableRoaming">Förbjud anslutning till roamingleverantörers mobila bredbandsnätverk (Prohibit connection to roaming Mobile Broadband networks)</string>
+      <string id="WCM_DisableRoaming_Help">Den här principinställningen hindrar klienter från att ansluta till mobila bredbandsnätverk när de är registrerade i en roamingleverantörs nätverk. 
+
+      Om den här principinställningen är aktiverad blockeras alla automatiska och manuella anslutningsförsök till roamingleverantören tills klienten registrerar sig i hemnätverket.
+      
+      Om du inaktiverar eller inte konfigurerar den här principinställningen tillåts klienterna att ansluta till roamingleverantörers mobila bredbandsnätverk.
+      
+      </string>
+      <string id="WCM_MinimizeConnections">Minimera antalet samtidiga anslutningar till Internet eller en Windows-domän (Minimize the number of simultaneous connections to the Internet or a Windows Domain)</string>
+      <string id="WCM_MinimizeConnections_Help">Den här principinställningen hindrar datorer från att upprätta flera samtidiga anslutningar antingen till Internet eller till en Windows-domän. Som standard är den här principinställningen aktiverad när dess värde är Inte konfigurerad.
+      
+      Om den här principinställningen aktiveras blockeras nya automatiska anslutningsförsök till Internet om datorn har minst en aktiv anslutning till Internet. När datorn har minst en aktiv anslutning till en Windows-domän blockeras även nya automatiska anslutningar till samma Windows-domän. Ytterligare manuella försök av användare att ansluta till Internet eller en Windows-domän blockeras inte av den här principinställningen.
+      
+      Om det finns flera samtidiga anslutningar antingen till Internet eller till en Windows-domän avbryts anslutningen med lägst prioritet när nätverkstrafiken via anslutningen med lägst prioritet sjunker under ett visst tröskelvärde. Exempel: När en dator är ansluten till Internet via en WLAN-anslutning och användaren kopplar upp sig mot ett Ethernet-nätverk, skickas nätverkstrafiken via den snabbare Ethernet-anslutningen och WLAN-trafiken minskar. Windows upptäcker detta och reagerar genom att koppla från WLAN-anslutningen.
+
+      Om du inaktiverar eller inte konfigurerar den här principinställningen tillåts flera samtidiga anslutningar till Internet och/eller till en Windows-domän.
+
+      Om den här principinställningen är Inte konfigurerad är standardinställningen att den är aktiverad. Detta skiljer sig dock från när principinställningen anges via Grupprincip – när principinställningen är Inte konfigurerad går den att ställa in på den lokala datorn. När principinställningen anges med Grupprincip går den inte att ange lokalt. När principinställningens värde är Inte konfigurerad görs inga nya anslutningsförsök automatiskt och anslutningar med lägre prioritet kopplas från.
+      </string>
+      <string id="WCM_DisablePowerManagement">Inaktivera energisparfunktioner vid vänteläge med anslutning (Disable power management in connected standby mode)</string>
+      <string id="WCM_DisablePowerManagement_Help">Den här principinställningen innebär att energisparfunktionerna inaktiveras när datorn försätts i anslutet vänteläge. 
+
+      Om den här principinställningen är aktiverad hanteras inte nätverkskortens sändare av Windows Connection Manager så att effektförbrukningen sänks när datorn försätts i anslutet vänteläge.
+
+      Om du inaktiverar eller inte konfigurerar den här principinställningen aktiveras energisparfunktionerna när datorn försätts i anslutet vänteläge.
+      
+      </string>
+      <string id="WCM_EnableSoftDisconnect">Låt Windows göra en mjuk frånkoppling av en dator från ett nätverk</string>
+      <string id="WCM_EnableSoftDisconnect_Help">Med den här principinställningen bestämmer du om Windows gör en mjuk frånkoppling av en dator från ett nätverk.
+
+      Om principinställningen är aktiverad eller inte konfigurerad gör Windows en mjuk frånkoppling av en dator från ett nätverk om den fastställer att datorn inte längre bör vara ansluten till nätverket.
+
+      Om principinställningen är inaktiverad kopplar Windows från en dator från ett nätverk omedelbart om den fastställer att datorn inte längre bör vara ansluten till nätverket.
+
+      När mjuk frånkoppling är aktiverat:
+      - När Windows fastställer att datorn inte längre bör vara ansluten till ett nätverk väntar den på att trafiken i det nätverket ska lägga sig. Den befintliga TCP-sessionen fortsätter oavbrutet.
+      - Windows kontrollerar sedan trafiknivån i nätverket med jämna mellanrum. Om trafiknivån är över en viss tröskel vidtas ingen åtgärd. Datorn förblir ansluten till nätverket och fortsätter använda det. Om till exempel nätverksanslutningen används för att ladda ned filer från Internet fortsätter filerna att laddas ned via den nätverksanslutningen.
+      - När trafiken sjunker under tröskeln så kopplar Windows från datorn från nätverket. Appar som håller en nätverksanslutning aktiv även om de inte aktivt använder den (t.ex. e-postappar) kan tappa sin anslutning. Om det händer bör de apparna återansluta via ett annat nätverk. 
+
+      Den här principinställningen är beroende av andra grupprincipinställningar. Om till exempel Minimera antalet samtidiga anslutningar till Internet eller en Windows-domän är inaktiverad kopplar Windows inte från några nätverk.
+      </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>
